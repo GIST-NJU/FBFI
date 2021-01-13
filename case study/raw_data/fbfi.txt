@@ -1,0 +1,1921 @@
+"D:\Program Files\jdk1.8\bin\java" "-javaagent:D:\Program Files\JetBrains\IntelliJ IDEA 2018.1\lib\idea_rt.jar=63232:D:\Program Files\JetBrains\IntelliJ IDEA 2018.1\bin" -Dfile.encoding=GBK -classpath "D:\Program Files\jdk1.8\jre\lib\charsets.jar;D:\Program Files\jdk1.8\jre\lib\deploy.jar;D:\Program Files\jdk1.8\jre\lib\ext\access-bridge-32.jar;D:\Program Files\jdk1.8\jre\lib\ext\cldrdata.jar;D:\Program Files\jdk1.8\jre\lib\ext\dnsns.jar;D:\Program Files\jdk1.8\jre\lib\ext\jaccess.jar;D:\Program Files\jdk1.8\jre\lib\ext\jfxrt.jar;D:\Program Files\jdk1.8\jre\lib\ext\localedata.jar;D:\Program Files\jdk1.8\jre\lib\ext\nashorn.jar;D:\Program Files\jdk1.8\jre\lib\ext\sunec.jar;D:\Program Files\jdk1.8\jre\lib\ext\sunjce_provider.jar;D:\Program Files\jdk1.8\jre\lib\ext\sunmscapi.jar;D:\Program Files\jdk1.8\jre\lib\ext\sunpkcs11.jar;D:\Program Files\jdk1.8\jre\lib\ext\zipfs.jar;D:\Program Files\jdk1.8\jre\lib\javaws.jar;D:\Program Files\jdk1.8\jre\lib\jce.jar;D:\Program Files\jdk1.8\jre\lib\jfr.jar;D:\Program Files\jdk1.8\jre\lib\jfxswt.jar;D:\Program Files\jdk1.8\jre\lib\jsse.jar;D:\Program Files\jdk1.8\jre\lib\management-agent.jar;D:\Program Files\jdk1.8\jre\lib\plugin.jar;D:\Program Files\jdk1.8\jre\lib\resources.jar;D:\Program Files\jdk1.8\jre\lib\rt.jar;G:\Train-ticket\target\classes;G:\Train-ticket\lib\com.microsoft.z3.jar;G:\Train-ticket\lib\commons-beanutils-1.7.0.jar;G:\Train-ticket\lib\commons-collections-3.1.jar;G:\Train-ticket\lib\commons-lang-2.5.jar;G:\Train-ticket\lib\commons-logging.jar;G:\Train-ticket\lib\ezmorph-1.0.3.jar;G:\Train-ticket\lib\jackson-all-2.8.0.jar;G:\Train-ticket\lib\jjwt-0.9.1.jar;G:\Train-ticket\lib\json-lib-2.4-jdk15.jar;C:\Users\Administrator.SC-201809121517\.m2\repository\ch\ethz\ganymed\ganymed-ssh2\build210\ganymed-ssh2-build210.jar;C:\Users\Administrator.SC-201809121517\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar" FBFI.Main
+-----------1------------FailcaseSet.size(): 0, TestcaseSet.size(): 1
+testcasseset:
+
+Reset system...
+begin init...
+init end, cost time 226s
+Insert faults is []
+Testcase is '[]'
+Insert faults...
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p3, Value= ts-travel-service-558966db9f-zbsdz
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-rb7f5
+------ts-food-service--------
+processes.size = 5
+Matched in p4, Value= ts-food-service-5d45948c75-9xxt2
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-qbpbm
+------ts-preserve-service--------
+processes.size = 5
+Matched in p4, Value= ts-preserve-service-7c74546547-hfgsb
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-6bf27
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-nvxmt
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-pzc2z
+
+path = ts-travel-service_3---ts-assurance-service_3---ts-food-service_1---ts-contacts-service_2---ts-preserve-service_3---ts-order-service_1---ts-inside-payment-service_2---ts-order-other-service_2
+
+TestcaseSum = 8
+-----------2------------FailcaseSet.size(): 0, TestcaseSet.size(): 8
+testcasseset:
+Crash(ts-inside-payment-service_2)
+
+Crash(ts-travel-service_3)
+
+Crash(ts-food-service_1)
+
+Crash(ts-order-other-service_2)
+
+Crash(ts-preserve-service_3)
+
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-service_1)
+
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 11s
+Insert faults is [Crash(ts-inside-payment-service_2)]
+Testcase is '[Crash(ts-inside-payment-service_2)]'
+Insert faults...
+delete info:pod "ts-inside-payment-service-644665db-nvxmt" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p3, Value= ts-travel-service-558966db9f-zbsdz
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-d6nlx
+------ts-food-service--------
+processes.size = 5
+Matched in p2, Value= ts-food-service-5d45948c75-9xxt2
+------ts-contacts-service--------
+processes.size = 5
+Matched in p3, Value= ts-contacts-service-758b4d8f44-qbpbm
+------ts-preserve-service--------
+processes.size = 5
+Matched in p4, Value= ts-preserve-service-7c74546547-7vszt
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-6bf27
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-7shsd
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-zxb57
+
+path = ts-travel-service_3---ts-assurance-service_1---ts-food-service_1---ts-contacts-service_2---ts-preserve-service_1---ts-order-service_1---ts-inside-payment-service_1---ts-order-other-service_3
+
+TestcaseSum = 10
+-----------3------------FailcaseSet.size(): 0, TestcaseSet.size(): 10
+testcasseset:
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-travel-service_3)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_3)
+
+Crash(ts-food-service_1)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-order-other-service_3)
+
+Crash(ts-order-service_1)
+
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 257s
+Insert faults is [Crash(ts-assurance-service_1), Crash(ts-assurance-service_3)]
+Testcase is '[Crash(ts-assurance-service_1), Crash(ts-assurance-service_3)]'
+Insert faults...
+delete info:pod "ts-assurance-service-84fbd86998-d6nlx" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-rb7f5" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p1, Value= ts-travel-service-558966db9f-fxjgm
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-j9mds
+------ts-food-service--------
+processes.size = 5
+Matched in p2, Value= ts-food-service-5d45948c75-9xxt2
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-nw72c
+------ts-preserve-service--------
+processes.size = 5
+Matched in p4, Value= ts-preserve-service-7c74546547-dkvcm
+------ts-order-service--------
+processes.size = 11
+Matched in p5, Value= ts-order-service-786995677f-6bf27
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-7shsd
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-pzc2z
+
+path = ts-travel-service_1---ts-assurance-service_2---ts-food-service_1---ts-contacts-service_1---ts-preserve-service_2---ts-order-service_1---ts-inside-payment-service_1---ts-order-other-service_2
+
+TestcaseSum = 13
+-----------4------------FailcaseSet.size(): 0, TestcaseSet.size(): 13
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+Crash(ts-travel-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_1)
+
+Crash(ts-order-service_1)
+
+Crash(ts-preserve-service_2)
+Crash(ts-contacts-service_2)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_3)
+
+Crash(ts-food-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-assurance-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 257s
+Insert faults is [Crash(ts-inside-payment-service_2), Crash(ts-inside-payment-service_1)]
+Testcase is '[Crash(ts-inside-payment-service_2), Crash(ts-inside-payment-service_1)]'
+Insert faults...
+delete info:pod "ts-inside-payment-service-644665db-9bp5d" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-7shsd" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+ResponseCode is an error code:502
+insidepaymentservice failed,resondeCode is 502,response is 
+Execution is failed!
+-----------5------------FailcaseSet.size(): 1, TestcaseSet.size(): 13
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+Crash(ts-travel-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_1)
+
+Crash(ts-order-service_1)
+
+Crash(ts-preserve-service_2)
+Crash(ts-contacts-service_2)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_3)
+
+Crash(ts-food-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-assurance-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 287s
+Insert faults is [Crash(ts-preserve-service_1), Crash(ts-preserve-service_2), Crash(ts-preserve-service_3)]
+Testcase is '[Crash(ts-preserve-service_1), Crash(ts-preserve-service_2), Crash(ts-preserve-service_3)]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-7vszt" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-dkvcm" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-preserve-service-7c74546547-hfgsb" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+ResponseCode is an error code:502
+preserveservice failed,resondeCode is 502,response is 
+Execution is failed!
+-----------6------------FailcaseSet.size(): 2, TestcaseSet.size(): 13
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+Crash(ts-travel-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_1)
+
+Crash(ts-order-service_1)
+
+Crash(ts-preserve-service_2)
+Crash(ts-contacts-service_2)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_3)
+
+Crash(ts-food-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-assurance-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 257s
+Insert faults is [Crash(ts-assurance-service_1), Crash(ts-assurance-service_3), Crash(ts-travel-service_1)]
+Testcase is '[Crash(ts-assurance-service_1), Crash(ts-assurance-service_3), Crash(ts-travel-service_1)]'
+Insert faults...
+delete info:pod "ts-assurance-service-84fbd86998-5zdhf" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-stwc6" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-travel-service-558966db9f-fxjgm" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p5, Value= ts-travel-service-558966db9f-zbsdz
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-j9mds
+------ts-food-service--------
+processes.size = 5
+Matched in p1, Value= ts-food-service-5d45948c75-9xxt2
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-nw72c
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-z9rqx
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-6bf27
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-6pvv9
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-fcvcj
+
+path = ts-travel-service_3---ts-assurance-service_2---ts-food-service_1---ts-contacts-service_1---ts-preserve-service_3---ts-order-service_1---ts-inside-payment-service_1---ts-order-other-service_1
+
+TestcaseSum = 12
+-----------7------------FailcaseSet.size(): 2, TestcaseSet.size(): 12
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_1)
+
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_2)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+
+Crash(ts-food-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_1)
+
+Crash(ts-order-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-assurance-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 257s
+Insert faults is [Crash(ts-order-other-service_2), Crash(ts-order-other-service_1), Crash(ts-order-other-service_3)]
+Testcase is '[Crash(ts-order-other-service_2), Crash(ts-order-other-service_1), Crash(ts-order-other-service_3)]'
+Insert faults...
+delete info:pod "ts-order-other-service-6fb79984cb-pzc2z" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-fcvcj" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-zxb57" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+ResponseCode is an error code:500
+preserveservice failed,resondeCode is 500,response is 
+Execution is failed!
+-----------8------------FailcaseSet.size(): 3, TestcaseSet.size(): 12
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_1)
+
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_2)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+
+Crash(ts-food-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_1)
+
+Crash(ts-order-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-assurance-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 257s
+Insert faults is [Crash(ts-travel-service_3), Crash(ts-travel-service_1)]
+Testcase is '[Crash(ts-travel-service_3), Crash(ts-travel-service_1)]'
+Insert faults...
+delete info:pod "ts-travel-service-558966db9f-zbsdz" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-travel-service-558966db9f-n8bdc" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p4, Value= ts-travel-service-558966db9f-r4989
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-j9mds
+------ts-food-service--------
+processes.size = 5
+Matched in p3, Value= ts-food-service-5d45948c75-lhw9x
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-qbpbm
+------ts-preserve-service--------
+processes.size = 5
+Matched in p4, Value= ts-preserve-service-7c74546547-5j8f7
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-htbm9
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-9ddrl
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-dgldk
+
+path = ts-travel-service_2---ts-assurance-service_3---ts-food-service_2---ts-contacts-service_2---ts-preserve-service_1---ts-order-service_3---ts-inside-payment-service_2---ts-order-other-service_2
+
+TestcaseSum = 22
+-----------9------------FailcaseSet.size(): 3, TestcaseSet.size(): 22
+testcasseset:
+Crash(ts-travel-service_3)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_3)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-assurance-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-assurance-service_3)
+Crash(ts-travel-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-order-service_1)
+
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_2)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+
+Crash(ts-order-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-food-service_1)
+
+Crash(ts-food-service_1)
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-order-service_1)
+
+Crash(ts-food-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_3)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-service_1)
+
+Reset system...
+begin init...
+init end, cost time 226s
+Insert faults is [Crash(ts-travel-service_3), Crash(ts-assurance-service_2), Crash(ts-assurance-service_3)]
+Testcase is '[Crash(ts-travel-service_3), Crash(ts-assurance-service_2), Crash(ts-assurance-service_3)]'
+Insert faults...
+delete info:pod "ts-travel-service-558966db9f-r4989" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-bt87p" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-j9mds" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p2, Value= ts-travel-service-558966db9f-qndzh
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-4fwz4
+------ts-food-service--------
+processes.size = 5
+Matched in p4, Value= ts-food-service-5d45948c75-9xxt2
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-qbpbm
+------ts-preserve-service--------
+processes.size = 5
+Matched in p4, Value= ts-preserve-service-7c74546547-5j8f7
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-6bf27
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-6pvv9
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-dgldk
+
+path = ts-travel-service_2---ts-assurance-service_1---ts-food-service_1---ts-contacts-service_2---ts-preserve-service_1---ts-order-service_1---ts-inside-payment-service_1---ts-order-other-service_2
+
+TestcaseSum = 21
+-----------10------------FailcaseSet.size(): 3, TestcaseSet.size(): 21
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-assurance-service_2)
+
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-order-service_1)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_1)
+
+Crash(ts-order-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-food-service_1)
+
+Crash(ts-food-service_1)
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-order-service_1)
+
+Crash(ts-food-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_3)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-service_1)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+Crash(ts-travel-service_1)
+
+Reset system...
+begin init...
+init end, cost time 287s
+Insert faults is [Crash(ts-food-service_1), Crash(ts-assurance-service_3)]
+Testcase is '[Crash(ts-food-service_1), Crash(ts-assurance-service_3)]'
+Insert faults...
+delete info:pod "ts-food-service-5d45948c75-9xxt2" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-mcpdf" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p2, Value= ts-travel-service-558966db9f-kxcjg
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-5l42s
+------ts-food-service--------
+processes.size = 5
+Matched in p5, Value= ts-food-service-5d45948c75-lhw9x
+------ts-contacts-service--------
+processes.size = 5
+Matched in p2, Value= ts-contacts-service-758b4d8f44-qbpbm
+------ts-preserve-service--------
+processes.size = 5
+Matched in p1, Value= ts-preserve-service-7c74546547-5j8f7
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-7cxj8
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-6pvv9
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-tz9qj
+
+path = ts-travel-service_2---ts-assurance-service_2---ts-food-service_2---ts-contacts-service_2---ts-preserve-service_1---ts-order-service_2---ts-inside-payment-service_1---ts-order-other-service_3
+
+TestcaseSum = 20
+-----------11------------FailcaseSet.size(): 3, TestcaseSet.size(): 20
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-service_1)
+Crash(ts-order-service_3)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-assurance-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-order-service_1)
+
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_2)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+
+Crash(ts-order-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_1)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+
+Crash(ts-food-service_1)
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Reset system...
+begin init...
+init end, cost time 287s
+Insert faults is [Crash(ts-inside-payment-service_1), Crash(ts-order-service_1), Crash(ts-order-service_3)]
+Testcase is '[Crash(ts-inside-payment-service_1), Crash(ts-order-service_1), Crash(ts-order-service_3)]'
+Insert faults...
+delete info:pod "ts-inside-payment-service-644665db-6pvv9" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-service-786995677f-6bf27" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-htbm9" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p4, Value= ts-travel-service-558966db9f-5mgcw
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-4fwz4
+------ts-food-service--------
+processes.size = 5
+Matched in p5, Value= ts-food-service-5d45948c75-4qkgz
+------ts-contacts-service--------
+processes.size = 5
+Matched in p3, Value= ts-contacts-service-758b4d8f44-nw72c
+------ts-preserve-service--------
+processes.size = 5
+Matched in p1, Value= ts-preserve-service-7c74546547-5j8f7
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-7cxj8
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-9ddrl
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-tz9qj
+
+path = ts-travel-service_1---ts-assurance-service_1---ts-food-service_1---ts-contacts-service_1---ts-preserve-service_1---ts-order-service_2---ts-inside-payment-service_2---ts-order-other-service_3
+
+TestcaseSum = 18
+-----------12------------FailcaseSet.size(): 3, TestcaseSet.size(): 18
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-inside-payment-service_1)
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_3)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-food-service_1)
+Crash(ts-assurance-service_2)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_3)
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-order-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-contacts-service_1)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+
+Reset system...
+begin init...
+init end, cost time 318s
+Insert faults is [Crash(ts-inside-payment-service_1), Crash(ts-order-other-service_2), Crash(ts-order-other-service_3)]
+Testcase is '[Crash(ts-inside-payment-service_1), Crash(ts-order-other-service_2), Crash(ts-order-other-service_3)]'
+Insert faults...
+delete info:pod "ts-inside-payment-service-644665db-2jld2" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-dgldk" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-tz9qj" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p1, Value= ts-travel-service-558966db9f-kxcjg
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-z7jxp
+------ts-food-service--------
+processes.size = 5
+Matched in p2, Value= ts-food-service-5d45948c75-4qkgz
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-qbpbm
+------ts-preserve-service--------
+processes.size = 5
+Matched in p4, Value= ts-preserve-service-7c74546547-dv44l
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-7cxj8
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-9ddrl
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-4j2cj
+
+path = ts-travel-service_2---ts-assurance-service_3---ts-food-service_1---ts-contacts-service_2---ts-preserve-service_2---ts-order-service_1---ts-inside-payment-service_2---ts-order-other-service_1
+
+TestcaseSum = 14
+-----------13------------FailcaseSet.size(): 3, TestcaseSet.size(): 14
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-food-service_1)
+Crash(ts-assurance-service_2)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-order-service_1)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+
+Reset system...
+begin init...
+init end, cost time 287s
+Insert faults is [Crash(ts-travel-service_3), Crash(ts-travel-service_2), Crash(ts-food-service_1), Crash(ts-assurance-service_2)]
+Testcase is '[Crash(ts-travel-service_3), Crash(ts-travel-service_2), Crash(ts-food-service_1), Crash(ts-assurance-service_2)]'
+Insert faults...
+delete info:pod "ts-travel-service-558966db9f-qndzh" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-travel-service-558966db9f-kxcjg" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+delete info:pod "ts-food-service-5d45948c75-4qkgz" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-5l42s" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p1, Value= ts-travel-service-558966db9f-5mgcw
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-4fwz4
+------ts-food-service--------
+processes.size = 5
+Matched in p4, Value= ts-food-service-5d45948c75-lhw9x
+------ts-contacts-service--------
+processes.size = 5
+Matched in p3, Value= ts-contacts-service-758b4d8f44-qbpbm
+------ts-preserve-service--------
+processes.size = 5
+Matched in p4, Value= ts-preserve-service-7c74546547-z9rqx
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-t4k5v
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-9ddrl
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-dgd7m
+
+path = ts-travel-service_1---ts-assurance-service_1---ts-food-service_2---ts-contacts-service_2---ts-preserve-service_3---ts-order-service_2---ts-inside-payment-service_1---ts-order-other-service_2
+
+TestcaseSum = 13
+-----------14------------FailcaseSet.size(): 3, TestcaseSet.size(): 13
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-preserve-service_1)
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-order-service_1)
+
+Crash(ts-food-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+
+Reset system...
+begin init...
+init end, cost time 318s
+Insert faults is [Crash(ts-inside-payment-service_2), Crash(ts-order-service_1), Crash(ts-order-service_2)]
+Testcase is '[Crash(ts-inside-payment-service_2), Crash(ts-order-service_1), Crash(ts-order-service_2)]'
+Insert faults...
+delete info:pod "ts-inside-payment-service-644665db-q6h6g" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-order-service-786995677f-7cxj8" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-t4k5v" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p5, Value= ts-travel-service-558966db9f-c64sj
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-z7jxp
+------ts-food-service--------
+processes.size = 5
+Matched in p2, Value= ts-food-service-5d45948c75-lhw9x
+------ts-contacts-service--------
+processes.size = 5
+Matched in p3, Value= ts-contacts-service-758b4d8f44-nw72c
+------ts-preserve-service--------
+processes.size = 5
+Matched in p2, Value= ts-preserve-service-7c74546547-5j8f7
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-zsdh9
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-9ddrl
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-dgd7m
+
+path = ts-travel-service_2---ts-assurance-service_3---ts-food-service_1---ts-contacts-service_1---ts-preserve-service_1---ts-order-service_3---ts-inside-payment-service_1---ts-order-other-service_2
+
+TestcaseSum = 12
+-----------15------------FailcaseSet.size(): 3, TestcaseSet.size(): 12
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-preserve-service_1)
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-order-service_1)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+
+Reset system...
+begin init...
+init end, cost time 257s
+Insert faults is [Crash(ts-preserve-service_1), Crash(ts-order-service_1), Crash(ts-order-service_2)]
+Testcase is '[Crash(ts-preserve-service_1), Crash(ts-order-service_1), Crash(ts-order-service_2)]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-5j8f7" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-order-service-786995677f-jn8cm" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-qqrk8" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p3, Value= ts-travel-service-558966db9f-w9mhn
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-rnffx
+------ts-food-service--------
+processes.size = 5
+Matched in p4, Value= ts-food-service-5d45948c75-sbbxs
+------ts-contacts-service--------
+processes.size = 5
+Matched in p2, Value= ts-contacts-service-758b4d8f44-nw72c
+------ts-preserve-service--------
+processes.size = 5
+Matched in p1, Value= ts-preserve-service-7c74546547-dv44l
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-zsdh9
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-z8gmt
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-4j2cj
+
+path = ts-travel-service_3---ts-assurance-service_2---ts-food-service_2---ts-contacts-service_1---ts-preserve-service_2---ts-order-service_3---ts-inside-payment-service_2---ts-order-other-service_1
+
+TestcaseSum = 11
+-----------16------------FailcaseSet.size(): 3, TestcaseSet.size(): 11
+testcasseset:
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-order-service_1)
+Crash(ts-order-service_3)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+
+Reset system...
+begin init...
+init end, cost time 318s
+Insert faults is [Crash(ts-preserve-service_1), Crash(ts-preserve-service_2), Crash(ts-order-service_1), Crash(ts-order-service_2)]
+Testcase is '[Crash(ts-preserve-service_1), Crash(ts-preserve-service_2), Crash(ts-order-service_1), Crash(ts-order-service_2)]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-4p2g7" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-dv44l" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-order-service-786995677f-cpjnk" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-tzjqt" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p5, Value= ts-travel-service-558966db9f-c64sj
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-rnffx
+------ts-food-service--------
+processes.size = 5
+Matched in p1, Value= ts-food-service-5d45948c75-sbbxs
+------ts-contacts-service--------
+processes.size = 5
+Matched in p1, Value= ts-contacts-service-758b4d8f44-nw72c
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-z9rqx
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-zsdh9
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-9ddrl
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-dgd7m
+
+path = ts-travel-service_2---ts-assurance-service_2---ts-food-service_2---ts-contacts-service_1---ts-preserve-service_3---ts-order-service_3---ts-inside-payment-service_1---ts-order-other-service_2
+
+TestcaseSum = 10
+-----------17------------FailcaseSet.size(): 3, TestcaseSet.size(): 10
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_3)
+Crash(ts-order-service_1)
+Crash(ts-order-service_3)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+
+Reset system...
+begin init...
+init end, cost time 287s
+Insert faults is [Crash(ts-preserve-service_1), Crash(ts-preserve-service_3), Crash(ts-order-service_1), Crash(ts-order-service_3)]
+Testcase is '[Crash(ts-preserve-service_1), Crash(ts-preserve-service_3), Crash(ts-order-service_1), Crash(ts-order-service_3)]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-czrcf" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-z9rqx" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-order-service-786995677f-fm69f" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-zsdh9" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p3, Value= ts-travel-service-558966db9f-5mgcw
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-z7jxp
+------ts-food-service--------
+processes.size = 5
+Matched in p1, Value= ts-food-service-5d45948c75-lhw9x
+------ts-contacts-service--------
+processes.size = 5
+Matched in p4, Value= ts-contacts-service-758b4d8f44-nw72c
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-nnznq
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-pvdmp
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-z8gmt
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-dgd7m
+
+path = ts-travel-service_1---ts-assurance-service_3---ts-food-service_1---ts-contacts-service_1---ts-preserve-service_2---ts-order-service_2---ts-inside-payment-service_2---ts-order-other-service_2
+
+TestcaseSum = 8
+-----------18------------FailcaseSet.size(): 3, TestcaseSet.size(): 8
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 287s
+Insert faults is [Crash(ts-travel-service_3), Crash(ts-travel-service_2), Crash(ts-travel-service_1)]
+Testcase is '[Crash(ts-travel-service_3), Crash(ts-travel-service_2), Crash(ts-travel-service_1)]'
+Insert faults...
+delete info:pod "ts-travel-service-558966db9f-w9mhn" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-travel-service-558966db9f-c64sj" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+delete info:pod "ts-travel-service-558966db9f-5mgcw" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is 
+Execution is failed!
+-----------19------------FailcaseSet.size(): 4, TestcaseSet.size(): 8
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 226s
+Insert faults is [Crash(ts-assurance-service_2), Crash(ts-assurance-service_1), Crash(ts-assurance-service_3)]
+Testcase is '[Crash(ts-assurance-service_2), Crash(ts-assurance-service_1), Crash(ts-assurance-service_3)]'
+Insert faults...
+delete info:pod "ts-assurance-service-84fbd86998-rnffx" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-4fwz4" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-z7jxp" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+travel service is true
+ResponseCode is an error code:502
+assuranceservice failed,resondeCode is 502,response is 
+Execution is failed!
+-----------20------------FailcaseSet.size(): 5, TestcaseSet.size(): 8
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 256s
+Insert faults is [Crash(ts-order-service_1), Crash(ts-order-service_2), Crash(ts-order-service_3)]
+Testcase is '[Crash(ts-order-service_1), Crash(ts-order-service_2), Crash(ts-order-service_3)]'
+Insert faults...
+delete info:pod "ts-order-service-786995677f-7gd78" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-h7qdq" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-order-service-786995677f-pvdmp" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+ResponseCode is an error code:500
+travelservice failed,resondeCode is 500,response is 
+Execution is failed!
+-----------21------------FailcaseSet.size(): 6, TestcaseSet.size(): 8
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 256s
+Insert faults is [Crash(ts-food-service_1), Crash(ts-food-service_2)]
+Testcase is '[Crash(ts-food-service_1), Crash(ts-food-service_2)]'
+Insert faults...
+delete info:pod "ts-food-service-5d45948c75-lhw9x" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-food-service-5d45948c75-sbbxs" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+travel service is true
+assurance service is true
+ResponseCode is an error code:502
+foodservice failed,resondeCode is 502,response is 
+Execution is failed!
+-----------22------------FailcaseSet.size(): 7, TestcaseSet.size(): 8
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Reset system...
+begin init...
+init end, cost time 256s
+Insert faults is [Crash(ts-contacts-service_1), Crash(ts-contacts-service_2)]
+Testcase is '[Crash(ts-contacts-service_1), Crash(ts-contacts-service_2)]'
+Insert faults...
+delete info:pod "ts-contacts-service-758b4d8f44-nw72c" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-qbpbm" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+travel service is true
+assurance service is true
+food service is true
+ResponseCode is an error code:502
+contactservice failed,resondeCode is 502,response is 
+Execution is failed!
+-----------23------------FailcaseSet.size(): 8, TestcaseSet.size(): 8
+testcasseset:
+Crash(ts-inside-payment-service_2)
+Crash(ts-inside-payment-service_1)
+
+Crash(ts-preserve-service_1)
+Crash(ts-preserve-service_2)
+Crash(ts-preserve-service_3)
+
+Crash(ts-order-other-service_2)
+Crash(ts-order-other-service_1)
+Crash(ts-order-other-service_3)
+
+Crash(ts-travel-service_3)
+Crash(ts-travel-service_2)
+Crash(ts-travel-service_1)
+
+Crash(ts-assurance-service_2)
+Crash(ts-assurance-service_1)
+Crash(ts-assurance-service_3)
+
+Crash(ts-order-service_1)
+Crash(ts-order-service_2)
+Crash(ts-order-service_3)
+
+Crash(ts-food-service_1)
+Crash(ts-food-service_2)
+
+Crash(ts-contacts-service_1)
+Crash(ts-contacts-service_2)
+
+Total time is 7295s
+begin init...
+init end, cost time 256s
+
+Process finished with exit code 0

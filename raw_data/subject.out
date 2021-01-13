@@ -1,0 +1,500 @@
+[Model 1]
+FBFI: rounds = 527 , fail_cases = 24 , bottlenecks = 24 , explore_nodes = 123 , explore_edges = 621 , time = 2689 ms
+Random-1x: rounds = 527 , fail_cases = 336.73 , bottlenecks = 6.33 , explore_nodes = 94.87 , explore_edges = 247.73 , time = 1158 ms
+Random-2x: rounds = 1054 , fail_cases = 677.17 , bottlenecks = 5.77 , explore_nodes = 102.30 , explore_edges = 295.17 , time = 2154 ms
+Random-4x: rounds = 2108 , fail_cases = 1357.70 , bottlenecks = 7.77 , explore_nodes = 110.83 , explore_edges = 350.50 , time = 4746 ms
+[Model 2]
+FBFI: rounds = 90 , fail_cases = 3 , bottlenecks = 3 , explore_nodes = 20 , explore_edges = 96 , time = 15 ms
+Random-1x: rounds = 90 , fail_cases = 5.70 , bottlenecks = 1.60 , explore_nodes = 18.80 , explore_edges = 39.77 , time = 13 ms
+Random-2x: rounds = 180 , fail_cases = 19.00 , bottlenecks = 2.63 , explore_nodes = 19.93 , explore_edges = 53.17 , time = 27 ms
+Random-4x: rounds = 360 , fail_cases = 50.03 , bottlenecks = 2.87 , explore_nodes = 20.00 , explore_edges = 67.10 , time = 57 ms
+[Model 3]
+FBFI: rounds = 505 , fail_cases = 25 , bottlenecks = 25 , explore_nodes = 124 , explore_edges = 593 , time = 3003 ms
+Random-1x: rounds = 505 , fail_cases = 316.87 , bottlenecks = 7.43 , explore_nodes = 99.93 , explore_edges = 260.63 , time = 1196 ms
+Random-2x: rounds = 1010 , fail_cases = 645.93 , bottlenecks = 8.43 , explore_nodes = 107.47 , explore_edges = 306.27 , time = 2519 ms
+Random-4x: rounds = 2020 , fail_cases = 1289.10 , bottlenecks = 9.33 , explore_nodes = 115.63 , explore_edges = 357.53 , time = 5880 ms
+[Model 4]
+FBFI: rounds = 282 , fail_cases = 14 , bottlenecks = 14 , explore_nodes = 73 , explore_edges = 329 , time = 721 ms
+Random-1x: rounds = 282 , fail_cases = 149.03 , bottlenecks = 4.57 , explore_nodes = 61.37 , explore_edges = 154.77 , time = 269 ms
+Random-2x: rounds = 564 , fail_cases = 304.60 , bottlenecks = 5.80 , explore_nodes = 66.30 , explore_edges = 188.20 , time = 625 ms
+Random-4x: rounds = 1128 , fail_cases = 618.97 , bottlenecks = 6.47 , explore_nodes = 70.23 , explore_edges = 221.37 , time = 1223 ms
+[Model 5]
+FBFI: rounds = 150 , fail_cases = 5 , bottlenecks = 5 , explore_nodes = 32 , explore_edges = 166 , time = 56 ms
+Random-1x: rounds = 150 , fail_cases = 27.50 , bottlenecks = 3.03 , explore_nodes = 31.40 , explore_edges = 89.40 , time = 47 ms
+Random-2x: rounds = 300 , fail_cases = 67.17 , bottlenecks = 3.80 , explore_nodes = 32.00 , explore_edges = 108.07 , time = 88 ms
+Random-4x: rounds = 600 , fail_cases = 144.23 , bottlenecks = 3.87 , explore_nodes = 32.00 , explore_edges = 128.83 , time = 186 ms
+[Model 6]
+FBFI: rounds = 96 , fail_cases = 5 , bottlenecks = 5 , explore_nodes = 26 , explore_edges = 112 , time = 30 ms
+Random-1x: rounds = 96 , fail_cases = 30.73 , bottlenecks = 2.50 , explore_nodes = 21.63 , explore_edges = 49.30 , time = 31 ms
+Random-2x: rounds = 192 , fail_cases = 66.63 , bottlenecks = 2.70 , explore_nodes = 23.77 , explore_edges = 63.10 , time = 43 ms
+Random-4x: rounds = 384 , fail_cases = 144.23 , bottlenecks = 3.17 , explore_nodes = 25.43 , explore_edges = 77.23 , time = 96 ms
+[Model 7]
+FBFI: rounds = 329 , fail_cases = 18 , bottlenecks = 18 , explore_nodes = 85 , explore_edges = 390 , time = 1700 ms
+Random-1x: rounds = 329 , fail_cases = 190.23 , bottlenecks = 6.20 , explore_nodes = 72.27 , explore_edges = 185.43 , time = 438 ms
+Random-2x: rounds = 658 , fail_cases = 387.37 , bottlenecks = 6.23 , explore_nodes = 76.43 , explore_edges = 218.87 , time = 804 ms
+Random-4x: rounds = 1316 , fail_cases = 781.90 , bottlenecks = 8.00 , explore_nodes = 80.33 , explore_edges = 252.53 , time = 1986 ms
+[Model 8]
+FBFI: rounds = 517 , fail_cases = 25 , bottlenecks = 25 , explore_nodes = 125 , explore_edges = 612 , time = 4700 ms
+Random-1x: rounds = 517 , fail_cases = 330.77 , bottlenecks = 6.33 , explore_nodes = 99.93 , explore_edges = 259.40 , time = 1197 ms
+Random-2x: rounds = 1034 , fail_cases = 674.53 , bottlenecks = 7.43 , explore_nodes = 108.40 , explore_edges = 309.73 , time = 2440 ms
+Random-4x: rounds = 2068 , fail_cases = 1349.23 , bottlenecks = 9.63 , explore_nodes = 114.67 , explore_edges = 362.33 , time = 5429 ms
+[Model 9]
+FBFI: rounds = 356 , fail_cases = 16 , bottlenecks = 16 , explore_nodes = 83 , explore_edges = 419 , time = 993 ms
+Random-1x: rounds = 356 , fail_cases = 181.87 , bottlenecks = 6.00 , explore_nodes = 73.97 , explore_edges = 218.40 , time = 422 ms
+Random-2x: rounds = 712 , fail_cases = 368.93 , bottlenecks = 6.40 , explore_nodes = 78.00 , explore_edges = 262.37 , time = 786 ms
+Random-4x: rounds = 1424 , fail_cases = 754.70 , bottlenecks = 8.20 , explore_nodes = 80.97 , explore_edges = 301.63 , time = 1767 ms
+[Model 10]
+FBFI: rounds = 324 , fail_cases = 24 , bottlenecks = 24 , explore_nodes = 100 , explore_edges = 394 , time = 1704 ms
+Random-1x: rounds = 324 , fail_cases = 216.57 , bottlenecks = 6.30 , explore_nodes = 80.30 , explore_edges = 183.43 , time = 553 ms
+Random-2x: rounds = 648 , fail_cases = 437.23 , bottlenecks = 6.97 , explore_nodes = 85.97 , explore_edges = 216.40 , time = 1093 ms
+Random-4x: rounds = 1296 , fail_cases = 879.63 , bottlenecks = 9.30 , explore_nodes = 91.00 , explore_edges = 251.13 , time = 2425 ms
+[Model 11]
+FBFI: rounds = 207 , fail_cases = 10 , bottlenecks = 10 , explore_nodes = 52 , explore_edges = 240 , time = 138 ms
+Random-1x: rounds = 207 , fail_cases = 90.03 , bottlenecks = 4.07 , explore_nodes = 47.70 , explore_edges = 126.30 , time = 119 ms
+Random-2x: rounds = 414 , fail_cases = 189.67 , bottlenecks = 5.20 , explore_nodes = 49.97 , explore_edges = 150.00 , time = 278 ms
+Random-4x: rounds = 828 , fail_cases = 387.63 , bottlenecks = 6.40 , explore_nodes = 51.83 , explore_edges = 174.10 , time = 599 ms
+[Model 12]
+FBFI: rounds = 31 , fail_cases = 4 , bottlenecks = 4 , explore_nodes = 14 , explore_edges = 35 , time = 2 ms
+Random-1x: rounds = 31 , fail_cases = 7.70 , bottlenecks = 1.87 , explore_nodes = 12.40 , explore_edges = 20.47 , time = 3 ms
+Random-2x: rounds = 62 , fail_cases = 17.80 , bottlenecks = 2.43 , explore_nodes = 13.50 , explore_edges = 24.50 , time = 8 ms
+Random-4x: rounds = 124 , fail_cases = 42.00 , bottlenecks = 3.07 , explore_nodes = 13.97 , explore_edges = 28.27 , time = 14 ms
+[Model 13]
+FBFI: rounds = 228 , fail_cases = 17 , bottlenecks = 17 , explore_nodes = 71 , explore_edges = 272 , time = 385 ms
+Random-1x: rounds = 228 , fail_cases = 137.60 , bottlenecks = 5.40 , explore_nodes = 59.93 , explore_edges = 136.87 , time = 217 ms
+Random-2x: rounds = 456 , fail_cases = 278.60 , bottlenecks = 7.10 , explore_nodes = 63.50 , explore_edges = 161.33 , time = 442 ms
+Random-4x: rounds = 912 , fail_cases = 564.87 , bottlenecks = 8.37 , explore_nodes = 66.80 , explore_edges = 184.53 , time = 970 ms
+[Model 14]
+FBFI: rounds = 234 , fail_cases = 13 , bottlenecks = 13 , explore_nodes = 61 , explore_edges = 274 , time = 279 ms
+Random-1x: rounds = 234 , fail_cases = 114.80 , bottlenecks = 4.90 , explore_nodes = 56.03 , explore_edges = 147.37 , time = 204 ms
+Random-2x: rounds = 468 , fail_cases = 238.73 , bottlenecks = 6.60 , explore_nodes = 58.70 , explore_edges = 172.23 , time = 385 ms
+Random-4x: rounds = 936 , fail_cases = 488.23 , bottlenecks = 7.20 , explore_nodes = 59.97 , explore_edges = 198.07 , time = 771 ms
+[Model 15]
+FBFI: rounds = 515 , fail_cases = 25 , bottlenecks = 25 , explore_nodes = 126 , explore_edges = 607 , time = 4146 ms
+Random-1x: rounds = 515 , fail_cases = 324.67 , bottlenecks = 7.47 , explore_nodes = 100.70 , explore_edges = 263.37 , time = 1295 ms
+Random-2x: rounds = 1030 , fail_cases = 661.33 , bottlenecks = 7.17 , explore_nodes = 108.07 , explore_edges = 307.03 , time = 2290 ms
+Random-4x: rounds = 2060 , fail_cases = 1325.30 , bottlenecks = 7.97 , explore_nodes = 115.67 , explore_edges = 361.73 , time = 5066 ms
+[Model 16]
+FBFI: rounds = 241 , fail_cases = 11 , bottlenecks = 11 , explore_nodes = 59 , explore_edges = 279 , time = 300 ms
+Random-1x: rounds = 241 , fail_cases = 104.67 , bottlenecks = 4.60 , explore_nodes = 55.93 , explore_edges = 153.27 , time = 162 ms
+Random-2x: rounds = 482 , fail_cases = 219.17 , bottlenecks = 5.77 , explore_nodes = 58.50 , explore_edges = 183.80 , time = 386 ms
+Random-4x: rounds = 964 , fail_cases = 445.37 , bottlenecks = 6.87 , explore_nodes = 58.97 , explore_edges = 210.00 , time = 756 ms
+[Model 17]
+FBFI: rounds = 86 , fail_cases = 3 , bottlenecks = 3 , explore_nodes = 20 , explore_edges = 91 , time = 12 ms
+Random-1x: rounds = 86 , fail_cases = 5.93 , bottlenecks = 1.77 , explore_nodes = 18.70 , explore_edges = 37.67 , time = 12 ms
+Random-2x: rounds = 172 , fail_cases = 18.33 , bottlenecks = 2.67 , explore_nodes = 19.93 , explore_edges = 52.10 , time = 25 ms
+Random-4x: rounds = 344 , fail_cases = 46.27 , bottlenecks = 2.77 , explore_nodes = 20.00 , explore_edges = 63.70 , time = 54 ms
+[Model 18]
+FBFI: rounds = 395 , fail_cases = 20 , bottlenecks = 20 , explore_nodes = 102 , explore_edges = 469 , time = 1116 ms
+Random-1x: rounds = 395 , fail_cases = 238.43 , bottlenecks = 5.63 , explore_nodes = 83.07 , explore_edges = 214.50 , time = 610 ms
+Random-2x: rounds = 790 , fail_cases = 474.17 , bottlenecks = 6.63 , explore_nodes = 89.57 , explore_edges = 254.93 , time = 1232 ms
+Random-4x: rounds = 1580 , fail_cases = 968.07 , bottlenecks = 8.27 , explore_nodes = 96.50 , explore_edges = 301.60 , time = 2743 ms
+[Model 19]
+FBFI: rounds = 476 , fail_cases = 29 , bottlenecks = 29 , explore_nodes = 130 , explore_edges = 570 , time = 5755 ms
+Random-1x: rounds = 476 , fail_cases = 341.27 , bottlenecks = 7.67 , explore_nodes = 93.70 , explore_edges = 213.13 , time = 1220 ms
+Random-2x: rounds = 952 , fail_cases = 690.40 , bottlenecks = 8.53 , explore_nodes = 99.87 , explore_edges = 243.67 , time = 2861 ms
+Random-4x: rounds = 1904 , fail_cases = 1373.03 , bottlenecks = 9.27 , explore_nodes = 108.90 , explore_edges = 290.43 , time = 5163 ms
+[Model 20]
+FBFI: rounds = 135 , fail_cases = 13 , bottlenecks = 13 , explore_nodes = 46 , explore_edges = 164 , time = 62 ms
+Random-1x: rounds = 135 , fail_cases = 82.37 , bottlenecks = 4.43 , explore_nodes = 37.10 , explore_edges = 75.30 , time = 65 ms
+Random-2x: rounds = 270 , fail_cases = 170.33 , bottlenecks = 4.93 , explore_nodes = 39.40 , explore_edges = 87.17 , time = 136 ms
+Random-4x: rounds = 540 , fail_cases = 343.53 , bottlenecks = 5.37 , explore_nodes = 41.43 , explore_edges = 100.00 , time = 287 ms
+[Model 21]
+FBFI: rounds = 81 , fail_cases = 4 , bottlenecks = 4 , explore_nodes = 21 , explore_edges = 90 , time = 14 ms
+Random-1x: rounds = 81 , fail_cases = 14.43 , bottlenecks = 2.77 , explore_nodes = 20.10 , explore_edges = 44.67 , time = 14 ms
+Random-2x: rounds = 162 , fail_cases = 32.83 , bottlenecks = 2.90 , explore_nodes = 20.90 , explore_edges = 57.97 , time = 29 ms
+Random-4x: rounds = 324 , fail_cases = 73.67 , bottlenecks = 3.23 , explore_nodes = 21.00 , explore_edges = 68.17 , time = 59 ms
+[Model 22]
+FBFI: rounds = 20 , fail_cases = 3 , bottlenecks = 3 , explore_nodes = 12 , explore_edges = 20 , time = 0 ms
+Random-1x: rounds = 20 , fail_cases = 4.37 , bottlenecks = 1.73 , explore_nodes = 7.27 , explore_edges = 8.27 , time = 1 ms
+Random-2x: rounds = 40 , fail_cases = 10.37 , bottlenecks = 1.87 , explore_nodes = 7.93 , explore_edges = 10.07 , time = 3 ms
+Random-4x: rounds = 80 , fail_cases = 24.13 , bottlenecks = 1.93 , explore_nodes = 9.40 , explore_edges = 12.70 , time = 5 ms
+[Model 23]
+FBFI: rounds = 154 , fail_cases = 9 , bottlenecks = 9 , explore_nodes = 44 , explore_edges = 179 , time = 69 ms
+Random-1x: rounds = 154 , fail_cases = 62.67 , bottlenecks = 3.87 , explore_nodes = 38.77 , explore_edges = 97.70 , time = 73 ms
+Random-2x: rounds = 308 , fail_cases = 133.43 , bottlenecks = 4.50 , explore_nodes = 41.57 , explore_edges = 116.67 , time = 149 ms
+Random-4x: rounds = 616 , fail_cases = 275.30 , bottlenecks = 5.50 , explore_nodes = 43.07 , explore_edges = 132.30 , time = 299 ms
+[Model 24]
+FBFI: rounds = 44 , fail_cases = 3 , bottlenecks = 3 , explore_nodes = 14 , explore_edges = 49 , time = 2 ms
+Random-1x: rounds = 44 , fail_cases = 8.23 , bottlenecks = 1.10 , explore_nodes = 10.80 , explore_edges = 17.70 , time = 4 ms
+Random-2x: rounds = 88 , fail_cases = 18.33 , bottlenecks = 1.73 , explore_nodes = 13.03 , explore_edges = 25.03 , time = 8 ms
+Random-4x: rounds = 176 , fail_cases = 43.57 , bottlenecks = 2.40 , explore_nodes = 13.87 , explore_edges = 31.30 , time = 17 ms
+[Model 25]
+FBFI: rounds = 641 , fail_cases = 27 , bottlenecks = 27 , explore_nodes = 147 , explore_edges = 749 , time = 5857 ms
+Random-1x: rounds = 641 , fail_cases = 382.27 , bottlenecks = 7.27 , explore_nodes = 127.03 , explore_edges = 367.63 , time = 1794 ms
+Random-2x: rounds = 1282 , fail_cases = 758.00 , bottlenecks = 8.77 , explore_nodes = 138.13 , explore_edges = 443.67 , time = 3691 ms
+Random-4x: rounds = 2564 , fail_cases = 1541.83 , bottlenecks = 13.17 , explore_nodes = 143.13 , explore_edges = 508.77 , time = 8261 ms
+[Model 26]
+FBFI: rounds = 418 , fail_cases = 24 , bottlenecks = 24 , explore_nodes = 112 , explore_edges = 494 , time = 2626 ms
+Random-1x: rounds = 418 , fail_cases = 271.27 , bottlenecks = 6.37 , explore_nodes = 89.70 , explore_edges = 216.57 , time = 876 ms
+Random-2x: rounds = 836 , fail_cases = 545.53 , bottlenecks = 6.60 , explore_nodes = 97.67 , explore_edges = 259.77 , time = 1734 ms
+Random-4x: rounds = 1672 , fail_cases = 1103.17 , bottlenecks = 8.63 , explore_nodes = 103.07 , explore_edges = 296.63 , time = 3629 ms
+[Model 27]
+FBFI: rounds = 511 , fail_cases = 25 , bottlenecks = 25 , explore_nodes = 124 , explore_edges = 604 , time = 3394 ms
+Random-1x: rounds = 511 , fail_cases = 328.10 , bottlenecks = 6.23 , explore_nodes = 103.37 , explore_edges = 271.87 , time = 1066 ms
+Random-2x: rounds = 1022 , fail_cases = 649.30 , bottlenecks = 7.03 , explore_nodes = 111.00 , explore_edges = 323.27 , time = 2072 ms
+Random-4x: rounds = 2044 , fail_cases = 1320.67 , bottlenecks = 9.60 , explore_nodes = 117.20 , explore_edges = 374.37 , time = 4495 ms
+[Model 28]
+FBFI: rounds = 57 , fail_cases = 4 , bottlenecks = 4 , explore_nodes = 22 , explore_edges = 61 , time = 10 ms
+Random-1x: rounds = 57 , fail_cases = 13.90 , bottlenecks = 1.53 , explore_nodes = 17.67 , explore_edges = 28.57 , time = 8 ms
+Random-2x: rounds = 114 , fail_cases = 31.23 , bottlenecks = 2.13 , explore_nodes = 20.03 , explore_edges = 36.57 , time = 17 ms
+Random-4x: rounds = 228 , fail_cases = 65.70 , bottlenecks = 2.77 , explore_nodes = 21.50 , explore_edges = 44.63 , time = 37 ms
+[Model 29]
+FBFI: rounds = 566 , fail_cases = 30 , bottlenecks = 30 , explore_nodes = 147 , explore_edges = 671 , time = 4191 ms
+Random-1x: rounds = 566 , fail_cases = 378.23 , bottlenecks = 5.40 , explore_nodes = 117.17 , explore_edges = 294.13 , time = 1379 ms
+Random-2x: rounds = 1132 , fail_cases = 761.63 , bottlenecks = 7.47 , explore_nodes = 128.60 , explore_edges = 350.87 , time = 3103 ms
+Random-4x: rounds = 2264 , fail_cases = 1535.90 , bottlenecks = 10.20 , explore_nodes = 137.47 , explore_edges = 409.73 , time = 7331 ms
+[Model 30]
+FBFI: rounds = 349 , fail_cases = 17 , bottlenecks = 17 , explore_nodes = 86 , explore_edges = 410 , time = 821 ms
+Random-1x: rounds = 349 , fail_cases = 170.90 , bottlenecks = 6.83 , explore_nodes = 81.03 , explore_edges = 237.03 , time = 530 ms
+Random-2x: rounds = 698 , fail_cases = 357.63 , bottlenecks = 8.30 , explore_nodes = 84.20 , explore_edges = 276.63 , time = 939 ms
+Random-4x: rounds = 1396 , fail_cases = 721.83 , bottlenecks = 10.20 , explore_nodes = 85.80 , explore_edges = 315.80 , time = 2040 ms
+[Model 31]
+FBFI: rounds = 192 , fail_cases = 11 , bottlenecks = 11 , explore_nodes = 53 , explore_edges = 230 , time = 181 ms
+Random-1x: rounds = 192 , fail_cases = 102.43 , bottlenecks = 3.43 , explore_nodes = 41.07 , explore_edges = 99.00 , time = 115 ms
+Random-2x: rounds = 384 , fail_cases = 211.17 , bottlenecks = 3.83 , explore_nodes = 45.57 , explore_edges = 124.13 , time = 248 ms
+Random-4x: rounds = 768 , fail_cases = 419.53 , bottlenecks = 4.70 , explore_nodes = 49.40 , explore_edges = 147.93 , time = 577 ms
+[Model 32]
+FBFI: rounds = 152 , fail_cases = 8 , bottlenecks = 8 , explore_nodes = 39 , explore_edges = 178 , time = 72 ms
+Random-1x: rounds = 152 , fail_cases = 61.03 , bottlenecks = 3.53 , explore_nodes = 34.80 , explore_edges = 91.07 , time = 63 ms
+Random-2x: rounds = 304 , fail_cases = 130.47 , bottlenecks = 4.37 , explore_nodes = 37.23 , explore_edges = 112.17 , time = 144 ms
+Random-4x: rounds = 608 , fail_cases = 270.70 , bottlenecks = 4.73 , explore_nodes = 38.37 , explore_edges = 127.80 , time = 299 ms
+[Model 33]
+FBFI: rounds = 122 , fail_cases = 5 , bottlenecks = 5 , explore_nodes = 30 , explore_edges = 136 , time = 24 ms
+Random-1x: rounds = 122 , fail_cases = 27.57 , bottlenecks = 2.67 , explore_nodes = 28.47 , explore_edges = 68.10 , time = 31 ms
+Random-2x: rounds = 244 , fail_cases = 63.67 , bottlenecks = 3.57 , explore_nodes = 29.87 , explore_edges = 85.57 , time = 63 ms
+Random-4x: rounds = 488 , fail_cases = 139.47 , bottlenecks = 4.07 , explore_nodes = 30.00 , explore_edges = 98.63 , time = 148 ms
+[Model 34]
+FBFI: rounds = 181 , fail_cases = 9 , bottlenecks = 9 , explore_nodes = 47 , explore_edges = 209 , time = 129 ms
+Random-1x: rounds = 181 , fail_cases = 68.87 , bottlenecks = 4.30 , explore_nodes = 42.90 , explore_edges = 117.30 , time = 98 ms
+Random-2x: rounds = 362 , fail_cases = 145.80 , bottlenecks = 4.23 , explore_nodes = 45.63 , explore_edges = 141.60 , time = 198 ms
+Random-4x: rounds = 724 , fail_cases = 299.23 , bottlenecks = 5.47 , explore_nodes = 46.70 , explore_edges = 162.00 , time = 429 ms
+[Model 35]
+FBFI: rounds = 398 , fail_cases = 24 , bottlenecks = 24 , explore_nodes = 115 , explore_edges = 481 , time = 2139 ms
+Random-1x: rounds = 398 , fail_cases = 251.57 , bottlenecks = 6.03 , explore_nodes = 90.17 , explore_edges = 226.37 , time = 669 ms
+Random-2x: rounds = 796 , fail_cases = 514.83 , bottlenecks = 7.10 , explore_nodes = 97.03 , explore_edges = 264.00 , time = 1475 ms
+Random-4x: rounds = 1592 , fail_cases = 1026.57 , bottlenecks = 7.63 , explore_nodes = 103.23 , explore_edges = 304.33 , time = 3105 ms
+[Model 36]
+FBFI: rounds = 119 , fail_cases = 9 , bottlenecks = 9 , explore_nodes = 40 , explore_edges = 140 , time = 66 ms
+Random-1x: rounds = 119 , fail_cases = 57.70 , bottlenecks = 3.63 , explore_nodes = 33.70 , explore_edges = 71.97 , time = 50 ms
+Random-2x: rounds = 238 , fail_cases = 117.53 , bottlenecks = 4.40 , explore_nodes = 36.17 , explore_edges = 84.60 , time = 103 ms
+Random-4x: rounds = 476 , fail_cases = 242.40 , bottlenecks = 4.60 , explore_nodes = 38.17 , explore_edges = 97.97 , time = 198 ms
+[Model 37]
+FBFI: rounds = 618 , fail_cases = 30 , bottlenecks = 30 , explore_nodes = 149 , explore_edges = 731 , time = 4018 ms
+Random-1x: rounds = 618 , fail_cases = 423.00 , bottlenecks = 7.00 , explore_nodes = 112.73 , explore_edges = 280.80 , time = 1877 ms
+Random-2x: rounds = 1236 , fail_cases = 859.57 , bottlenecks = 8.17 , explore_nodes = 122.83 , explore_edges = 333.97 , time = 3952 ms
+Random-4x: rounds = 2472 , fail_cases = 1722.17 , bottlenecks = 9.80 , explore_nodes = 133.40 , explore_edges = 398.23 , time = 7736 ms
+[Model 38]
+FBFI: rounds = 517 , fail_cases = 25 , bottlenecks = 25 , explore_nodes = 127 , explore_edges = 610 , time = 3362 ms
+Random-1x: rounds = 517 , fail_cases = 322.53 , bottlenecks = 7.10 , explore_nodes = 102.20 , explore_edges = 274.27 , time = 1123 ms
+Random-2x: rounds = 1034 , fail_cases = 655.93 , bottlenecks = 8.30 , explore_nodes = 110.10 , explore_edges = 324.37 , time = 2562 ms
+Random-4x: rounds = 2068 , fail_cases = 1316.83 , bottlenecks = 9.97 , explore_nodes = 118.13 , explore_edges = 381.27 , time = 4617 ms
+[Model 39]
+FBFI: rounds = 334 , fail_cases = 14 , bottlenecks = 14 , explore_nodes = 78 , explore_edges = 383 , time = 1516 ms
+Random-1x: rounds = 334 , fail_cases = 187.60 , bottlenecks = 3.40 , explore_nodes = 61.80 , explore_edges = 154.93 , time = 395 ms
+Random-2x: rounds = 668 , fail_cases = 375.87 , bottlenecks = 4.20 , explore_nodes = 69.50 , explore_edges = 192.37 , time = 762 ms
+Random-4x: rounds = 1336 , fail_cases = 758.13 , bottlenecks = 6.90 , explore_nodes = 74.53 , explore_edges = 231.67 , time = 1721 ms
+[Model 40]
+FBFI: rounds = 122 , fail_cases = 8 , bottlenecks = 8 , explore_nodes = 37 , explore_edges = 140 , time = 121 ms
+Random-1x: rounds = 122 , fail_cases = 54.23 , bottlenecks = 3.17 , explore_nodes = 29.90 , explore_edges = 63.63 , time = 48 ms
+Random-2x: rounds = 244 , fail_cases = 114.77 , bottlenecks = 3.33 , explore_nodes = 33.03 , explore_edges = 78.37 , time = 100 ms
+Random-4x: rounds = 488 , fail_cases = 233.20 , bottlenecks = 4.57 , explore_nodes = 35.27 , explore_edges = 90.80 , time = 213 ms
+[Model 41]
+FBFI: rounds = 205 , fail_cases = 15 , bottlenecks = 15 , explore_nodes = 68 , explore_edges = 247 , time = 210 ms
+Random-1x: rounds = 205 , fail_cases = 116.90 , bottlenecks = 4.33 , explore_nodes = 57.03 , explore_edges = 131.27 , time = 173 ms
+Random-2x: rounds = 410 , fail_cases = 239.30 , bottlenecks = 5.80 , explore_nodes = 60.43 , explore_edges = 154.20 , time = 364 ms
+Random-4x: rounds = 820 , fail_cases = 479.60 , bottlenecks = 7.40 , explore_nodes = 63.97 , explore_edges = 178.80 , time = 790 ms
+[Model 42]
+FBFI: rounds = 462 , fail_cases = 24 , bottlenecks = 24 , explore_nodes = 116 , explore_edges = 546 , time = 1803 ms
+Random-1x: rounds = 462 , fail_cases = 278.63 , bottlenecks = 7.13 , explore_nodes = 98.33 , explore_edges = 261.83 , time = 1016 ms
+Random-2x: rounds = 924 , fail_cases = 568.87 , bottlenecks = 8.93 , explore_nodes = 104.67 , explore_edges = 307.10 , time = 2265 ms
+Random-4x: rounds = 1848 , fail_cases = 1147.60 , bottlenecks = 11.53 , explore_nodes = 108.83 , explore_edges = 353.37 , time = 5400 ms
+[Model 43]
+FBFI: rounds = 559 , fail_cases = 27 , bottlenecks = 27 , explore_nodes = 141 , explore_edges = 661 , time = 4944 ms
+Random-1x: rounds = 559 , fail_cases = 341.83 , bottlenecks = 6.17 , explore_nodes = 118.50 , explore_edges = 318.83 , time = 1628 ms
+Random-2x: rounds = 1118 , fail_cases = 700.83 , bottlenecks = 8.00 , explore_nodes = 128.67 , explore_edges = 385.63 , time = 3519 ms
+Random-4x: rounds = 2236 , fail_cases = 1407.53 , bottlenecks = 11.03 , explore_nodes = 135.43 , explore_edges = 443.37 , time = 7650 ms
+[Model 44]
+FBFI: rounds = 121 , fail_cases = 8 , bottlenecks = 8 , explore_nodes = 36 , explore_edges = 141 , time = 30 ms
+Random-1x: rounds = 121 , fail_cases = 46.17 , bottlenecks = 4.13 , explore_nodes = 33.93 , explore_edges = 82.83 , time = 43 ms
+Random-2x: rounds = 242 , fail_cases = 97.43 , bottlenecks = 4.83 , explore_nodes = 35.53 , explore_edges = 98.83 , time = 90 ms
+Random-4x: rounds = 484 , fail_cases = 200.90 , bottlenecks = 5.00 , explore_nodes = 35.97 , explore_edges = 112.33 , time = 186 ms
+[Model 45]
+FBFI: rounds = 271 , fail_cases = 14 , bottlenecks = 14 , explore_nodes = 70 , explore_edges = 318 , time = 869 ms
+Random-1x: rounds = 271 , fail_cases = 156.97 , bottlenecks = 4.17 , explore_nodes = 54.17 , explore_edges = 133.07 , time = 254 ms
+Random-2x: rounds = 542 , fail_cases = 314.83 , bottlenecks = 4.67 , explore_nodes = 59.57 , explore_edges = 161.07 , time = 492 ms
+Random-4x: rounds = 1084 , fail_cases = 636.13 , bottlenecks = 5.17 , explore_nodes = 64.50 , explore_edges = 190.73 , time = 1062 ms
+[Model 46]
+FBFI: rounds = 327 , fail_cases = 23 , bottlenecks = 23 , explore_nodes = 103 , explore_edges = 393 , time = 1493 ms
+Random-1x: rounds = 327 , fail_cases = 208.97 , bottlenecks = 6.43 , explore_nodes = 83.87 , explore_edges = 200.80 , time = 517 ms
+Random-2x: rounds = 654 , fail_cases = 419.80 , bottlenecks = 7.87 , explore_nodes = 89.40 , explore_edges = 233.70 , time = 1067 ms
+Random-4x: rounds = 1308 , fail_cases = 850.60 , bottlenecks = 9.53 , explore_nodes = 94.47 , explore_edges = 269.00 , time = 2593 ms
+[Model 47]
+FBFI: rounds = 582 , fail_cases = 29 , bottlenecks = 29 , explore_nodes = 144 , explore_edges = 691 , time = 6153 ms
+Random-1x: rounds = 582 , fail_cases = 379.50 , bottlenecks = 7.23 , explore_nodes = 115.20 , explore_edges = 302.10 , time = 1563 ms
+Random-2x: rounds = 1164 , fail_cases = 767.37 , bottlenecks = 7.67 , explore_nodes = 124.40 , explore_edges = 358.53 , time = 3512 ms
+Random-4x: rounds = 2328 , fail_cases = 1548.27 , bottlenecks = 10.40 , explore_nodes = 132.13 , explore_edges = 418.03 , time = 7885 ms
+[Model 48]
+FBFI: rounds = 422 , fail_cases = 26 , bottlenecks = 26 , explore_nodes = 120 , explore_edges = 506 , time = 2004 ms
+Random-1x: rounds = 422 , fail_cases = 259.37 , bottlenecks = 7.13 , explore_nodes = 106.40 , explore_edges = 275.07 , time = 870 ms
+Random-2x: rounds = 844 , fail_cases = 531.03 , bottlenecks = 8.97 , explore_nodes = 112.30 , explore_edges = 322.40 , time = 1935 ms
+Random-4x: rounds = 1688 , fail_cases = 1066.63 , bottlenecks = 12.53 , explore_nodes = 116.70 , explore_edges = 364.23 , time = 4265 ms
+[Model 49]
+FBFI: rounds = 22 , fail_cases = 2 , bottlenecks = 2 , explore_nodes = 10 , explore_edges = 21 , time = 1 ms
+Random-1x: rounds = 22 , fail_cases = 0.00 , bottlenecks = 0.00 , explore_nodes = 2.00 , explore_edges = 1.00 , time = 1 ms
+Random-2x: rounds = 44 , fail_cases = 0.00 , bottlenecks = 0.00 , explore_nodes = 2.00 , explore_edges = 1.00 , time = 2 ms
+Random-4x: rounds = 88 , fail_cases = 0.00 , bottlenecks = 0.00 , explore_nodes = 2.00 , explore_edges = 1.00 , time = 4 ms
+[Model 50]
+FBFI: rounds = 535 , fail_cases = 21 , bottlenecks = 21 , explore_nodes = 116 , explore_edges = 624 , time = 3282 ms
+Random-1x: rounds = 535 , fail_cases = 265.23 , bottlenecks = 6.67 , explore_nodes = 106.90 , explore_edges = 340.87 , time = 1008 ms
+Random-2x: rounds = 1070 , fail_cases = 547.60 , bottlenecks = 9.40 , explore_nodes = 112.47 , explore_edges = 403.67 , time = 2263 ms
+Random-4x: rounds = 2140 , fail_cases = 1103.83 , bottlenecks = 12.00 , explore_nodes = 115.20 , explore_edges = 464.00 , time = 5129 ms
+[Model 51]
+FBFI: rounds = 217 , fail_cases = 20 , bottlenecks = 20 , explore_nodes = 78 , explore_edges = 267 , time = 260 ms
+Random-1x: rounds = 217 , fail_cases = 143.27 , bottlenecks = 5.50 , explore_nodes = 56.87 , explore_edges = 121.30 , time = 221 ms
+Random-2x: rounds = 434 , fail_cases = 293.53 , bottlenecks = 6.37 , explore_nodes = 60.57 , explore_edges = 139.07 , time = 427 ms
+Random-4x: rounds = 868 , fail_cases = 594.37 , bottlenecks = 7.13 , explore_nodes = 64.00 , explore_edges = 156.73 , time = 981 ms
+[Model 52]
+FBFI: rounds = 580 , fail_cases = 32 , bottlenecks = 32 , explore_nodes = 134 , explore_edges = 673 , time = 8112 ms
+Random-1x: rounds = 580 , fail_cases = 364.23 , bottlenecks = 7.30 , explore_nodes = 111.63 , explore_edges = 300.47 , time = 1315 ms
+Random-2x: rounds = 1160 , fail_cases = 727.60 , bottlenecks = 8.07 , explore_nodes = 120.77 , explore_edges = 363.17 , time = 2868 ms
+Random-4x: rounds = 2320 , fail_cases = 1474.20 , bottlenecks = 10.93 , explore_nodes = 126.73 , explore_edges = 417.10 , time = 6385 ms
+[Model 53]
+FBFI: rounds = 45 , fail_cases = 6 , bottlenecks = 6 , explore_nodes = 14 , explore_edges = 47 , time = 4 ms
+Random-1x: rounds = 45 , fail_cases = 5.07 , bottlenecks = 1.67 , explore_nodes = 12.00 , explore_edges = 19.97 , time = 4 ms
+Random-2x: rounds = 90 , fail_cases = 13.60 , bottlenecks = 2.17 , explore_nodes = 13.37 , explore_edges = 27.27 , time = 9 ms
+Random-4x: rounds = 180 , fail_cases = 34.60 , bottlenecks = 2.83 , explore_nodes = 13.90 , explore_edges = 34.30 , time = 19 ms
+[Model 54]
+FBFI: rounds = 296 , fail_cases = 62 , bottlenecks = 62 , explore_nodes = 85 , explore_edges = 316 , time = 9507 ms
+Random-1x: rounds = 296 , fail_cases = 201.93 , bottlenecks = 6.43 , explore_nodes = 69.37 , explore_edges = 152.13 , time = 422 ms
+Random-2x: rounds = 592 , fail_cases = 410.37 , bottlenecks = 7.17 , explore_nodes = 74.80 , explore_edges = 180.10 , time = 948 ms
+Random-4x: rounds = 1184 , fail_cases = 823.70 , bottlenecks = 9.27 , explore_nodes = 79.07 , explore_edges = 205.20 , time = 1972 ms
+[Model 55]
+FBFI: rounds = 146 , fail_cases = 19 , bottlenecks = 19 , explore_nodes = 38 , explore_edges = 156 , time = 438 ms
+Random-1x: rounds = 146 , fail_cases = 58.17 , bottlenecks = 4.77 , explore_nodes = 34.90 , explore_edges = 85.43 , time = 70 ms
+Random-2x: rounds = 292 , fail_cases = 121.97 , bottlenecks = 5.27 , explore_nodes = 36.80 , explore_edges = 104.67 , time = 160 ms
+Random-4x: rounds = 584 , fail_cases = 247.47 , bottlenecks = 6.03 , explore_nodes = 37.93 , explore_edges = 118.57 , time = 338 ms
+[Model 56]
+FBFI: rounds = 575 , fail_cases = 59 , bottlenecks = 59 , explore_nodes = 139 , explore_edges = 642 , time = 47163 ms
+Random-1x: rounds = 575 , fail_cases = 375.17 , bottlenecks = 6.67 , explore_nodes = 112.20 , explore_edges = 283.43 , time = 1408 ms
+Random-2x: rounds = 1150 , fail_cases = 757.20 , bottlenecks = 7.63 , explore_nodes = 121.67 , explore_edges = 335.53 , time = 2987 ms
+Random-4x: rounds = 2300 , fail_cases = 1516.80 , bottlenecks = 11.07 , explore_nodes = 130.17 , explore_edges = 396.30 , time = 6978 ms
+[Model 57]
+FBFI: rounds = 226 , fail_cases = 13 , bottlenecks = 13 , explore_nodes = 60 , explore_edges = 267 , time = 383 ms
+Random-1x: rounds = 226 , fail_cases = 111.40 , bottlenecks = 4.83 , explore_nodes = 52.37 , explore_edges = 135.53 , time = 183 ms
+Random-2x: rounds = 452 , fail_cases = 233.50 , bottlenecks = 5.63 , explore_nodes = 55.27 , explore_edges = 163.93 , time = 399 ms
+Random-4x: rounds = 904 , fail_cases = 472.47 , bottlenecks = 6.90 , explore_nodes = 57.90 , explore_edges = 192.20 , time = 752 ms
+[Model 58]
+FBFI: rounds = 211 , fail_cases = 33 , bottlenecks = 33 , explore_nodes = 44 , explore_edges = 212 , time = 1244 ms
+Random-1x: rounds = 211 , fail_cases = 113.90 , bottlenecks = 3.20 , explore_nodes = 35.03 , explore_edges = 76.10 , time = 94 ms
+Random-2x: rounds = 422 , fail_cases = 229.50 , bottlenecks = 3.57 , explore_nodes = 39.47 , explore_edges = 95.73 , time = 190 ms
+Random-4x: rounds = 844 , fail_cases = 468.57 , bottlenecks = 5.07 , explore_nodes = 42.17 , explore_edges = 119.57 , time = 423 ms
+[Model 59]
+FBFI: rounds = 110 , fail_cases = 8 , bottlenecks = 8 , explore_nodes = 25 , explore_edges = 116 , time = 49 ms
+Random-1x: rounds = 110 , fail_cases = 14.07 , bottlenecks = 2.97 , explore_nodes = 24.83 , explore_edges = 61.63 , time = 23 ms
+Random-2x: rounds = 220 , fail_cases = 41.13 , bottlenecks = 3.50 , explore_nodes = 25.00 , explore_edges = 76.93 , time = 50 ms
+Random-4x: rounds = 440 , fail_cases = 87.13 , bottlenecks = 3.80 , explore_nodes = 25.00 , explore_edges = 93.07 , time = 109 ms
+[Model 60]
+FBFI: rounds = 592 , fail_cases = 52 , bottlenecks = 52 , explore_nodes = 142 , explore_edges = 673 , time = 27086 ms
+Random-1x: rounds = 592 , fail_cases = 368.30 , bottlenecks = 9.07 , explore_nodes = 119.30 , explore_edges = 330.20 , time = 1582 ms
+Random-2x: rounds = 1184 , fail_cases = 736.40 , bottlenecks = 9.93 , explore_nodes = 126.87 , explore_edges = 387.83 , time = 3244 ms
+Random-4x: rounds = 2368 , fail_cases = 1489.30 , bottlenecks = 11.50 , explore_nodes = 133.37 , explore_edges = 445.10 , time = 7006 ms
+[Model 61]
+FBFI: rounds = 56 , fail_cases = 5 , bottlenecks = 5 , explore_nodes = 17 , explore_edges = 57 , time = 7 ms
+Random-1x: rounds = 56 , fail_cases = 4.33 , bottlenecks = 1.83 , explore_nodes = 16.10 , explore_edges = 27.90 , time = 7 ms
+Random-2x: rounds = 112 , fail_cases = 12.67 , bottlenecks = 2.70 , explore_nodes = 16.87 , explore_edges = 36.10 , time = 13 ms
+Random-4x: rounds = 224 , fail_cases = 33.07 , bottlenecks = 3.10 , explore_nodes = 17.00 , explore_edges = 44.93 , time = 29 ms
+[Model 62]
+FBFI: rounds = 47 , fail_cases = 4 , bottlenecks = 4 , explore_nodes = 15 , explore_edges = 49 , time = 4 ms
+Random-1x: rounds = 47 , fail_cases = 3.20 , bottlenecks = 1.57 , explore_nodes = 14.50 , explore_edges = 25.33 , time = 6 ms
+Random-2x: rounds = 94 , fail_cases = 11.63 , bottlenecks = 2.87 , explore_nodes = 15.00 , explore_edges = 32.10 , time = 10 ms
+Random-4x: rounds = 188 , fail_cases = 28.07 , bottlenecks = 3.10 , explore_nodes = 15.00 , explore_edges = 38.50 , time = 21 ms
+[Model 63]
+FBFI: rounds = 519 , fail_cases = 36 , bottlenecks = 36 , explore_nodes = 125 , explore_edges = 599 , time = 12574 ms
+Random-1x: rounds = 519 , fail_cases = 320.17 , bottlenecks = 6.60 , explore_nodes = 107.40 , explore_edges = 288.13 , time = 1140 ms
+Random-2x: rounds = 1038 , fail_cases = 643.27 , bottlenecks = 9.00 , explore_nodes = 114.67 , explore_edges = 340.97 , time = 2615 ms
+Random-4x: rounds = 2076 , fail_cases = 1302.60 , bottlenecks = 9.10 , explore_nodes = 119.80 , explore_edges = 390.53 , time = 4805 ms
+[Model 64]
+FBFI: rounds = 555 , fail_cases = 57 , bottlenecks = 57 , explore_nodes = 130 , explore_edges = 616 , time = 38051 ms
+Random-1x: rounds = 555 , fail_cases = 309.17 , bottlenecks = 8.17 , explore_nodes = 116.60 , explore_edges = 335.93 , time = 1308 ms
+Random-2x: rounds = 1110 , fail_cases = 636.93 , bottlenecks = 9.97 , explore_nodes = 122.97 , explore_edges = 390.53 , time = 3037 ms
+Random-4x: rounds = 2220 , fail_cases = 1278.70 , bottlenecks = 12.53 , explore_nodes = 127.40 , explore_edges = 442.73 , time = 6485 ms
+[Model 65]
+FBFI: rounds = 271 , fail_cases = 43 , bottlenecks = 43 , explore_nodes = 73 , explore_edges = 292 , time = 1840 ms
+Random-1x: rounds = 271 , fail_cases = 149.80 , bottlenecks = 6.37 , explore_nodes = 64.67 , explore_edges = 166.13 , time = 260 ms
+Random-2x: rounds = 542 , fail_cases = 301.17 , bottlenecks = 7.67 , explore_nodes = 68.63 , explore_edges = 194.10 , time = 618 ms
+Random-4x: rounds = 1084 , fail_cases = 614.13 , bottlenecks = 8.80 , explore_nodes = 70.40 , explore_edges = 218.00 , time = 1246 ms
+[Model 66]
+FBFI: rounds = 329 , fail_cases = 46 , bottlenecks = 46 , explore_nodes = 92 , explore_edges = 360 , time = 6494 ms
+Random-1x: rounds = 329 , fail_cases = 213.97 , bottlenecks = 4.73 , explore_nodes = 70.13 , explore_edges = 154.60 , time = 458 ms
+Random-2x: rounds = 658 , fail_cases = 440.27 , bottlenecks = 6.63 , explore_nodes = 78.13 , explore_edges = 189.50 , time = 1107 ms
+Random-4x: rounds = 1316 , fail_cases = 884.37 , bottlenecks = 8.37 , explore_nodes = 83.27 , explore_edges = 221.10 , time = 2315 ms
+[Model 67]
+FBFI: rounds = 242 , fail_cases = 34 , bottlenecks = 34 , explore_nodes = 76 , explore_edges = 276 , time = 1506 ms
+Random-1x: rounds = 242 , fail_cases = 153.03 , bottlenecks = 6.23 , explore_nodes = 64.00 , explore_edges = 142.63 , time = 235 ms
+Random-2x: rounds = 484 , fail_cases = 312.77 , bottlenecks = 8.13 , explore_nodes = 68.33 , explore_edges = 165.50 , time = 550 ms
+Random-4x: rounds = 968 , fail_cases = 634.53 , bottlenecks = 10.20 , explore_nodes = 70.47 , explore_edges = 185.73 , time = 1264 ms
+[Model 68]
+FBFI: rounds = 322 , fail_cases = 25 , bottlenecks = 25 , explore_nodes = 92 , explore_edges = 381 , time = 1842 ms
+Random-1x: rounds = 322 , fail_cases = 187.77 , bottlenecks = 6.67 , explore_nodes = 79.67 , explore_edges = 203.10 , time = 466 ms
+Random-2x: rounds = 644 , fail_cases = 382.23 , bottlenecks = 8.30 , explore_nodes = 84.93 , explore_edges = 240.53 , time = 1077 ms
+Random-4x: rounds = 1288 , fail_cases = 777.60 , bottlenecks = 9.33 , explore_nodes = 88.27 , explore_edges = 271.63 , time = 2145 ms
+[Model 69]
+FBFI: rounds = 118 , fail_cases = 22 , bottlenecks = 22 , explore_nodes = 40 , explore_edges = 127 , time = 347 ms
+Random-1x: rounds = 118 , fail_cases = 63.30 , bottlenecks = 3.83 , explore_nodes = 33.53 , explore_edges = 65.40 , time = 49 ms
+Random-2x: rounds = 236 , fail_cases = 133.37 , bottlenecks = 4.87 , explore_nodes = 35.23 , explore_edges = 78.07 , time = 105 ms
+Random-4x: rounds = 472 , fail_cases = 266.77 , bottlenecks = 5.50 , explore_nodes = 37.47 , explore_edges = 90.67 , time = 204 ms
+[Model 70]
+FBFI: rounds = 76 , fail_cases = 6 , bottlenecks = 6 , explore_nodes = 26 , explore_edges = 83 , time = 20 ms
+Random-1x: rounds = 76 , fail_cases = 23.70 , bottlenecks = 2.03 , explore_nodes = 22.03 , explore_edges = 41.80 , time = 19 ms
+Random-2x: rounds = 152 , fail_cases = 49.67 , bottlenecks = 2.83 , explore_nodes = 24.23 , explore_edges = 51.17 , time = 38 ms
+Random-4x: rounds = 304 , fail_cases = 109.30 , bottlenecks = 3.33 , explore_nodes = 25.33 , explore_edges = 60.97 , time = 79 ms
+[Model 71]
+FBFI: rounds = 533 , fail_cases = 40 , bottlenecks = 40 , explore_nodes = 124 , explore_edges = 606 , time = 13740 ms
+Random-1x: rounds = 533 , fail_cases = 307.70 , bottlenecks = 6.73 , explore_nodes = 108.23 , explore_edges = 303.30 , time = 1258 ms
+Random-2x: rounds = 1066 , fail_cases = 626.63 , bottlenecks = 8.57 , explore_nodes = 115.37 , explore_edges = 360.97 , time = 2609 ms
+Random-4x: rounds = 2132 , fail_cases = 1268.97 , bottlenecks = 10.80 , explore_nodes = 120.10 , explore_edges = 416.47 , time = 5603 ms
+[Model 72]
+FBFI: rounds = 446 , fail_cases = 23 , bottlenecks = 23 , explore_nodes = 97 , explore_edges = 517 , time = 4278 ms
+Random-1x: rounds = 446 , fail_cases = 255.70 , bottlenecks = 4.90 , explore_nodes = 83.80 , explore_edges = 238.60 , time = 723 ms
+Random-2x: rounds = 892 , fail_cases = 520.33 , bottlenecks = 7.73 , explore_nodes = 90.30 , explore_edges = 287.07 , time = 1620 ms
+Random-4x: rounds = 1784 , fail_cases = 1042.77 , bottlenecks = 7.60 , explore_nodes = 95.43 , explore_edges = 339.30 , time = 2984 ms
+[Model 73]
+FBFI: rounds = 26 , fail_cases = 6 , bottlenecks = 6 , explore_nodes = 15 , explore_edges = 23 , time = 1 ms
+Random-1x: rounds = 26 , fail_cases = 3.70 , bottlenecks = 1.00 , explore_nodes = 9.87 , explore_edges = 11.57 , time = 2 ms
+Random-2x: rounds = 52 , fail_cases = 10.50 , bottlenecks = 1.13 , explore_nodes = 12.43 , explore_edges = 15.73 , time = 5 ms
+Random-4x: rounds = 104 , fail_cases = 21.80 , bottlenecks = 2.10 , explore_nodes = 14.23 , explore_edges = 19.33 , time = 10 ms
+[Model 74]
+FBFI: rounds = 292 , fail_cases = 46 , bottlenecks = 46 , explore_nodes = 74 , explore_edges = 315 , time = 2153 ms
+Random-1x: rounds = 292 , fail_cases = 166.30 , bottlenecks = 5.47 , explore_nodes = 63.37 , explore_edges = 159.77 , time = 319 ms
+Random-2x: rounds = 584 , fail_cases = 337.23 , bottlenecks = 6.30 , explore_nodes = 67.67 , explore_edges = 190.23 , time = 648 ms
+Random-4x: rounds = 1168 , fail_cases = 696.10 , bottlenecks = 8.33 , explore_nodes = 71.33 , explore_edges = 217.73 , time = 1445 ms
+[Model 75]
+FBFI: rounds = 118 , fail_cases = 27 , bottlenecks = 27 , explore_nodes = 31 , explore_edges = 117 , time = 214 ms
+Random-1x: rounds = 118 , fail_cases = 61.17 , bottlenecks = 4.10 , explore_nodes = 24.90 , explore_edges = 48.63 , time = 42 ms
+Random-2x: rounds = 236 , fail_cases = 126.43 , bottlenecks = 4.00 , explore_nodes = 26.50 , explore_edges = 57.97 , time = 77 ms
+Random-4x: rounds = 472 , fail_cases = 256.90 , bottlenecks = 4.00 , explore_nodes = 28.60 , explore_edges = 68.43 , time = 158 ms
+[Model 76]
+FBFI: rounds = 149 , fail_cases = 29 , bottlenecks = 29 , explore_nodes = 41 , explore_edges = 151 , time = 779 ms
+Random-1x: rounds = 149 , fail_cases = 63.37 , bottlenecks = 3.90 , explore_nodes = 36.20 , explore_edges = 83.00 , time = 72 ms
+Random-2x: rounds = 298 , fail_cases = 132.40 , bottlenecks = 3.87 , explore_nodes = 38.80 , explore_edges = 100.90 , time = 142 ms
+Random-4x: rounds = 596 , fail_cases = 265.37 , bottlenecks = 5.43 , explore_nodes = 40.23 , explore_edges = 118.07 , time = 288 ms
+[Model 77]
+FBFI: rounds = 442 , fail_cases = 54 , bottlenecks = 54 , explore_nodes = 116 , explore_edges = 498 , time = 19930 ms
+Random-1x: rounds = 442 , fail_cases = 295.00 , bottlenecks = 6.10 , explore_nodes = 93.00 , explore_edges = 225.67 , time = 819 ms
+Random-2x: rounds = 884 , fail_cases = 591.77 , bottlenecks = 8.83 , explore_nodes = 101.87 , explore_edges = 270.40 , time = 1899 ms
+Random-4x: rounds = 1768 , fail_cases = 1196.83 , bottlenecks = 10.23 , explore_nodes = 108.23 , explore_edges = 311.90 , time = 3837 ms
+[Model 78]
+FBFI: rounds = 49 , fail_cases = 12 , bottlenecks = 12 , explore_nodes = 19 , explore_edges = 53 , time = 10 ms
+Random-1x: rounds = 49 , fail_cases = 23.07 , bottlenecks = 2.83 , explore_nodes = 16.40 , explore_edges = 28.93 , time = 9 ms
+Random-2x: rounds = 98 , fail_cases = 49.03 , bottlenecks = 3.20 , explore_nodes = 17.63 , explore_edges = 34.67 , time = 20 ms
+Random-4x: rounds = 196 , fail_cases = 101.17 , bottlenecks = 3.87 , explore_nodes = 18.10 , explore_edges = 40.10 , time = 45 ms
+[Model 79]
+FBFI: rounds = 207 , fail_cases = 21 , bottlenecks = 21 , explore_nodes = 63 , explore_edges = 242 , time = 355 ms
+Random-1x: rounds = 207 , fail_cases = 121.00 , bottlenecks = 4.73 , explore_nodes = 53.30 , explore_edges = 117.03 , time = 163 ms
+Random-2x: rounds = 414 , fail_cases = 250.20 , bottlenecks = 5.63 , explore_nodes = 58.20 , explore_edges = 142.43 , time = 336 ms
+Random-4x: rounds = 828 , fail_cases = 504.63 , bottlenecks = 7.33 , explore_nodes = 60.80 , explore_edges = 163.87 , time = 769 ms
+[Model 80]
+FBFI: rounds = 340 , fail_cases = 21 , bottlenecks = 21 , explore_nodes = 93 , explore_edges = 402 , time = 1362 ms
+Random-1x: rounds = 340 , fail_cases = 199.40 , bottlenecks = 6.13 , explore_nodes = 81.13 , explore_edges = 212.17 , time = 530 ms
+Random-2x: rounds = 680 , fail_cases = 406.27 , bottlenecks = 7.83 , explore_nodes = 85.90 , explore_edges = 245.07 , time = 1137 ms
+Random-4x: rounds = 1360 , fail_cases = 813.37 , bottlenecks = 9.30 , explore_nodes = 89.30 , explore_edges = 282.93 , time = 2649 ms
+[Model 81]
+FBFI: rounds = 620 , fail_cases = 51 , bottlenecks = 51 , explore_nodes = 151 , explore_edges = 714 , time = 20225 ms
+Random-1x: rounds = 620 , fail_cases = 387.80 , bottlenecks = 8.57 , explore_nodes = 133.43 , explore_edges = 369.97 , time = 2008 ms
+Random-2x: rounds = 1240 , fail_cases = 783.03 , bottlenecks = 10.90 , explore_nodes = 141.80 , explore_edges = 433.33 , time = 4381 ms
+Random-4x: rounds = 2480 , fail_cases = 1568.80 , bottlenecks = 14.47 , explore_nodes = 147.57 , explore_edges = 495.87 , time = 10857 ms
+[Model 82]
+FBFI: rounds = 685 , fail_cases = 38 , bottlenecks = 38 , explore_nodes = 156 , explore_edges = 798 , time = 12510 ms
+Random-1x: rounds = 685 , fail_cases = 442.73 , bottlenecks = 7.20 , explore_nodes = 130.20 , explore_edges = 361.97 , time = 2539 ms
+Random-2x: rounds = 1370 , fail_cases = 895.87 , bottlenecks = 10.03 , explore_nodes = 140.47 , explore_edges = 435.87 , time = 6329 ms
+Random-4x: rounds = 2740 , fail_cases = 1799.13 , bottlenecks = 12.93 , explore_nodes = 148.80 , explore_edges = 508.83 , time = 13838 ms
+[Model 83]
+FBFI: rounds = 500 , fail_cases = 63 , bottlenecks = 63 , explore_nodes = 115 , explore_edges = 546 , time = 22359 ms
+Random-1x: rounds = 500 , fail_cases = 338.80 , bottlenecks = 5.33 , explore_nodes = 92.47 , explore_edges = 223.47 , time = 987 ms
+Random-2x: rounds = 1000 , fail_cases = 671.40 , bottlenecks = 7.27 , explore_nodes = 100.50 , explore_edges = 268.33 , time = 2465 ms
+Random-4x: rounds = 2000 , fail_cases = 1359.80 , bottlenecks = 8.47 , explore_nodes = 106.67 , explore_edges = 311.13 , time = 4363 ms
+[Model 84]
+FBFI: rounds = 558 , fail_cases = 51 , bottlenecks = 51 , explore_nodes = 120 , explore_edges = 620 , time = 36543 ms
+Random-1x: rounds = 558 , fail_cases = 318.70 , bottlenecks = 7.50 , explore_nodes = 104.83 , explore_edges = 306.63 , time = 1386 ms
+Random-2x: rounds = 1116 , fail_cases = 644.80 , bottlenecks = 9.43 , explore_nodes = 112.30 , explore_edges = 366.70 , time = 3090 ms
+Random-4x: rounds = 2232 , fail_cases = 1304.23 , bottlenecks = 11.67 , explore_nodes = 117.37 , explore_edges = 421.20 , time = 6805 ms
+[Model 85]
+FBFI: rounds = 597 , fail_cases = 31 , bottlenecks = 31 , explore_nodes = 147 , explore_edges = 703 , time = 8245 ms
+Random-1x: rounds = 597 , fail_cases = 376.57 , bottlenecks = 5.93 , explore_nodes = 118.50 , explore_edges = 317.67 , time = 1810 ms
+Random-2x: rounds = 1194 , fail_cases = 764.50 , bottlenecks = 7.90 , explore_nodes = 127.00 , explore_edges = 376.43 , time = 4040 ms
+Random-4x: rounds = 2388 , fail_cases = 1532.67 , bottlenecks = 11.40 , explore_nodes = 136.30 , explore_edges = 435.43 , time = 9618 ms
+[Model 86]
+FBFI: rounds = 188 , fail_cases = 22 , bottlenecks = 22 , explore_nodes = 64 , explore_edges = 222 , time = 1277 ms
+Random-1x: rounds = 188 , fail_cases = 121.70 , bottlenecks = 6.00 , explore_nodes = 52.57 , explore_edges = 108.37 , time = 219 ms
+Random-2x: rounds = 376 , fail_cases = 249.10 , bottlenecks = 6.70 , explore_nodes = 55.27 , explore_edges = 123.73 , time = 359 ms
+Random-4x: rounds = 752 , fail_cases = 506.23 , bottlenecks = 8.03 , explore_nodes = 57.83 , explore_edges = 138.73 , time = 828 ms
+[Model 87]
+FBFI: rounds = 155 , fail_cases = 20 , bottlenecks = 20 , explore_nodes = 31 , explore_edges = 155 , time = 213 ms
+Random-1x: rounds = 155 , fail_cases = 31.83 , bottlenecks = 3.23 , explore_nodes = 30.47 , explore_edges = 82.13 , time = 57 ms
+Random-2x: rounds = 310 , fail_cases = 75.23 , bottlenecks = 4.30 , explore_nodes = 31.00 , explore_edges = 100.77 , time = 109 ms
+Random-4x: rounds = 620 , fail_cases = 160.37 , bottlenecks = 4.43 , explore_nodes = 31.00 , explore_edges = 117.17 , time = 242 ms
+[Model 88]
+FBFI: rounds = 244 , fail_cases = 14 , bottlenecks = 14 , explore_nodes = 51 , explore_edges = 268 , time = 878 ms
+Random-1x: rounds = 244 , fail_cases = 86.17 , bottlenecks = 4.03 , explore_nodes = 48.77 , explore_edges = 136.93 , time = 174 ms
+Random-2x: rounds = 488 , fail_cases = 184.97 , bottlenecks = 5.27 , explore_nodes = 50.73 , explore_edges = 169.03 , time = 344 ms
+Random-4x: rounds = 976 , fail_cases = 381.43 , bottlenecks = 5.83 , explore_nodes = 50.97 , explore_edges = 194.57 , time = 730 ms
+[Model 89]
+FBFI: rounds = 201 , fail_cases = 11 , bottlenecks = 11 , explore_nodes = 50 , explore_edges = 231 , time = 124 ms
+Random-1x: rounds = 201 , fail_cases = 88.77 , bottlenecks = 4.23 , explore_nodes = 46.10 , explore_edges = 115.80 , time = 133 ms
+Random-2x: rounds = 402 , fail_cases = 189.27 , bottlenecks = 5.30 , explore_nodes = 48.27 , explore_edges = 140.93 , time = 273 ms
+Random-4x: rounds = 804 , fail_cases = 384.03 , bottlenecks = 6.10 , explore_nodes = 49.53 , explore_edges = 162.83 , time = 575 ms
+[Model 90]
+FBFI: rounds = 163 , fail_cases = 12 , bottlenecks = 12 , explore_nodes = 53 , explore_edges = 190 , time = 138 ms
+Random-1x: rounds = 163 , fail_cases = 80.63 , bottlenecks = 3.80 , explore_nodes = 42.43 , explore_edges = 97.83 , time = 100 ms
+Random-2x: rounds = 326 , fail_cases = 168.13 , bottlenecks = 4.20 , explore_nodes = 45.17 , explore_edges = 114.37 , time = 200 ms
+Random-4x: rounds = 652 , fail_cases = 337.40 , bottlenecks = 4.53 , explore_nodes = 49.57 , explore_edges = 134.23 , time = 436 ms
+[Model 91]
+FBFI: rounds = 559 , fail_cases = 63 , bottlenecks = 63 , explore_nodes = 136 , explore_edges = 625 , time = 37284 ms
+Random-1x: rounds = 559 , fail_cases = 369.00 , bottlenecks = 7.37 , explore_nodes = 109.23 , explore_edges = 275.60 , time = 1708 ms
+Random-2x: rounds = 1118 , fail_cases = 748.03 , bottlenecks = 9.43 , explore_nodes = 117.60 , explore_edges = 329.47 , time = 3558 ms
+Random-4x: rounds = 2236 , fail_cases = 1498.97 , bottlenecks = 10.87 , explore_nodes = 125.43 , explore_edges = 383.50 , time = 7235 ms
+[Model 92]
+FBFI: rounds = 415 , fail_cases = 35 , bottlenecks = 35 , explore_nodes = 113 , explore_edges = 484 , time = 5785 ms
+Random-1x: rounds = 415 , fail_cases = 276.50 , bottlenecks = 6.63 , explore_nodes = 85.30 , explore_edges = 200.73 , time = 961 ms
+Random-2x: rounds = 830 , fail_cases = 559.33 , bottlenecks = 7.97 , explore_nodes = 91.53 , explore_edges = 238.40 , time = 2036 ms
+Random-4x: rounds = 1660 , fail_cases = 1123.47 , bottlenecks = 8.30 , explore_nodes = 99.53 , explore_edges = 279.20 , time = 3642 ms
+[Model 93]
+FBFI: rounds = 284 , fail_cases = 18 , bottlenecks = 18 , explore_nodes = 61 , explore_edges = 315 , time = 2515 ms
+Random-1x: rounds = 284 , fail_cases = 95.87 , bottlenecks = 5.17 , explore_nodes = 59.27 , explore_edges = 189.07 , time = 233 ms
+Random-2x: rounds = 568 , fail_cases = 208.67 , bottlenecks = 6.47 , explore_nodes = 60.80 , explore_edges = 224.40 , time = 464 ms
+Random-4x: rounds = 1136 , fail_cases = 417.47 , bottlenecks = 7.67 , explore_nodes = 61.00 , explore_edges = 254.83 , time = 1027 ms
+[Model 94]
+FBFI: rounds = 573 , fail_cases = 43 , bottlenecks = 43 , explore_nodes = 139 , explore_edges = 662 , time = 16591 ms
+Random-1x: rounds = 573 , fail_cases = 380.27 , bottlenecks = 7.47 , explore_nodes = 110.23 , explore_edges = 283.10 , time = 1942 ms
+Random-2x: rounds = 1146 , fail_cases = 763.60 , bottlenecks = 8.37 , explore_nodes = 118.40 , explore_edges = 335.87 , time = 3658 ms
+Random-4x: rounds = 2292 , fail_cases = 1537.80 , bottlenecks = 10.13 , explore_nodes = 125.70 , explore_edges = 388.80 , time = 7669 ms
+[Model 95]
+FBFI: rounds = 613 , fail_cases = 51 , bottlenecks = 51 , explore_nodes = 134 , explore_edges = 682 , time = 52155 ms
+Random-1x: rounds = 613 , fail_cases = 389.97 , bottlenecks = 7.23 , explore_nodes = 109.97 , explore_edges = 291.23 , time = 1796 ms
+Random-2x: rounds = 1226 , fail_cases = 778.90 , bottlenecks = 9.10 , explore_nodes = 118.33 , explore_edges = 349.83 , time = 4302 ms
+Random-4x: rounds = 2452 , fail_cases = 1564.47 , bottlenecks = 10.57 , explore_nodes = 127.27 , explore_edges = 414.17 , time = 7903 ms
+[Model 96]
+FBFI: rounds = 489 , fail_cases = 33 , bottlenecks = 33 , explore_nodes = 107 , explore_edges = 554 , time = 8438 ms
+Random-1x: rounds = 489 , fail_cases = 245.20 , bottlenecks = 6.10 , explore_nodes = 96.37 , explore_edges = 297.77 , time = 972 ms
+Random-2x: rounds = 978 , fail_cases = 504.87 , bottlenecks = 8.60 , explore_nodes = 103.20 , explore_edges = 356.50 , time = 2135 ms
+Random-4x: rounds = 1956 , fail_cases = 1005.70 , bottlenecks = 10.60 , explore_nodes = 106.33 , explore_edges = 405.40 , time = 4375 ms
+[Model 97]
+FBFI: rounds = 55 , fail_cases = 8 , bottlenecks = 8 , explore_nodes = 22 , explore_edges = 58 , time = 18 ms
+Random-1x: rounds = 55 , fail_cases = 17.73 , bottlenecks = 2.23 , explore_nodes = 18.67 , explore_edges = 32.20 , time = 14 ms
+Random-2x: rounds = 110 , fail_cases = 39.30 , bottlenecks = 2.90 , explore_nodes = 20.27 , explore_edges = 39.87 , time = 25 ms
+Random-4x: rounds = 220 , fail_cases = 84.90 , bottlenecks = 3.40 , explore_nodes = 21.30 , explore_edges = 45.40 , time = 46 ms
+[Model 98]
+FBFI: rounds = 11 , fail_cases = 3 , bottlenecks = 3 , explore_nodes = 7 , explore_edges = 9 , time = 0 ms
+Random-1x: rounds = 11 , fail_cases = 0.00 , bottlenecks = 0.00 , explore_nodes = 2.00 , explore_edges = 1.00 , time = 1 ms
+Random-2x: rounds = 22 , fail_cases = 0.00 , bottlenecks = 0.00 , explore_nodes = 2.00 , explore_edges = 1.00 , time = 0 ms
+Random-4x: rounds = 44 , fail_cases = 0.00 , bottlenecks = 0.00 , explore_nodes = 2.00 , explore_edges = 1.00 , time = 2 ms
+[Model 99]
+FBFI: rounds = 301 , fail_cases = 38 , bottlenecks = 38 , explore_nodes = 74 , explore_edges = 332 , time = 6214 ms
+Random-1x: rounds = 301 , fail_cases = 151.63 , bottlenecks = 6.53 , explore_nodes = 66.13 , explore_edges = 185.30 , time = 352 ms
+Random-2x: rounds = 602 , fail_cases = 312.27 , bottlenecks = 7.57 , explore_nodes = 69.20 , explore_edges = 216.63 , time = 669 ms
+Random-4x: rounds = 1204 , fail_cases = 633.97 , bottlenecks = 8.57 , explore_nodes = 72.07 , explore_edges = 247.17 , time = 1436 ms
+[Model 100]
+FBFI: rounds = 602 , fail_cases = 31 , bottlenecks = 31 , explore_nodes = 135 , explore_edges = 693 , time = 8551 ms
+Random-1x: rounds = 602 , fail_cases = 380.67 , bottlenecks = 6.10 , explore_nodes = 107.47 , explore_edges = 281.10 , time = 1668 ms
+Random-2x: rounds = 1204 , fail_cases = 771.80 , bottlenecks = 7.70 , explore_nodes = 116.90 , explore_edges = 342.03 , time = 3865 ms
+Random-4x: rounds = 2408 , fail_cases = 1553.07 , bottlenecks = 9.00 , explore_nodes = 124.93 , explore_edges = 402.67 , time = 7723 ms

@@ -1,0 +1,9 @@
+# User-specific stuff
+.idea/
+analysis/
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
