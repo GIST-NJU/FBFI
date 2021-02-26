@@ -1,0 +1,2502 @@
+"D:\Program Files\jdk1.8\bin\java" "-javaagent:D:\Program Files\JetBrains\IntelliJ IDEA 2018.1\lib\idea_rt.jar=65407:D:\Program Files\JetBrains\IntelliJ IDEA 2018.1\bin" -Dfile.encoding=GBK -classpath "D:\Program Files\jdk1.8\jre\lib\charsets.jar;D:\Program Files\jdk1.8\jre\lib\deploy.jar;D:\Program Files\jdk1.8\jre\lib\ext\access-bridge-32.jar;D:\Program Files\jdk1.8\jre\lib\ext\cldrdata.jar;D:\Program Files\jdk1.8\jre\lib\ext\dnsns.jar;D:\Program Files\jdk1.8\jre\lib\ext\jaccess.jar;D:\Program Files\jdk1.8\jre\lib\ext\jfxrt.jar;D:\Program Files\jdk1.8\jre\lib\ext\localedata.jar;D:\Program Files\jdk1.8\jre\lib\ext\nashorn.jar;D:\Program Files\jdk1.8\jre\lib\ext\sunec.jar;D:\Program Files\jdk1.8\jre\lib\ext\sunjce_provider.jar;D:\Program Files\jdk1.8\jre\lib\ext\sunmscapi.jar;D:\Program Files\jdk1.8\jre\lib\ext\sunpkcs11.jar;D:\Program Files\jdk1.8\jre\lib\ext\zipfs.jar;D:\Program Files\jdk1.8\jre\lib\javaws.jar;D:\Program Files\jdk1.8\jre\lib\jce.jar;D:\Program Files\jdk1.8\jre\lib\jfr.jar;D:\Program Files\jdk1.8\jre\lib\jfxswt.jar;D:\Program Files\jdk1.8\jre\lib\jsse.jar;D:\Program Files\jdk1.8\jre\lib\management-agent.jar;D:\Program Files\jdk1.8\jre\lib\plugin.jar;D:\Program Files\jdk1.8\jre\lib\resources.jar;D:\Program Files\jdk1.8\jre\lib\rt.jar;G:\Train-ticket\target\classes;G:\Train-ticket\lib\com.microsoft.z3.jar;G:\Train-ticket\lib\commons-beanutils-1.7.0.jar;G:\Train-ticket\lib\commons-collections-3.1.jar;G:\Train-ticket\lib\commons-lang-2.5.jar;G:\Train-ticket\lib\commons-logging.jar;G:\Train-ticket\lib\ezmorph-1.0.3.jar;G:\Train-ticket\lib\jackson-all-2.8.0.jar;G:\Train-ticket\lib\jjwt-0.9.1.jar;G:\Train-ticket\lib\json-lib-2.4-jdk15.jar;C:\Users\Administrator.SC-201809121517\.m2\repository\ch\ethz\ganymed\ganymed-ssh2\build210\ganymed-ssh2-build210.jar;C:\Users\Administrator.SC-201809121517\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;G:\Train-ticket\z3-4.8.9-x86-win\bin\com.microsoft.z3.jar" Random.RandomExp 42 1
+Reset system...
+begin init...
+init end, cost time 380s
+Testcase is '[]'
+Insert faults...
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p5, Value= ts-travel-service-558966db9f-l9xqk
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-72wpj
+------ts-food-service--------
+processes.size = 5
+Matched in p1, Value= ts-food-service-5d45948c75-6zstl
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-bpzfn
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-k9gzl
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-6fv4q
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-wcwtr
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-6bnp4
+path = ts-travel-service_3---ts-assurance-service_1---ts-food-service_1---ts-contacts-service_2---ts-preserve-service_2---ts-order-service_1---ts-inside-payment-service_2---ts-order-other-service_1
+Reset system...
+begin init...
+init end, cost time 11s
+Testcase is '[ts-assurance-service_1]'
+Insert faults...
+delete info:pod "ts-assurance-service-84fbd86998-72wpj" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p3, Value= ts-travel-service-558966db9f-7tzpv
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-dbrlt
+------ts-food-service--------
+processes.size = 5
+Matched in p1, Value= ts-food-service-5d45948c75-6zstl
+------ts-contacts-service--------
+processes.size = 5
+Matched in p4, Value= ts-contacts-service-758b4d8f44-bpzfn
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-rn5cq
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-6fv4q
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-m6b6h
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-6bnp4
+path = ts-travel-service_2---ts-assurance-service_3---ts-food-service_1---ts-contacts-service_2---ts-preserve-service_3---ts-order-service_1---ts-inside-payment-service_1---ts-order-other-service_1
+Reset system...
+begin init...
+init end, cost time 256s
+Testcase is '[ts-contacts-service_2]'
+Insert faults...
+delete info:pod "ts-contacts-service-758b4d8f44-bpzfn" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p5, Value= ts-travel-service-558966db9f-l9xqk
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-4tq5q
+------ts-food-service--------
+processes.size = 5
+Matched in p1, Value= ts-food-service-5d45948c75-6zstl
+------ts-contacts-service--------
+processes.size = 5
+Matched in p3, Value= ts-contacts-service-758b4d8f44-6xhj5
+------ts-preserve-service--------
+processes.size = 5
+Matched in p4, Value= ts-preserve-service-7c74546547-k9gzl
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-6fv4q
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-wcwtr
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-6bnp4
+path = ts-travel-service_3---ts-assurance-service_1---ts-food-service_1---ts-contacts-service_1---ts-preserve-service_2---ts-order-service_1---ts-inside-payment-service_2---ts-order-other-service_1
+Reset system...
+begin init...
+init end, cost time 225s
+Testcase is '[ts-preserve-service_2, ts-assurance-service_3]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-k9gzl" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-dbrlt" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p2, Value= ts-travel-service-558966db9f-2pgpb
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-4tq5q
+------ts-food-service--------
+processes.size = 5
+Matched in p3, Value= ts-food-service-5d45948c75-6zstl
+------ts-contacts-service--------
+processes.size = 5
+Matched in p4, Value= ts-contacts-service-758b4d8f44-kfb2c
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-rn5cq
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-xqr2s
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-m6b6h
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-cvzt2
+path = ts-travel-service_1---ts-assurance-service_1---ts-food-service_1---ts-contacts-service_2---ts-preserve-service_3---ts-order-service_3---ts-inside-payment-service_1---ts-order-other-service_2
+Reset system...
+begin init...
+init end, cost time 256s
+Testcase is '[ts-order-other-service_1, ts-food-service_1, ts-contacts-service_2]'
+Insert faults...
+delete info:pod "ts-order-other-service-6fb79984cb-6bnp4" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-food-service-5d45948c75-6zstl" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-kfb2c" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p4, Value= ts-travel-service-558966db9f-2pgpb
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-c7dw4
+------ts-food-service--------
+processes.size = 5
+Matched in p5, Value= ts-food-service-5d45948c75-n4gz9
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-6xhj5
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-rn5cq
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-w6dqd
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-m6b6h
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-g2429
+path = ts-travel-service_1---ts-assurance-service_2---ts-food-service_2---ts-contacts-service_1---ts-preserve-service_3---ts-order-service_2---ts-inside-payment-service_1---ts-order-other-service_3
+Reset system...
+begin init...
+init end, cost time 318s
+Testcase is '[ts-preserve-service_2, ts-inside-payment-service_1, ts-order-other-service_1, ts-inside-payment-service_2, ts-food-service_1, ts-order-other-service_3, ts-travel-service_3, ts-contacts-service_2, ts-assurance-service_3, ts-assurance-service_2, ts-order-service_1, ts-contacts-service_1, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-cvdqr" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-m6b6h" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-cvzt2" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-wcwtr" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-food-service-5d45948c75-jzmfg" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-ks28b" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-travel-service-558966db9f-l9xqk" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-g2lx4" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-t8f4b" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-c7dw4" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-6fv4q" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-6xhj5" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-travel-service-558966db9f-2pgpb" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-7tzpv" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 348s
+Testcase is '[ts-preserve-service_2, ts-order-other-service_1, ts-inside-payment-service_2, ts-order-service_3, ts-contacts-service_2, ts-order-service_1, ts-order-service_2, ts-travel-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-h4tfg" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-9thtb" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-w52s5" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-order-service-786995677f-xqr2s" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-kclgn" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-846ps" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-w6dqd" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-5fnc2" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+ResponseCode is an error code:500
+travelservice failed,resondeCode is 500,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 317s
+Testcase is '[ts-preserve-service_2, ts-order-other-service_1, ts-travel-service_3]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-cbwl2" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-g2429" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-travel-service-558966db9f-tdbww" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p4, Value= ts-travel-service-558966db9f-c5n5z
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-9jwrd
+------ts-food-service--------
+processes.size = 5
+Matched in p3, Value= ts-food-service-5d45948c75-zmx89
+------ts-contacts-service--------
+processes.size = 5
+Matched in p4, Value= ts-contacts-service-758b4d8f44-jtw6z
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-8brtm
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-hlwlx
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-24t6j
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-qhj4w
+path = ts-travel-service_1---ts-assurance-service_2---ts-food-service_2---ts-contacts-service_2---ts-preserve-service_1---ts-order-service_1---ts-inside-payment-service_1---ts-order-other-service_2
+Reset system...
+begin init...
+init end, cost time 290s
+Testcase is '[ts-preserve-service_3, ts-food-service_2, ts-order-other-service_3, ts-inside-payment-service_2, ts-travel-service_3, ts-assurance-service_1, ts-contacts-service_2, ts-order-service_1, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-x8l2c" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-food-service-5d45948c75-zmx89" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-z24h8" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-inside-payment-service-644665db-f9h9q" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-qj4t4" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-4tq5q" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-jtw6z" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-hlwlx" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-travel-service-558966db9f-c5n5z" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-pcmf8" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 318s
+Testcase is '[ts-preserve-service_3, ts-order-other-service_2, ts-food-service_2, ts-order-other-service_3, ts-assurance-service_3, ts-contacts-service_2, ts-assurance-service_2, ts-order-service_1, ts-order-service_2, ts-contacts-service_1, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-rn5cq" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-order-other-service-6fb79984cb-h4f4n" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-n6skn" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-qhj4w" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-tt28n" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-gpq22" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-bhn6c" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-lmpnh" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-sqlw2" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-b7n5z" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-travel-service-558966db9f-7z6t9" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-pc7gc" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+travel service is true
+assurance service is true
+food service is true
+ResponseCode is an error code:502
+contactservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 317s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_2, ts-inside-payment-service_1, ts-food-service_2, ts-order-other-service_3, ts-inside-payment-service_2, ts-travel-service_3, ts-assurance-service_1, ts-contacts-service_2, ts-assurance-service_3, ts-order-service_2, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-kpxx8" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-8brtm" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-24t6j" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-food-service-5d45948c75-n4gz9" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-bwz7n" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-inside-payment-service-644665db-nwxwv" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-vsg8w" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-9jwrd" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-tkjnf" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-slgnb" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-order-service-786995677f-dkxvn" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-rs8w4" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+ResponseCode is an error code:502
+insidepaymentservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 348s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-assurance-service_1, ts-order-service_3, ts-assurance-service_3, ts-contacts-service_2, ts-order-service_1, ts-contacts-service_1, ts-order-service_2, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-kqkmj" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-4sxxs" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-24fnm" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-order-service-786995677f-w5tdf" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-nb9s5" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-skgtv" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-7t7g5" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-6bsls" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-order-service-786995677f-gp7fl" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-9z2bt" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-gsgtr" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:500
+travelservice failed,resondeCode is 500,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 318s
+Testcase is '[ts-inside-payment-service_1, ts-inside-payment-service_2, ts-order-service_1, ts-order-service_2, ts-contacts-service_1]'
+Insert faults...
+delete info:pod "ts-inside-payment-service-644665db-w8ktb" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-x9qvj" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-order-service-786995677f-6vgq5" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-hkd7n" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-klswx" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+ResponseCode is an error code:502
+insidepaymentservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 287s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-preserve-service_2, ts-inside-payment-service_1, ts-order-other-service_1, ts-food-service_2, ts-order-other-service_3, ts-assurance-service_1, ts-travel-service_3, ts-contacts-service_2, ts-assurance-service_3, ts-order-service_1, ts-order-service_2, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-qpx5v" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-88gfv" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-q6k2f" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-6p2hw" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-5wfdp" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-food-service-5d45948c75-vgjst" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-gwhtp" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-2rwpg" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-travel-service-558966db9f-mj68c" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-ptp89" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-qg888" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-order-service-786995677f-b289j" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-hs47b" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-ldj6p" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+ResponseCode is an error code:502
+preserveservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 318s
+Testcase is '[ts-preserve-service_1, ts-preserve-service_2, ts-inside-payment-service_1, ts-order-other-service_1, ts-food-service_2, ts-order-other-service_2, ts-food-service_1, ts-order-other-service_3, ts-inside-payment-service_2, ts-travel-service_3, ts-assurance-service_1, ts-contacts-service_2, ts-assurance-service_3, ts-assurance-service_2, ts-order-service_1, ts-order-service_2, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-7b82c" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-zsfdh" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-dhqqt" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-922zw" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-food-service-5d45948c75-bwz48" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-9s9vn" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-2mmbg" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-vl2g4" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-inside-payment-service-644665db-zd6dc" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-wnkxj" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-b94zt" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-l77vs" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-qt9d9" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-lwhlb" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-4w9fj" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-lmcq2" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-767c5" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-rrn9q" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 348s
+Testcase is '[ts-preserve-service_3, ts-inside-payment-service_1, ts-inside-payment-service_2, ts-contacts-service_2, ts-assurance-service_3, ts-assurance-service_2, ts-order-service_1, ts-contacts-service_1, ts-order-service_2, ts-travel-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-zvslt" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-inside-payment-service-644665db-2p42h" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-wzvvb" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-mvwkz" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-ptg6b" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-p4ls5" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-px67d" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-2k48p" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-order-service-786995677f-qrrhz" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-867q8" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+travel service is true
+assurance service is true
+food service is true
+ResponseCode is an error code:502
+contactservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 318s
+Testcase is '[ts-preserve-service_1, ts-inside-payment-service_1, ts-order-other-service_1, ts-food-service_2, ts-order-other-service_3, ts-inside-payment-service_2, ts-travel-service_3, ts-assurance-service_1, ts-assurance-service_3, ts-order-service_3, ts-contacts-service_2, ts-assurance-service_2, ts-order-service_1, ts-order-service_2, ts-travel-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-7d7hz" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-4q48p" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-2hx6w" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-food-service-5d45948c75-j9wws" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-z6wnv" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-inside-payment-service-644665db-p9nf2" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-wggtt" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-bvvfd" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-jn5tx" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-order-service-786995677f-t6ss2" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-p4rsj" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-jk9hj" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-5wwnq" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-9sx2m" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-mxwwq" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+ResponseCode is an error code:500
+travelservice failed,resondeCode is 500,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 348s
+Testcase is '[ts-inside-payment-service_1, ts-food-service_2, ts-order-other-service_2, ts-travel-service_3, ts-assurance-service_1, ts-assurance-service_3, ts-order-service_1, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-inside-payment-service-644665db-8gnfw" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-food-service-5d45948c75-fgvbw" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-fhpqr" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-travel-service-558966db9f-w5l5q" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-9nwws" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-pl9m4" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-order-service-786995677f-6wbnn" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-travel-service-558966db9f-8j4dv" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-tjnsh" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 349s
+Testcase is '[ts-preserve-service_1, ts-preserve-service_2, ts-inside-payment-service_1, ts-order-other-service_1, ts-order-other-service_2, ts-food-service_2, ts-food-service_1, ts-order-other-service_3, ts-assurance-service_1, ts-travel-service_3, ts-order-service_3, ts-contacts-service_2, ts-order-service_1, ts-contacts-service_1, ts-order-service_2, ts-travel-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-8cd2s" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-ctx67" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-fkwdf" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-96wsz" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-m496j" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-lmztc" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-food-service-5d45948c75-42296" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-qkz4n" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-gbzth" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-travel-service-558966db9f-q8vhv" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-order-service-786995677f-trhxp" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-r4nwt" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-9q2zp" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-mvxtk" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-order-service-786995677f-s7zmn" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-fjwxq" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+ResponseCode is an error code:500
+travelservice failed,resondeCode is 500,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 410s
+Testcase is '[ts-preserve-service_1, ts-preserve-service_2, ts-order-other-service_2, ts-inside-payment-service_2, ts-food-service_1, ts-travel-service_3, ts-assurance-service_3, ts-order-service_1, ts-travel-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-t27bq" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-v9qjz" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-qnvh5" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-hhn8d" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-food-service-5d45948c75-775ls" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-travel-service-558966db9f-n6n2p" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-zcldm" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-order-service-786995677f-j76s5" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-travel-service-558966db9f-bx6n7" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p3, Value= ts-travel-service-558966db9f-lvghz
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-wfhzw
+------ts-food-service--------
+processes.size = 5
+Matched in p5, Value= ts-food-service-5d45948c75-jr88l
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-smchx
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-vgtwz
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-nmhl4
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-fmfw9
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-8fcvj
+path = ts-travel-service_2---ts-assurance-service_2---ts-food-service_2---ts-contacts-service_2---ts-preserve-service_3---ts-order-service_2---ts-inside-payment-service_1---ts-order-other-service_1
+Reset system...
+begin init...
+init end, cost time 379s
+Testcase is '[ts-preserve-service_1, ts-order-other-service_1, ts-order-other-service_2, ts-order-other-service_3, ts-food-service_1, ts-inside-payment-service_2, ts-travel-service_3, ts-assurance-service_1, ts-travel-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-bgkz5" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-8fcvj" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-r9qs4" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-szl7m" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-food-service-5d45948c75-jr88l" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-fmfw9" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-rs6mn" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-nbd85" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-travel-service-558966db9f-26jdv" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+ResponseCode is an error code:500
+preserveservice failed,resondeCode is 500,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 318s
+Testcase is '[ts-preserve-service_1, ts-preserve-service_2, ts-order-other-service_1, ts-order-other-service_2, ts-order-other-service_3, ts-assurance-service_3, ts-contacts-service_2, ts-assurance-service_2, ts-order-service_1, ts-order-service_2, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-v79zp" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-vgtwz" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-74xkf" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-79jhl" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-s48xz" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-x6jqk" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-smchx" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-wfhzw" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-m9g2q" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-nmhl4" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-8nn9p" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-j8khh" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+ResponseCode is an error code:500
+preserveservice failed,resondeCode is 500,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 348s
+Testcase is '[ts-preserve-service_1, ts-preserve-service_2, ts-inside-payment-service_1, ts-order-other-service_2, ts-food-service_1, ts-inside-payment-service_2, ts-travel-service_3, ts-assurance-service_1, ts-assurance-service_3, ts-contacts-service_2, ts-assurance-service_2, ts-order-service_1, ts-contacts-service_1, ts-order-service_2, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-ckxpv" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-zvkgl" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-6fn5r" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-q6pxq" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-mt84l" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-x48gc" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-vbsd5" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-blxh9" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-r74lw" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-qzxjm" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-pjnt5" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-7h9mj" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-q89zz" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-order-service-786995677f-tw594" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-lvghz" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-s2cxq" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 379s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-preserve-service_2, ts-inside-payment-service_1, ts-order-other-service_1, ts-order-other-service_2, ts-food-service_2, ts-food-service_1, ts-order-other-service_3, ts-travel-service_3, ts-assurance-service_1, ts-assurance-service_3, ts-contacts-service_2, ts-order-service_3, ts-assurance-service_2, ts-order-service_1, ts-order-service_2, ts-contacts-service_1, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-zwqj6" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-bmdjv" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-ncpkb" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-f2kb6" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-44v42" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-lrzbh" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-vhzgg" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-food-service-5d45948c75-s5vqp" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-qwvbf" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-travel-service-558966db9f-xqwlb" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-4z484" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-qpwgj" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-lz6qw" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-wnxxr" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-d4hcr" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-vdb5p" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-vw4bq" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-lmzh9" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-travel-service-558966db9f-qcz8g" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-w6klk" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 410s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-preserve-service_2, ts-order-other-service_1, ts-order-other-service_2, ts-food-service_2, ts-inside-payment-service_2, ts-food-service_1, ts-travel-service_3, ts-assurance-service_1, ts-assurance-service_3, ts-contacts-service_2, ts-order-service_3, ts-assurance-service_2, ts-order-service_1, ts-contacts-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-r7pw9" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-bnsvb" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-cp5lt" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-frsx9" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-sr92b" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-w9lhv" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-vlzwt" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-food-service-5d45948c75-7jkh8" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-travel-service-558966db9f-pj8v5" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-kfj7g" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-wl6sl" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-ggr7k" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-mbfvv" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-pbbch" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-cn5lt" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-2b644" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-travel-service-558966db9f-77zg8" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+travel service is true
+ResponseCode is an error code:502
+assuranceservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 409s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-preserve-service_2, ts-inside-payment-service_1, ts-food-service_2, ts-order-other-service_2, ts-order-other-service_3, ts-food-service_1, ts-inside-payment-service_2, ts-travel-service_3, ts-contacts-service_2, ts-order-service_3, ts-assurance-service_2, ts-order-service_1, ts-contacts-service_1, ts-order-service_2, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-w6zjq" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-flhcl" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-jszrt" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-bk8sz" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-food-service-5d45948c75-wnm45" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-vnpkv" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-xdnkd" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-food-service-5d45948c75-2xvlr" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-sjkxb" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-sptmf" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-rbqzr" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-rftzc" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-khhrz" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-bkf48" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-ncg8b" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-order-service-786995677f-jpvqr" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-22rk6" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-68g67" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 409s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-preserve-service_2, ts-inside-payment-service_1, ts-order-other-service_1, ts-food-service_2, ts-order-other-service_2, ts-food-service_1, ts-travel-service_3, ts-assurance-service_1, ts-assurance-service_3, ts-order-service_3, ts-contacts-service_2, ts-assurance-service_2, ts-contacts-service_1, ts-order-service_2, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-xzwtd" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-k84xj" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-tzn49" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-6mzst" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-jsrl5" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-food-service-5d45948c75-gq9b5" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-stlzj" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-dzfjp" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-travel-service-558966db9f-tfpwl" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-7rw2w" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-swl7l" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-order-service-786995677f-rtzs9" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-vd74m" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-db24z" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-rxqcg" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-order-service-786995677f-hkmht" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-7nz9z" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-rzcft" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 379s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-inside-payment-service_1, ts-order-other-service_1, ts-order-other-service_2, ts-food-service_2, ts-inside-payment-service_2, ts-travel-service_3, ts-order-service_3, ts-contacts-service_2, ts-order-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-lqntm" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-8tvbf" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-kt2fh" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-tqcb8" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-x2jhl" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-h6fsw" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-vfkt5" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-kr9f9" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-order-service-786995677f-n4hbd" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-fpgjl" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-6rz42" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-travel-service-558966db9f-c2bw2" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+ResponseCode is an error code:502
+insidepaymentservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 317s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-preserve-service_2, ts-inside-payment-service_1, ts-order-other-service_1, ts-food-service_2, ts-order-other-service_2, ts-food-service_1, ts-order-other-service_3, ts-travel-service_3, ts-assurance-service_2, ts-order-service_1, ts-order-service_2, ts-contacts-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-rffcz" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-477ts" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-b7q5j" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-4g8k8" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-g688b" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-food-service-5d45948c75-rzd5h" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-qgzss" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-cnsk2" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-zxlwr" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-travel-service-558966db9f-ltshs" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-ctbbd" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-2kc9b" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-7sdxb" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-8xcn6" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+travel service is true
+assurance service is true
+ResponseCode is an error code:502
+foodservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 348s
+Testcase is '[ts-order-other-service_1, ts-order-other-service_2]'
+Insert faults...
+delete info:pod "ts-order-other-service-6fb79984cb-lcrmm" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-mtt8c" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p5, Value= ts-travel-service-558966db9f-kwkwq
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-sw5hq
+------ts-food-service--------
+processes.size = 5
+Matched in p1, Value= ts-food-service-5d45948c75-zgqgx
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-msxnr
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-cplgt
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-t2zbm
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-c2mwf
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-rh2np
+path = ts-travel-service_3---ts-assurance-service_3---ts-food-service_2---ts-contacts-service_2---ts-preserve-service_1---ts-order-service_3---ts-inside-payment-service_1---ts-order-other-service_3
+Reset system...
+begin init...
+init end, cost time 256s
+Testcase is '[ts-preserve-service_3, ts-inside-payment-service_1, ts-order-other-service_1, ts-order-other-service_2, ts-order-other-service_3, ts-food-service_1, ts-contacts-service_2, ts-order-service_3, ts-order-service_1, ts-order-service_2, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-ph65s" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-inside-payment-service-644665db-c2mwf" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-cqvdp" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-ptwvj" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-rh2np" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-food-service-5d45948c75-qs6kc" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-msxnr" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-t2zbm" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-order-service-786995677f-fflbt" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-mtf2m" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-7h7w6" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-dxj4q" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:500
+travelservice failed,resondeCode is 500,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 348s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-preserve-service_2, ts-food-service_2, ts-order-other-service_2, ts-order-other-service_3, ts-food-service_1, ts-assurance-service_1, ts-order-service_3, ts-assurance-service_3, ts-assurance-service_2, ts-order-service_1, ts-contacts-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-wc5x4" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-cplgt" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-pg42h" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-food-service-5d45948c75-zgqgx" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-clwrx" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-p7h6l" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-food-service-5d45948c75-sjwh8" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-5x4tl" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-order-service-786995677f-tspsv" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-sw5hq" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-rwcbg" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-9b5xs" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-brc9h" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+travel service is true
+ResponseCode is an error code:502
+assuranceservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 349s
+Testcase is '[ts-preserve-service_3, ts-order-other-service_1, ts-food-service_2, ts-order-other-service_3, ts-inside-payment-service_2, ts-order-service_3, ts-order-service_1, ts-contacts-service_1, ts-order-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-qkgmr" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-order-other-service-6fb79984cb-7cmr4" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-food-service-5d45948c75-lf8cp" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-sccxr" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-inside-payment-service-644665db-xsqlg" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-order-service-786995677f-kg2nl" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-order-service-786995677f-g7h5x" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-contacts-service-758b4d8f44-gxd56" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-order-service-786995677f-j5tfw" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+ResponseCode is an error code:500
+travelservice failed,resondeCode is 500,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 349s
+Testcase is '[ts-food-service_2, ts-order-other-service_2, ts-inside-payment-service_2, ts-travel-service_3, ts-contacts-service_2, ts-contacts-service_1, ts-order-service_2, ts-travel-service_1]'
+Insert faults...
+delete info:pod "ts-food-service-5d45948c75-r5hgb" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-9vp7n" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-kccbl" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-s8j27" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-zcbkl" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-wt4xm" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-order-service-786995677f-sksl2" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-travel-service-558966db9f-gbml6" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+travel service is true
+assurance service is true
+food service is true
+ResponseCode is an error code:502
+contactservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 287s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-preserve-service_2, ts-order-other-service_2, ts-contacts-service_2, ts-order-service_3, ts-assurance-service_3, ts-assurance-service_2, ts-travel-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-qm2qb" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-52zmh" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-6dzkt" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-7ctsb" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-clqgq" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-xnj25" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-r4qfn" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-djljg" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-travel-service-558966db9f-9ctmz" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+ResponseCode is an error code:502
+preserveservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 348s
+Testcase is '[]'
+Insert faults...
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p4, Value= ts-travel-service-558966db9f-kwkwq
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-c8wss
+------ts-food-service--------
+processes.size = 5
+Matched in p3, Value= ts-food-service-5d45948c75-lchvf
+------ts-contacts-service--------
+processes.size = 5
+Matched in p4, Value= ts-contacts-service-758b4d8f44-6p5jw
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-xn27t
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-48qlr
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-k227m
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-ggmn2
+path = ts-travel-service_2---ts-assurance-service_1---ts-food-service_2---ts-contacts-service_1---ts-preserve-service_3---ts-order-service_1---ts-inside-payment-service_2---ts-order-other-service_2
+Reset system...
+begin init...
+init end, cost time 11s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-preserve-service_2, ts-inside-payment-service_1, ts-order-other-service_1, ts-food-service_2, ts-order-other-service_2, ts-food-service_1, ts-order-other-service_3, ts-inside-payment-service_2, ts-travel-service_3, ts-assurance-service_1, ts-order-service_3, ts-assurance-service_3, ts-assurance-service_2, ts-order-service_1, ts-order-service_2, ts-contacts-service_1, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-xn27t" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-r6zdx" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-preserve-service-7c74546547-xlwjv" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-8xf4d" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-7b5bh" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-food-service-5d45948c75-lchvf" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-ggmn2" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-9wbrj" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-gz284" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-inside-payment-service-644665db-k227m" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-lml6w" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-c8wss" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-order-service-786995677f-9hsvq" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-ssr5x" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-lff6g" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-48qlr" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-67k7v" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-6p5jw" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-travel-service-558966db9f-cvp4c" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-kwkwq" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 410s
+Testcase is '[ts-inside-payment-service_1, ts-order-other-service_2, ts-order-other-service_3, ts-assurance-service_3, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-inside-payment-service-644665db-qtgpm" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-s7vr9" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-sq4kt" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-nrpl7" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-travel-service-558966db9f-rv4hm" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p5, Value= ts-travel-service-558966db9f-t6qrv
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-2g6xq
+------ts-food-service--------
+processes.size = 5
+Matched in p3, Value= ts-food-service-5d45948c75-5dcps
+------ts-contacts-service--------
+processes.size = 5
+Matched in p4, Value= ts-contacts-service-758b4d8f44-kkcdh
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-4qlcs
+------ts-order-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-service-786995677f-tljwp
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p2, Value= ts-inside-payment-service-644665db-srsmg
+------ts-order-other-service--------
+processes.size = 2
+Matched in p1, Value= ts-order-other-service-6fb79984cb-kc28l
+path = ts-travel-service_3---ts-assurance-service_1---ts-food-service_1---ts-contacts-service_1---ts-preserve-service_1---ts-order-service_3---ts-inside-payment-service_2---ts-order-other-service_1
+Reset system...
+begin init...
+init end, cost time 257s
+Testcase is '[ts-inside-payment-service_1]'
+Insert faults...
+delete info:pod "ts-inside-payment-service-644665db-q7m6g" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p1, Value= ts-travel-service-558966db9f-t6qrv
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-2g6xq
+------ts-food-service--------
+processes.size = 5
+Matched in p5, Value= ts-food-service-5d45948c75-jflp8
+------ts-contacts-service--------
+processes.size = 5
+Matched in p4, Value= ts-contacts-service-758b4d8f44-x576b
+------ts-preserve-service--------
+processes.size = 5
+Matched in p3, Value= ts-preserve-service-7c74546547-gx7ps
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-8prfg
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-srsmg
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-74dhs
+path = ts-travel-service_2---ts-assurance-service_1---ts-food-service_2---ts-contacts-service_2---ts-preserve-service_3---ts-order-service_1---ts-inside-payment-service_2---ts-order-other-service_1
+Reset system...
+begin init...
+init end, cost time 256s
+Testcase is '[ts-preserve-service_2, ts-food-service_2, ts-order-other-service_2, ts-inside-payment-service_2, ts-travel-service_3, ts-contacts-service_2, ts-order-service_3, ts-assurance-service_3, ts-travel-service_1]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-ct2jm" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_2 success
+delete info:pod "ts-food-service-5d45948c75-jflp8" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-kc28l" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-srsmg" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-zr22l" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-x576b" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-order-service-786995677f-tljwp" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-xvgnn" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-travel-service-558966db9f-62hxc" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+travel service is true
+assurance service is true
+food service is true
+contact service is true
+preserve service is true
+order service is true
+order other service is true
+inside payment service is true
+Execution is successful!
+------ts-travel-service--------
+processes.size = 5
+Matched in p2, Value= ts-travel-service-558966db9f-t6qrv
+------ts-assurance-service--------
+processes.size = 1
+Matched in p1, Value= ts-assurance-service-84fbd86998-2g6xq
+------ts-food-service--------
+processes.size = 5
+Matched in p5, Value= ts-food-service-5d45948c75-5dcps
+------ts-contacts-service--------
+processes.size = 5
+Matched in p5, Value= ts-contacts-service-758b4d8f44-kkcdh
+------ts-preserve-service--------
+processes.size = 5
+Matched in p4, Value= ts-preserve-service-7c74546547-gx7ps
+------ts-order-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-service-786995677f-8prfg
+------ts-inside-payment-service--------
+processes.size = 2
+Matched in p1, Value= ts-inside-payment-service-644665db-2dvqj
+------ts-order-other-service--------
+processes.size = 2
+Matched in p2, Value= ts-order-other-service-6fb79984cb-74dhs
+path = ts-travel-service_2---ts-assurance-service_1---ts-food-service_1---ts-contacts-service_1---ts-preserve-service_3---ts-order-service_1---ts-inside-payment-service_1---ts-order-other-service_1
+Reset system...
+begin init...
+init end, cost time 348s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-inside-payment-service_1, ts-order-other-service_1, ts-order-other-service_2, ts-food-service_2, ts-inside-payment-service_2, ts-order-other-service_3, ts-food-service_1, ts-assurance-service_1, ts-travel-service_3, ts-contacts-service_2, ts-assurance-service_3, ts-order-service_3, ts-assurance-service_2, ts-order-service_1, ts-order-service_2, ts-contacts-service_1, ts-travel-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-gx7ps" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-4qlcs" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-2dvqj" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-74dhs" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-9mwct" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-sfxss" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-inside-payment-service-644665db-pd5sn" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-vjb5f" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-food-service-5d45948c75-5dcps" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-assurance-service-84fbd86998-2g6xq" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-travel-service-558966db9f-t6qrv" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-kkcdh" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-tbhgr" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-order-service-786995677f-x5bxm" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-4vqpq" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_2 success
+delete info:pod "ts-order-service-786995677f-8prfg" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-lcnbq" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-7zj84" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-travel-service-558966db9f-9bqp7" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_1 success
+delete info:pod "ts-travel-service-558966db9f-m497j" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:502
+travelservice failed,resondeCode is 502,response is
+Execution is failed!
+Reset system...
+begin init...
+init end, cost time 410s
+Testcase is '[ts-preserve-service_3, ts-preserve-service_1, ts-inside-payment-service_1, ts-order-other-service_1, ts-order-other-service_2, ts-food-service_2, ts-order-other-service_3, ts-food-service_1, ts-inside-payment-service_2, ts-travel-service_3, ts-assurance-service_1, ts-order-service_3, ts-contacts-service_2, ts-assurance-service_3, ts-order-service_1, ts-order-service_2, ts-contacts-service_1, ts-travel-service_2]'
+Insert faults...
+delete info:pod "ts-preserve-service-7c74546547-7pfv9" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_3 success
+delete info:pod "ts-preserve-service-7c74546547-5fx6w" deleted
+deployment.extensions/ts-preserve-service scaled
+
+stop ts-preserve-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-njx9k" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-2r776" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_1 success
+delete info:pod "ts-order-other-service-6fb79984cb-2t56m" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_2 success
+delete info:pod "ts-food-service-5d45948c75-lrnrc" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_2 success
+delete info:pod "ts-order-other-service-6fb79984cb-6kzgt" deleted
+deployment.extensions/ts-order-other-service scaled
+
+stop ts-order-other-service_3 success
+delete info:pod "ts-food-service-5d45948c75-kcnmw" deleted
+deployment.extensions/ts-food-service scaled
+
+stop ts-food-service_1 success
+delete info:pod "ts-inside-payment-service-644665db-xdz2j" deleted
+deployment.extensions/ts-inside-payment-service scaled
+
+stop ts-inside-payment-service_2 success
+delete info:pod "ts-travel-service-558966db9f-zx2t5" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_3 success
+delete info:pod "ts-assurance-service-84fbd86998-fjntt" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_1 success
+delete info:pod "ts-order-service-786995677f-vm5vf" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_3 success
+delete info:pod "ts-contacts-service-758b4d8f44-jflq4" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_2 success
+delete info:pod "ts-assurance-service-84fbd86998-pf45m" deleted
+deployment.extensions/ts-assurance-service scaled
+
+stop ts-assurance-service_3 success
+delete info:pod "ts-order-service-786995677f-dspv4" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_1 success
+delete info:pod "ts-order-service-786995677f-s4r4w" deleted
+deployment.extensions/ts-order-service scaled
+
+stop ts-order-service_2 success
+delete info:pod "ts-contacts-service-758b4d8f44-f465s" deleted
+deployment.extensions/ts-contacts-service scaled
+
+stop ts-contacts-service_1 success
+delete info:pod "ts-travel-service-558966db9f-jcv5p" deleted
+deployment.extensions/ts-travel-service scaled
+
+stop ts-travel-service_2 success
+ResponseCode is an error code:500
+travelservice failed,resondeCode is 500,response is
+Execution is failed!
+Size=42,random_times=1,average_time=22493.66s,average_failcase=30.00,nodes=21.00,edges=38.00,average_bottlenecks=8.00
+
+Process finished with exit code 0
