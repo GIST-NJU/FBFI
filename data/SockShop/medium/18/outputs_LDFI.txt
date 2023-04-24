@@ -1,0 +1,634 @@
+FBFI_inject_number = 44
+FBFI_total_time = 1388.323
+
+[ < Experiment Start > ]
+
+subject = SockShop
+algorithm = LDFI
+inject type = stop
+
+Running algorithm: LDFI
+
+[ Covered 9 Services ]
+sock-shop_user
+sock-shop_catalogue
+sock-shop_catalogue-db
+sock-shop_carts
+sock-shop_carts-db
+sock-shop_orders
+sock-shop_orders-db
+sock-shop_payment
+sock-shop_shipping
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Graph ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+[ Layer 1: sock-shop_user ]
+[ Layer 2: sock-shop_catalogue ]
+[ Layer 3: sock-shop_catalogue-db ]
+[ Layer 4: sock-shop_carts ]
+[ Layer 5: sock-shop_carts-db ]
+[ Layer 6: sock-shop_orders ]
+[ Layer 7: sock-shop_orders-db ]
+[ Layer 8: sock-shop_payment ]
+[ Layer 9: sock-shop_shipping ]
+
+
+
+LDFI Round 1
+< Most: 1 >
+
+Inject Config: [sock-shop_orders-db_1]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Flaky Case: [sock-shop_orders-db_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_2, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 2
+< Most: 1 >
+
+Inject Config: [sock-shop_user_1]
+Path: [sock-shop_user_2, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 3
+< Most: 1 >
+
+Inject Config: [sock-shop_catalogue_3]
+Path: [sock-shop_user_1, sock-shop_catalogue_1, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 4
+< Most: 1 >
+
+Inject Config: [sock-shop_carts-db_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_1, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 5
+< Most: 1 >
+
+Inject Config: [sock-shop_orders_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_1, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 6
+< Most: 1 >
+
+Inject Config: [sock-shop_shipping_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_2]
+
+LDFI Round 7
+< Most: 1 >
+
+Inject Config: [sock-shop_payment_3]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_2, sock-shop_shipping_1]
+
+LDFI Round 8
+< Most: 1 >
+
+Inject Config: [sock-shop_catalogue-db_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_1, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 9
+< Most: 1 >
+
+Inject Config: [sock-shop_carts_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_2, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 10
+< Most: 1 >
+
+LDFI Round 11
+< Most: 2 >
+
+Inject Config: [sock-shop_orders_1, sock-shop_orders_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_3, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 12
+< Most: 2 >
+
+Inject Config: [sock-shop_carts-db_2, sock-shop_orders_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_1, sock-shop_orders_1, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 13
+< Most: 2 >
+
+Inject Config: [sock-shop_shipping_2, sock-shop_shipping_1]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Checking workload on unbroken system
+
+LDFI Round 14
+< Most: 2 >
+
+Inject Config: [sock-shop_carts-db_2, sock-shop_carts-db_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_3, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 15
+< Most: 2 >
+
+Inject Config: [sock-shop_catalogue_3, sock-shop_catalogue_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_2, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 16
+< Most: 2 >
+
+Inject Config: [sock-shop_catalogue_3, sock-shop_user_1]
+Path: [sock-shop_user_2, sock-shop_catalogue_1, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 17
+< Most: 2 >
+
+Inject Config: [sock-shop_payment_3, sock-shop_payment_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_1, sock-shop_shipping_1]
+
+LDFI Round 18
+< Most: 2 >
+
+Inject Config: [sock-shop_orders_2, sock-shop_orders-db_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_1, sock-shop_orders-db_2, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 19
+< Most: 2 >
+
+Inject Config: [sock-shop_orders-db_2, sock-shop_orders-db_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_3, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 20
+< Most: 2 >
+
+Inject Config: [sock-shop_user_1, sock-shop_user_2]
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Checking workload on unbroken system
+
+LDFI Round 21
+< Most: 2 >
+
+Inject Config: [sock-shop_carts-db_2, sock-shop_carts_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_2, sock-shop_carts-db_1, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 22
+< Most: 2 >
+
+Inject Config: [sock-shop_carts_1, sock-shop_carts_2]
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Checking workload on unbroken system
+
+LDFI Round 23
+< Most: 2 >
+
+Inject Config: [sock-shop_shipping_1, sock-shop_payment_3]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_2, sock-shop_shipping_2]
+
+LDFI Round 24
+< Most: 2 >
+
+Inject Config: [sock-shop_orders-db_1, sock-shop_payment_3]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_2, sock-shop_payment_2, sock-shop_shipping_1]
+
+LDFI Round 25
+< Most: 2 >
+
+Inject Config: [sock-shop_catalogue_3, sock-shop_catalogue-db_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_1, sock-shop_catalogue-db_1, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 26
+< Most: 2 >
+
+Inject Config: [sock-shop_carts_1, sock-shop_catalogue-db_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_1, sock-shop_carts_2, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 27
+< Most: 2 >
+
+Inject Config: [sock-shop_catalogue-db_2, sock-shop_catalogue-db_1]
+Got an error status_code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error status_code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error status_code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Checking workload on unbroken system
+
+LDFI Round 28
+< Most: 2 >
+
+LDFI Round 29
+< Most: 3 >
+
+Inject Config: [sock-shop_carts-db_3, sock-shop_carts-db_2, sock-shop_carts-db_1]
+Got an error code: 500 when GET http://localhost:8070/cart
+Got an error code: 500 when GET http://localhost:8070/cart
+Got an error code: 500 when GET http://localhost:8070/cart
+Checking workload on unbroken system
+
+LDFI Round 30
+< Most: 3 >
+
+Inject Config: [sock-shop_catalogue_3, sock-shop_catalogue_2, sock-shop_catalogue_1]
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Checking workload on unbroken system
+
+LDFI Round 31
+< Most: 3 >
+
+Inject Config: [sock-shop_catalogue_3, sock-shop_catalogue_1, sock-shop_user_1]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Checking workload on unbroken system
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+[ TracePath unexpectedly failed! Retry for 1 times ]
+
+LDFI Round 32
+< Most: 3 >
+
+Inject Config: [sock-shop_payment_3, sock-shop_payment_2, sock-shop_payment_1]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Checking workload on unbroken system
+
+LDFI Round 33
+< Most: 3 >
+
+Inject Config: [sock-shop_carts-db_2, sock-shop_carts-db_1, sock-shop_carts_1]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Flaky Case: [sock-shop_carts-db_2, sock-shop_carts-db_1, sock-shop_carts_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_2, sock-shop_carts-db_3, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 34
+< Most: 3 >
+
+Inject Config: [sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_carts-db_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_3, sock-shop_orders_1, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 35
+< Most: 3 >
+
+Inject Config: [sock-shop_orders_1, sock-shop_carts-db_2, sock-shop_orders_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_1, sock-shop_orders_3, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 36
+< Most: 3 >
+
+Inject Config: [sock-shop_shipping_1, sock-shop_payment_3, sock-shop_payment_2]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Flaky Case: [sock-shop_shipping_1, sock-shop_payment_3, sock-shop_payment_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_1, sock-shop_shipping_2]
+
+LDFI Round 37
+< Most: 3 >
+
+Inject Config: [sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_payment_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_2, sock-shop_payment_1, sock-shop_shipping_1]
+
+LDFI Round 38
+< Most: 3 >
+
+Inject Config: [sock-shop_orders_1, sock-shop_orders_2, sock-shop_orders_3]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Checking workload on unbroken system
+
+LDFI Round 39
+< Most: 3 >
+
+Inject Config: [sock-shop_orders-db_3, sock-shop_orders-db_2, sock-shop_orders-db_1]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Checking workload on unbroken system
+
+LDFI Round 40
+< Most: 3 >
+
+Inject Config: [sock-shop_orders_2, sock-shop_orders-db_2, sock-shop_orders-db_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_1, sock-shop_orders-db_3, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 41
+< Most: 3 >
+
+Inject Config: [sock-shop_orders_1, sock-shop_orders_2, sock-shop_orders-db_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_3, sock-shop_orders-db_2, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 42
+< Most: 3 >
+
+Inject Config: [sock-shop_orders-db_2, sock-shop_orders-db_1, sock-shop_payment_3]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Flaky Case: [sock-shop_orders-db_2, sock-shop_orders-db_1, sock-shop_payment_3]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_3, sock-shop_payment_2, sock-shop_shipping_1]
+
+LDFI Round 43
+< Most: 3 >
+
+Inject Config: [sock-shop_catalogue_3, sock-shop_catalogue_1, sock-shop_catalogue-db_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_2, sock-shop_catalogue-db_1, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 44
+< Most: 3 >
+
+LDFI Round 45
+< Most: 4 >
+
+Inject Config: [sock-shop_orders_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_carts-db_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_3, sock-shop_orders_3, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 46
+< Most: 4 >
+
+Inject Config: [sock-shop_orders_1, sock-shop_orders_2, sock-shop_orders-db_2, sock-shop_orders-db_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_3, sock-shop_orders-db_3, sock-shop_payment_3, sock-shop_shipping_1]
+
+LDFI Round 47
+< Most: 4 >
+
+Inject Config: [sock-shop_orders-db_2, sock-shop_orders-db_1, sock-shop_payment_3, sock-shop_payment_2]
+Path: [sock-shop_user_1, sock-shop_catalogue_3, sock-shop_catalogue-db_2, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_3, sock-shop_payment_1, sock-shop_shipping_1]
+
+LDFI Round 48
+< Most: 4 >
+
+LDFI Round 49
+< Most: 5 >
+
+LDFI Round 50
+< Most: 6 >
+
+LDFI Round 51
+< Most: 7 >
+
+LDFI Round 52
+< Most: 8 >
+
+LDFI Round 53
+< Most: 9 >
+
+LDFI Round 54
+< Most: 10 >
+
+LDFI Round 55
+< Most: 11 >
+
+LDFI Round 56
+< Most: 12 >
+
+LDFI Round 57
+< Most: 13 >
+
+LDFI Round 58
+< Most: 14 >
+
+LDFI Round 59
+< Most: 15 >
+
+LDFI Round 60
+< Most: 16 >
+
+LDFI Round 61
+< Most: 17 >
+
+LDFI Round 62
+< Most: 18 >
+
+LDFI Round 63
+< Most: 19 >
+
+LDFI Round 64
+< Most: 20 >
+
+LDFI Round 65
+< Most: 21 >
+
+LDFI Round 66
+< Most: 22 >
+
+LDFI Round 67
+< Most: 23 >
+
+LDFI Round 68
+< Most: 24 >
+
+Total Graph
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Graph ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+[ Layer 1: sock-shop_user ]
+LayerSize: 2
+LayerNodes: [sock-shop_user_1, sock-shop_user_2]
+
+NodeID: sock-shop_user_1
+Layer: 1
+SubNodes: sock-shop_catalogue_3 sock-shop_catalogue_2 sock-shop_catalogue_1 
+PreNodes: start 
+
+NodeID: sock-shop_user_2
+Layer: 1
+SubNodes: sock-shop_catalogue_3 sock-shop_catalogue_2 sock-shop_catalogue_1 
+PreNodes: start 
+
+[ Layer 2: sock-shop_catalogue ]
+LayerSize: 3
+LayerNodes: [sock-shop_catalogue_3, sock-shop_catalogue_2, sock-shop_catalogue_1]
+
+NodeID: sock-shop_catalogue_3
+Layer: 2
+SubNodes: sock-shop_catalogue-db_2 sock-shop_catalogue-db_1 
+PreNodes: sock-shop_user_1 sock-shop_user_2 
+
+NodeID: sock-shop_catalogue_2
+Layer: 2
+SubNodes: sock-shop_catalogue-db_2 sock-shop_catalogue-db_1 
+PreNodes: sock-shop_user_1 sock-shop_user_2 
+
+NodeID: sock-shop_catalogue_1
+Layer: 2
+SubNodes: sock-shop_catalogue-db_2 sock-shop_catalogue-db_1 
+PreNodes: sock-shop_user_1 sock-shop_user_2 
+
+[ Layer 3: sock-shop_catalogue-db ]
+LayerSize: 2
+LayerNodes: [sock-shop_catalogue-db_2, sock-shop_catalogue-db_1]
+
+NodeID: sock-shop_catalogue-db_2
+Layer: 3
+SubNodes: sock-shop_carts_1 sock-shop_carts_2 
+PreNodes: sock-shop_catalogue_3 sock-shop_catalogue_2 sock-shop_catalogue_1 
+
+NodeID: sock-shop_catalogue-db_1
+Layer: 3
+SubNodes: sock-shop_carts_1 sock-shop_carts_2 
+PreNodes: sock-shop_catalogue_3 sock-shop_catalogue_2 sock-shop_catalogue_1 
+
+[ Layer 4: sock-shop_carts ]
+LayerSize: 2
+LayerNodes: [sock-shop_carts_1, sock-shop_carts_2]
+
+NodeID: sock-shop_carts_1
+Layer: 4
+SubNodes: sock-shop_carts-db_3 sock-shop_carts-db_2 sock-shop_carts-db_1 
+PreNodes: sock-shop_catalogue-db_2 sock-shop_catalogue-db_1 
+
+NodeID: sock-shop_carts_2
+Layer: 4
+SubNodes: sock-shop_carts-db_3 sock-shop_carts-db_2 sock-shop_carts-db_1 
+PreNodes: sock-shop_catalogue-db_2 sock-shop_catalogue-db_1 
+
+[ Layer 5: sock-shop_carts-db ]
+LayerSize: 3
+LayerNodes: [sock-shop_carts-db_3, sock-shop_carts-db_2, sock-shop_carts-db_1]
+
+NodeID: sock-shop_carts-db_3
+Layer: 5
+SubNodes: sock-shop_orders_1 sock-shop_orders_2 sock-shop_orders_3 
+PreNodes: sock-shop_carts_1 sock-shop_carts_2 
+
+NodeID: sock-shop_carts-db_2
+Layer: 5
+SubNodes: sock-shop_orders_1 sock-shop_orders_2 sock-shop_orders_3 
+PreNodes: sock-shop_carts_1 sock-shop_carts_2 
+
+NodeID: sock-shop_carts-db_1
+Layer: 5
+SubNodes: sock-shop_orders_1 sock-shop_orders_2 sock-shop_orders_3 
+PreNodes: sock-shop_carts_1 sock-shop_carts_2 
+
+[ Layer 6: sock-shop_orders ]
+LayerSize: 3
+LayerNodes: [sock-shop_orders_1, sock-shop_orders_2, sock-shop_orders_3]
+
+NodeID: sock-shop_orders_1
+Layer: 6
+SubNodes: sock-shop_orders-db_3 sock-shop_orders-db_2 sock-shop_orders-db_1 
+PreNodes: sock-shop_carts-db_3 sock-shop_carts-db_2 sock-shop_carts-db_1 
+
+NodeID: sock-shop_orders_2
+Layer: 6
+SubNodes: sock-shop_orders-db_3 sock-shop_orders-db_2 sock-shop_orders-db_1 
+PreNodes: sock-shop_carts-db_3 sock-shop_carts-db_2 sock-shop_carts-db_1 
+
+NodeID: sock-shop_orders_3
+Layer: 6
+SubNodes: sock-shop_orders-db_3 sock-shop_orders-db_2 sock-shop_orders-db_1 
+PreNodes: sock-shop_carts-db_3 sock-shop_carts-db_2 sock-shop_carts-db_1 
+
+[ Layer 7: sock-shop_orders-db ]
+LayerSize: 3
+LayerNodes: [sock-shop_orders-db_3, sock-shop_orders-db_2, sock-shop_orders-db_1]
+
+NodeID: sock-shop_orders-db_3
+Layer: 7
+SubNodes: sock-shop_payment_3 sock-shop_payment_2 sock-shop_payment_1 
+PreNodes: sock-shop_orders_1 sock-shop_orders_2 sock-shop_orders_3 
+
+NodeID: sock-shop_orders-db_2
+Layer: 7
+SubNodes: sock-shop_payment_3 sock-shop_payment_2 sock-shop_payment_1 
+PreNodes: sock-shop_orders_1 sock-shop_orders_2 sock-shop_orders_3 
+
+NodeID: sock-shop_orders-db_1
+Layer: 7
+SubNodes: sock-shop_payment_3 sock-shop_payment_2 sock-shop_payment_1 
+PreNodes: sock-shop_orders_1 sock-shop_orders_2 sock-shop_orders_3 
+
+[ Layer 8: sock-shop_payment ]
+LayerSize: 3
+LayerNodes: [sock-shop_payment_3, sock-shop_payment_2, sock-shop_payment_1]
+
+NodeID: sock-shop_payment_3
+Layer: 8
+SubNodes: sock-shop_shipping_2 sock-shop_shipping_1 
+PreNodes: sock-shop_orders-db_3 sock-shop_orders-db_2 sock-shop_orders-db_1 
+
+NodeID: sock-shop_payment_2
+Layer: 8
+SubNodes: sock-shop_shipping_2 sock-shop_shipping_1 
+PreNodes: sock-shop_orders-db_3 sock-shop_orders-db_2 sock-shop_orders-db_1 
+
+NodeID: sock-shop_payment_1
+Layer: 8
+SubNodes: sock-shop_shipping_2 sock-shop_shipping_1 
+PreNodes: sock-shop_orders-db_3 sock-shop_orders-db_2 sock-shop_orders-db_1 
+
+[ Layer 9: sock-shop_shipping ]
+LayerSize: 2
+LayerNodes: [sock-shop_shipping_2, sock-shop_shipping_1]
+
+NodeID: sock-shop_shipping_2
+Layer: 9
+SubNodes: end 
+PreNodes: sock-shop_payment_3 sock-shop_payment_2 sock-shop_payment_1 
+
+NodeID: sock-shop_shipping_1
+Layer: 9
+SubNodes: end 
+PreNodes: sock-shop_payment_3 sock-shop_payment_2 sock-shop_payment_1 
+
+
+Bottlenecks: 
+[[sock-shop_shipping_2, sock-shop_shipping_1], [sock-shop_user_1, sock-shop_user_2], [sock-shop_carts_1, sock-shop_carts_2], [sock-shop_catalogue-db_2, sock-shop_catalogue-db_1], [sock-shop_carts-db_3, sock-shop_carts-db_2, sock-shop_carts-db_1], [sock-shop_catalogue_3, sock-shop_catalogue_2, sock-shop_catalogue_1], [sock-shop_payment_3, sock-shop_payment_2, sock-shop_payment_1], [sock-shop_orders_1, sock-shop_orders_2, sock-shop_orders_3], [sock-shop_orders-db_3, sock-shop_orders-db_2, sock-shop_orders-db_1]]
+bottleneckNumber = 10
+
+Redundancies: 
+[]
+redundanciesNumber = 0
+
+Defects: 
+[]
+defectNumber = 0
+
+
+Flaky Defects: 
+[[sock-shop_orders-db_1], [sock-shop_carts-db_2, sock-shop_carts-db_1, sock-shop_carts_1], [sock-shop_shipping_1, sock-shop_payment_3, sock-shop_payment_2], [sock-shop_orders-db_2, sock-shop_orders-db_1, sock-shop_payment_3]]
+
+sock-shop_user: 2/2
+sock-shop_catalogue: 3/3
+sock-shop_catalogue-db: 2/2
+sock-shop_carts: 2/2
+sock-shop_carts-db: 3/3
+sock-shop_orders: 3/3
+sock-shop_orders-db: 3/3
+sock-shop_payment: 3/3
+sock-shop_shipping: 2/2
+
+Node Coverage = 23/23
+
+Edge Coverage = 55/55
+Missed Edge = []
+
+Path Number = 35
+Inject Number = 44
+Average Inject Size = 2.27
+
+Total Time = 1480.296s
+HandleConfig Time = 1471.679s
+Algorithm Time = 8.595s
