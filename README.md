@@ -9,7 +9,7 @@ To use FBFI to test a system, the tester should have a *system workload* that ex
 We currently provide a command-line utility that implements the core algorithm of FBFI. The `algorithm` parameter can be configured to indicate which specific algorithm (namely, `FBFI`, `LDFI` or `Random`) will be used to generate fault injection configurations.
 
 ```bash
-java -jar Experiment.jar algorithm=[Algorithm]
+java -jar Experiment.jar algorithm=[Algorithm_Name]
 ```
 At first, the tester should provide an initial successful execution path of the system. Here, each *execution path* should be encoded as `x_1-x_2-...-x_n`, where `x_i` is a string that indicates the name of a particular business node of the *i*-th service.
 
@@ -107,17 +107,17 @@ java -jar Experiment.jar subject=[Subject_Name] deployScale=[Scale]
 
 Here, the `subject` parameter indicates the name of benchmark system, which can be `TrainTicket` or `SockShop`. The `deployScale` parameter indicates the deployment scale, which can be `small`, `medium` or `large` (that is, each service has `{1,2}`, `{2,3}`, or `{3,4}` redundant nodes).
 
-Next, for each deployment configuration generated, use `docker-compose` command to deploy the benchmark system. For example, running the following command will deploy 4 nodes for service `ts-ticketinfo-service` and 3 nodes for service `ts-seat-service`.
+Next, for each deployment configuration generated, use `docker-compose` command to deploy the benchmark system. For example, running the following command will deploy 4 nodes for service `ts-ticketinfo-service`, 3 nodes for service `ts-seat-service`, etc.
 
 ```bash
-docker-compose up --scale ts-ticketinfo-service=4 --scale ts-seat-service=3
+docker-compose up --scale ts-ticketinfo-service=4 --scale ts-seat-service=3 ...
 ```
 After the successful deployment of the benchmark system, run the following command to carry out the experiment:
 
 ```bash
 java -jar Experiment.jar subject=[Subject_Name] algorithm=[Algorithm_Name]
 ```
-The `algorithm` parameter indicates the FIT approach that will be used to perform fault injection experiments, which can take `FBFI`, `LDFI` or `Random`.
+The `algorithm` parameter indicates the FIT approach that will be used to perform fault injection experiments, which can take `FBFI`, `LDFI` or `Random`. Note that according to the experiment setting, FBFI should be executed first, because the maximum execution time constraints allocated to the random and LDFI approaches are dependent on the time costs of FBFI (1x and 3x of FBFI, respectively).
 
 Once the experiment terminates, the following data will be reported:
 
@@ -133,7 +133,7 @@ Once the experiment terminates, the following data will be reported:
 * `HandleConfig Time`:  the injection cost of experiment, including the time cost of implementing injections and resetting the system (Seconds)
 * `Algorithm Time`:  the generation cost of the algorithm (Seconds)
 
-The `ExperimentData` directory gives the raw experimental data observed in our experiment. For each deployment scale of the benchmark system, 30 different deployment configurations are used (i.e., 30 different business structures). So, there will be 30 sub-directories for each deployment scale. In each of these sub-directories, we provide:
+The `data` directory gives the raw experimental data observed in our experiment. For each deployment scale of the benchmark system, 30 different deployment configurations are used (i.e., 30 different business structures). So, there will be 30 sub-directories for each deployment scale. In each of these sub-directories, we provide:
 
 * `scale.txt`: the particular deployment configuration
 * `outputs_[Algorithm].txt`: the raw experiment results of running each FIT approach under this deployment configuration
