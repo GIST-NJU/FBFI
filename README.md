@@ -6,12 +6,14 @@ FBFI (Fault-tolerance Bottleneck driven Fault Injection) is a fault injection te
 
 To use FBFI to test a system, the tester should have a *system workload* that exercises a certain number of services, a *fault injector* that implements the concrete fault injections, and a *tracing tool* that captures the execution paths of the system. Given such an application scenario, FBFI will take the system execution results observed as the input (either a successful execution path, or a system failure observed), and infer fault-tolerance bottlenecks as the locations of fault injection.
 
-We currently provide a command-line utility that implements the core algorithm of FBFI. The `algorithm` parameter can be configured to indicate which specific algorithm (namely, `FBFI`, `LDFI` or `Random`) will be used to generate fault injection configurations.
+We currently provide a command-line utility that implements the core algorithms of the FBFI (with `algorithm=FBFI`). In addition, the `algorithm` parameter can also be configured to `Random` or `LDFI`, in order to use different strategies to generate fault injection configurations.
 
 ```bash
 java -jar Experiment.jar algorithm=[Algorithm_Name]
 ```
-At first, the tester should provide an initial successful execution path of the system. Here, each *execution path* should be encoded as `x_1-x_2-...-x_n`, where `x_i` is a string that indicates the name of a particular business node of the *i*-th service.
+##### Main process of FBFI
+
+At first, since FBFI is unaware of the complete business structure, the tester should provide an initial successful execution path, and FBFI will use this path as the initial business structure. Here, each *execution path* should be encoded as `x_1-x_2-...-x_n`, where `x_i` is a string that indicates the name of a particular business node of the *i*-th service.
 
 ```
 Please input a successful execution path (e.g. A_1-B_1-C_1):
@@ -31,7 +33,7 @@ A_2-B_1-C_2
 Path: [A_2, B_1, C_2]
 Please restore config: [A_1]
 ```
-Next, repeat the above process, until all bottlenecks inferred can break the system. At this moment, FBFI has explored the complete business structure, and the algorithm terminates.
+FBFI will repeat the above process until all bottlenecks inferred can break the system. At this moment, FBFI has explored the complete business structure, and the algorithm terminates.
 
 ```
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Graph ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -93,31 +95,35 @@ defectNumber = 0
 ...
 ```
 
+##### The random and LDFI approaches 
+
+Like FBFI, the random and LDFI approaches are also unaware of the complete business structure, and will rely on only the successful execution paths to update the business structure. The main difference between these approaches is in the generation of fault injection configurations: the random approach generates fault injection configurations randomly, while LDFI uses a SAT solver to infer bottlenecks.
+
 
 
 ### Experiment
 
 The performance of FBFI is evaluated under two microservice benchmark systems, [TrainTicket](https://github.com/FudanSELab/train-ticket/tree/jaeger) and [SockShop](https://github.com/microservices-demo/microservices-demo). Two additional automated FIT approaches, Radnom and LDFI (an adapted version), are used for comparison.
 
-To reproduce the experiments, first run the following command to generate deployment configurations of a specific deployment scale for each benchmark system (to introduce redundancy of different levels):
+To reproduce the experiments, first run the following command to generate a specific deployment configuration for the given deployment scale of the given benchmark system:
 
 ```bash
 java -jar Experiment.jar subject=[Subject_Name] deployScale=[Scale]
 ```
 
-Here, the `subject` parameter indicates the name of benchmark system, which can be `TrainTicket` or `SockShop`. The `deployScale` parameter indicates the deployment scale, which can be `small`, `medium` or `large` (that is, each service has `{1,2}`, `{2,3}`, or `{3,4}` redundant nodes).
+Here, the `subject` parameter indicates the name of the benchmark system, which can be `SockShop` or  `TrainTicket`. The `deployScale` parameter indicates the deployment scale, which can be `small`, `medium` or `large` (that is, each service has `{1,2}`, `{2,3}`, or `{3,4}` redundant business nodes).
 
-Next, for each deployment configuration generated, use `docker-compose` command to deploy the benchmark system. For example, running the following command will deploy 4 nodes for service `ts-ticketinfo-service`, 3 nodes for service `ts-seat-service`, etc.
+Next, for the deployment configuration generated, use `docker-compose` command to deploy the benchmark system. For example, running the following command will deploy 4 nodes for service `ts-ticketinfo-service`, 3 nodes for service `ts-seat-service`, etc.
 
 ```bash
 docker-compose up --scale ts-ticketinfo-service=4 --scale ts-seat-service=3 ...
 ```
-After the successful deployment of the benchmark system, run the following command to carry out the experiment:
+After the successful deployment of the benchmark system, run the following command to carry out the fault injection experiments:
 
 ```bash
 java -jar Experiment.jar subject=[Subject_Name] algorithm=[Algorithm_Name]
 ```
-The `algorithm` parameter indicates the FIT approach that will be used to perform fault injection experiments, which can take `FBFI`, `LDFI` or `Random`. Note that according to the experiment setting, FBFI should be executed first, because the maximum execution time constraints allocated to the random and LDFI approaches are dependent on the time costs of FBFI (1x and 3x of FBFI, respectively).
+The `algorithm` parameter indicates the FIT approach that will be used, which can take `FBFI`, `LDFI` or `Random`. Note that according to the experiment setting, FBFI should be executed first, because the maximum execution time constraints allocated to the random and LDFI approaches are dependent on the time costs of FBFI (1x and 3x of FBFI, respectively).
 
 Once the experiment terminates, the following data will be reported:
 
