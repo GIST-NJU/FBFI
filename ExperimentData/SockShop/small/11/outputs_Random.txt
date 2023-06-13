@@ -1,0 +1,327 @@
+FBFI_inject_number = 19
+FBFI_total_time = 797.387
+
+[ < Experiment Start > ]
+
+port = 8070
+subject = SockShop
+algorithm = Random
+inject type = stop
+
+Running algorithm: Random
+
+[ Covered 9 Services ]
+sock-shop_user
+sock-shop_catalogue
+sock-shop_catalogue-db
+sock-shop_carts
+sock-shop_carts-db
+sock-shop_orders
+sock-shop_orders-db
+sock-shop_payment
+sock-shop_shipping
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Graph ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+[ Layer 1: sock-shop_user ]
+[ Layer 2: sock-shop_catalogue ]
+[ Layer 3: sock-shop_catalogue-db ]
+[ Layer 4: sock-shop_carts ]
+[ Layer 5: sock-shop_carts-db ]
+[ Layer 6: sock-shop_orders ]
+[ Layer 7: sock-shop_orders-db ]
+[ Layer 8: sock-shop_payment ]
+[ Layer 9: sock-shop_shipping ]
+
+
+
+Random Round 1
+Node Number: 9
+
+Inject Config: [sock-shop_orders-db_1, sock-shop_user_1, sock-shop_catalogue_1, sock-shop_payment_2, sock-shop_carts-db_1]
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Checking workload on unbroken system
+Got an error code: 500 when GET http://localhost:8070/cart
+[ TracePath unexpectedly failed! Retry for 1 times ]
+
+Random Round 2
+Node Number: 9
+
+Inject Config: [sock-shop_catalogue_1, sock-shop_orders_1, sock-shop_carts-db_1, sock-shop_catalogue-db_2, sock-shop_payment_2]
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Checking workload on unbroken system
+
+Random Round 3
+Node Number: 9
+
+Inject Config: [sock-shop_catalogue-db_2, sock-shop_shipping_1, sock-shop_catalogue_1, sock-shop_carts_1]
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Checking workload on unbroken system
+Got an error code: 500 when GET http://localhost:8070/cart
+[ TracePath unexpectedly failed! Retry for 1 times ]
+
+Random Round 4
+Node Number: 9
+
+Inject Config: [sock-shop_orders-db_1, sock-shop_user_1, sock-shop_carts_1, sock-shop_catalogue-db_2, sock-shop_orders_1, sock-shop_catalogue_1]
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Checking workload on unbroken system
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+[ TracePath unexpectedly failed! Retry for 1 times ]
+
+Random Round 5
+Node Number: 9
+
+Inject Config: [sock-shop_payment_2, sock-shop_orders-db_1, sock-shop_catalogue-db_2, sock-shop_orders_1, sock-shop_catalogue_1, sock-shop_carts_1, sock-shop_shipping_1, sock-shop_user_1, sock-shop_carts-db_1]
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Checking workload on unbroken system
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+[ TracePath unexpectedly failed! Retry for 1 times ]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+[ TracePath unexpectedly failed! Retry for 2 times ]
+[ Restart config and dashboard for 1 times ]
+
+Random Round 6
+Node Number: 9
+
+Inject Config: [sock-shop_shipping_1, sock-shop_payment_2, sock-shop_carts_1, sock-shop_carts-db_1, sock-shop_orders-db_1, sock-shop_user_1, sock-shop_catalogue_1, sock-shop_catalogue-db_2]
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Checking workload on unbroken system
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+[ TracePath unexpectedly failed! Retry for 1 times ]
+
+Random Round 7
+Node Number: 9
+
+Inject Config: [sock-shop_shipping_1, sock-shop_catalogue-db_2, sock-shop_carts-db_1, sock-shop_payment_2, sock-shop_catalogue_1]
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Got an error code: 500 when GET http://localhost:8070/catalogue?sort=id&size=3&tags=blue
+Checking workload on unbroken system
+
+Random Round 8
+Node Number: 9
+
+Inject Config: [sock-shop_user_1, sock-shop_catalogue-db_2, sock-shop_carts-db_1, sock-shop_orders-db_1, sock-shop_catalogue_1, sock-shop_carts_1]
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Checking workload on unbroken system
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+[ TracePath unexpectedly failed! Retry for 1 times ]
+
+Random Round 9
+Node Number: 9
+
+Inject Config: [sock-shop_shipping_1, sock-shop_orders-db_1, sock-shop_catalogue-db_2, sock-shop_carts-db_1, sock-shop_orders_1]
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Got an error code: 500 when POST http://localhost:8070/orders
+Parameter is: {}
+Flaky Case: [sock-shop_shipping_1, sock-shop_orders-db_1, sock-shop_catalogue-db_2, sock-shop_carts-db_1, sock-shop_orders_1]
+Path: [sock-shop_user_1, sock-shop_catalogue_1, sock-shop_catalogue-db_1, sock-shop_carts_1, sock-shop_carts-db_2, sock-shop_orders_2, sock-shop_orders-db_2, sock-shop_payment_2, sock-shop_shipping_2]
+
+Random Round 10
+Node Number: 14
+
+Inject Config: [sock-shop_user_1]
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Checking workload on unbroken system
+
+Random Round 11
+Node Number: 14
+
+Inject Config: [sock-shop_shipping_1, sock-shop_catalogue_1, sock-shop_orders-db_2, sock-shop_catalogue-db_1, sock-shop_user_1, sock-shop_carts-db_1, sock-shop_orders_1, sock-shop_carts-db_2, sock-shop_payment_2]
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Got an error code: 500 when POST http://localhost:8070/register
+Parameter is: {"username":"user","password":"p","email":"e","firstName":"f","lastName":"l"}
+Checking workload on unbroken system
+
+Total Graph
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Graph ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+[ Layer 1: sock-shop_user ]
+LayerSize: 1
+LayerNodes: [sock-shop_user_1]
+
+NodeID: sock-shop_user_1
+Layer: 1
+SubNodes: sock-shop_catalogue_1 
+PreNodes: start 
+
+[ Layer 2: sock-shop_catalogue ]
+LayerSize: 1
+LayerNodes: [sock-shop_catalogue_1]
+
+NodeID: sock-shop_catalogue_1
+Layer: 2
+SubNodes: sock-shop_catalogue-db_1 sock-shop_catalogue-db_2 
+PreNodes: sock-shop_user_1 
+
+[ Layer 3: sock-shop_catalogue-db ]
+LayerSize: 2
+LayerNodes: [sock-shop_catalogue-db_1, sock-shop_catalogue-db_2]
+
+NodeID: sock-shop_catalogue-db_1
+Layer: 3
+SubNodes: sock-shop_carts_1 
+PreNodes: sock-shop_catalogue_1 
+
+NodeID: sock-shop_catalogue-db_2
+Layer: 3
+SubNodes: sock-shop_carts_1 
+PreNodes: sock-shop_catalogue_1 
+
+[ Layer 4: sock-shop_carts ]
+LayerSize: 1
+LayerNodes: [sock-shop_carts_1]
+
+NodeID: sock-shop_carts_1
+Layer: 4
+SubNodes: sock-shop_carts-db_2 sock-shop_carts-db_1 
+PreNodes: sock-shop_catalogue-db_1 sock-shop_catalogue-db_2 
+
+[ Layer 5: sock-shop_carts-db ]
+LayerSize: 2
+LayerNodes: [sock-shop_carts-db_2, sock-shop_carts-db_1]
+
+NodeID: sock-shop_carts-db_2
+Layer: 5
+SubNodes: sock-shop_orders_2 
+PreNodes: sock-shop_carts_1 
+
+NodeID: sock-shop_carts-db_1
+Layer: 5
+SubNodes: sock-shop_orders_1 
+PreNodes: sock-shop_carts_1 
+
+[ Layer 6: sock-shop_orders ]
+LayerSize: 2
+LayerNodes: [sock-shop_orders_2, sock-shop_orders_1]
+
+NodeID: sock-shop_orders_2
+Layer: 6
+SubNodes: sock-shop_orders-db_2 
+PreNodes: sock-shop_carts-db_2 
+
+NodeID: sock-shop_orders_1
+Layer: 6
+SubNodes: sock-shop_orders-db_1 
+PreNodes: sock-shop_carts-db_1 
+
+[ Layer 7: sock-shop_orders-db ]
+LayerSize: 2
+LayerNodes: [sock-shop_orders-db_1, sock-shop_orders-db_2]
+
+NodeID: sock-shop_orders-db_1
+Layer: 7
+SubNodes: sock-shop_payment_2 
+PreNodes: sock-shop_orders_1 
+
+NodeID: sock-shop_orders-db_2
+Layer: 7
+SubNodes: sock-shop_payment_2 
+PreNodes: sock-shop_orders_2 
+
+[ Layer 8: sock-shop_payment ]
+LayerSize: 1
+LayerNodes: [sock-shop_payment_2]
+
+NodeID: sock-shop_payment_2
+Layer: 8
+SubNodes: sock-shop_shipping_1 sock-shop_shipping_2 
+PreNodes: sock-shop_orders-db_1 sock-shop_orders-db_2 
+
+[ Layer 9: sock-shop_shipping ]
+LayerSize: 2
+LayerNodes: [sock-shop_shipping_1, sock-shop_shipping_2]
+
+NodeID: sock-shop_shipping_1
+Layer: 9
+SubNodes: end 
+PreNodes: sock-shop_payment_2 
+
+NodeID: sock-shop_shipping_2
+Layer: 9
+SubNodes: end 
+PreNodes: sock-shop_payment_2 
+
+
+Bottlenecks: 
+[[sock-shop_user_1]]
+bottleneckNumber = 1
+
+Redundancies: 
+[[sock-shop_orders-db_1, sock-shop_user_1, sock-shop_catalogue_1, sock-shop_payment_2, sock-shop_carts-db_1], [sock-shop_catalogue_1, sock-shop_orders_1, sock-shop_carts-db_1, sock-shop_catalogue-db_2, sock-shop_payment_2], [sock-shop_catalogue-db_2, sock-shop_shipping_1, sock-shop_catalogue_1, sock-shop_carts_1], [sock-shop_orders-db_1, sock-shop_user_1, sock-shop_carts_1, sock-shop_catalogue-db_2, sock-shop_orders_1, sock-shop_catalogue_1], [sock-shop_payment_2, sock-shop_orders-db_1, sock-shop_catalogue-db_2, sock-shop_orders_1, sock-shop_catalogue_1, sock-shop_carts_1, sock-shop_shipping_1, sock-shop_user_1, sock-shop_carts-db_1], [sock-shop_shipping_1, sock-shop_payment_2, sock-shop_carts_1, sock-shop_carts-db_1, sock-shop_orders-db_1, sock-shop_user_1, sock-shop_catalogue_1, sock-shop_catalogue-db_2], [sock-shop_shipping_1, sock-shop_catalogue-db_2, sock-shop_carts-db_1, sock-shop_payment_2, sock-shop_catalogue_1], [sock-shop_user_1, sock-shop_catalogue-db_2, sock-shop_carts-db_1, sock-shop_orders-db_1, sock-shop_catalogue_1, sock-shop_carts_1], [sock-shop_shipping_1, sock-shop_catalogue_1, sock-shop_orders-db_2, sock-shop_catalogue-db_1, sock-shop_user_1, sock-shop_carts-db_1, sock-shop_orders_1, sock-shop_carts-db_2, sock-shop_payment_2]]
+redundanciesNumber = 9
+
+Defects: 
+[]
+defectNumber = 0
+
+
+Flaky Defects: 
+[[sock-shop_shipping_1, sock-shop_orders-db_1, sock-shop_catalogue-db_2, sock-shop_carts-db_1, sock-shop_orders_1]]
+
+
+sock-shop_user: 1/1
+sock-shop_catalogue: 1/1
+sock-shop_catalogue-db: 2/2
+sock-shop_carts: 1/2
+sock-shop_carts-db: 2/2
+sock-shop_orders: 2/2
+sock-shop_orders-db: 2/2
+sock-shop_payment: 1/2
+sock-shop_shipping: 2/2
+
+Node Coverage = 14/16
+
+Edge Coverage = 15/27
+Missed Edge = [sock-shop_carts-db_1 -> sock-shop_orders_2, sock-shop_carts-db_2 -> sock-shop_orders_1, sock-shop_orders_2 -> sock-shop_orders-db_1, sock-shop_orders_1 -> sock-shop_orders-db_2]
+
+Path Number = 2
+Inject Number = 11
+Average Inject Size = 5.73
+
+Total Time = 822.275s
+HandleConfig Time = 822.262s
+Algorithm Time = 0.0s

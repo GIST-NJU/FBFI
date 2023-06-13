@@ -1,0 +1,9 @@
+sock-shop_user = 3
+sock-shop_catalogue = 2
+sock-shop_catalogue-db = 2
+sock-shop_carts = 3
+sock-shop_carts-db = 2
+sock-shop_orders = 2
+sock-shop_orders-db = 3
+sock-shop_payment = 2
+sock-shop_shipping = 3
