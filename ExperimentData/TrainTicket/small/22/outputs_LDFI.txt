@@ -1,0 +1,1204 @@
+FBFI_inject_number = 43
+FBFI_total_time = 4404.394
+
+[ < Experiment Start > ]
+
+subject = TrainTicket
+algorithm = LDFI
+inject type = stop
+
+Running algorithm: LDFI
+[ Workload Success ]
+
+[ Covered 34 Services ]
+ts-inside-payment-service
+ts-travel-plan-service
+ts-admin-basic-info-service
+ts-basic-service
+ts-order-service
+ts-contacts-service
+ts-security-service
+ts-notification-service
+ts-consign-service
+ts-payment-service
+ts-travel-service
+ts-route-plan-service
+ts-preserve-service
+ts-execute-service
+ts-admin-order-service
+ts-config-service
+ts-admin-user-service
+ts-station-service
+ts-train-service
+ts-route-service
+ts-ticketinfo-service
+ts-seat-service
+ts-food-service
+ts-user-service
+ts-rebook-service
+ts-admin-route-service
+ts-assurance-service
+ts-food-map-service
+ts-order-other-service
+ts-travel2-service
+ts-auth-service
+ts-admin-travel-service
+ts-price-service
+ts-cancel-service
+
+[ Trace List ]
+[ ts-assurance-service.getAllAssuranceType ]
+[ ts-food-service.getAllFood ]
+[ ts-preserve-service.preserve ]
+[ ts-consign-service.findByOrderId ]
+[ ts-cancel-service.calculate ]
+[ ts-inside-payment-service.pay ]
+[ ts-rebook-service.rebook ]
+[ ts-travel-plan-service.getByCheapest ]
+[ ts-execute-service.executeTicket ]
+[ ts-auth-service.getToken ]
+[ ts-admin-order-service.getAllOrders ]
+[ ts-admin-route-service.getAllRoutes ]
+[ ts-admin-travel-service.getAllTravels ]
+[ ts-admin-user-service.getAllUsers ]
+[ ts-admin-basic-info-service.getAllStations ]
+[ ts-admin-basic-info-service.getAllTrains ]
+[ ts-admin-basic-info-service.getAllPrices ]
+[ ts-admin-basic-info-service.getAllConfigs ]
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Graph ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+[ Layer 1: ts-assurance-service ]
+[ Layer 2: ts-food-service ]
+[ Layer 3: ts-food-map-service ]
+[ Layer 4: ts-travel-service ]
+[ Layer 5: ts-route-service ]
+[ Layer 6: ts-station-service ]
+[ Layer 7: ts-preserve-service ]
+[ Layer 8: ts-security-service ]
+[ Layer 9: ts-order-service ]
+[ Layer 10: ts-order-other-service ]
+[ Layer 11: ts-contacts-service ]
+[ Layer 12: ts-ticketinfo-service ]
+[ Layer 13: ts-basic-service ]
+[ Layer 14: ts-train-service ]
+[ Layer 15: ts-price-service ]
+[ Layer 16: ts-seat-service ]
+[ Layer 17: ts-config-service ]
+[ Layer 18: ts-user-service ]
+[ Layer 19: ts-notification-service ]
+[ Layer 20: ts-consign-service ]
+[ Layer 21: ts-cancel-service ]
+[ Layer 22: ts-inside-payment-service ]
+[ Layer 23: ts-payment-service ]
+[ Layer 24: ts-rebook-service ]
+[ Layer 25: ts-travel-plan-service ]
+[ Layer 26: ts-route-plan-service ]
+[ Layer 27: ts-travel2-service ]
+[ Layer 28: ts-execute-service ]
+[ Layer 29: ts-auth-service ]
+[ Layer 30: ts-admin-order-service ]
+[ Layer 31: ts-admin-route-service ]
+[ Layer 32: ts-admin-travel-service ]
+[ Layer 33: ts-admin-user-service ]
+[ Layer 34: ts-admin-basic-info-service ]
+
+LDFI max time = 3 * 4404.394 = 13213.182s
+
+LDFI Round 1
+< Most: 1 >
+
+Inject Config: [ts-travel-plan-service~~3207e27ab694]
+[ Workload Success ]
+Path: [ts-assurance-service~~184a8c19a754, ts-food-service~~5c6a38910844, ts-food-map-service~~939c56981179, ts-travel-service~~7adcbdff6506, ts-route-service~~a21a4a8db32c, ts-station-service~~9488a16bade5, ts-preserve-service~~674e4b22950c, ts-security-service~~398ef53127cf, ts-order-service~~7c85a0c239f5, ts-order-other-service~~2ce3c1fe4e69, ts-contacts-service~~250bed7e4d78, ts-ticketinfo-service~~74f748c57d02, ts-basic-service~~2be7fcdea81d, ts-train-service~~8971ac137e28, ts-price-service~~01b4c6c4d2e9, ts-seat-service~~64ea50702235, ts-config-service~~0683f64e5892, ts-user-service~~de7aee0018b5, ts-notification-service~~82d0e421fbf6, ts-consign-service~~c12df908d27d, ts-cancel-service~~5292f0cd67fc, ts-inside-payment-service~~144f8e3f8104, ts-payment-service~~71981d8449dc, ts-rebook-service~~64514f4243e5, ts-travel-plan-service~~d2a322f50bc6, ts-route-plan-service~~0acfc18e6e6c, ts-travel2-service~~32cc87e36448, ts-execute-service~~be6810956cd1, ts-auth-service~~0bb07d3db52e, ts-admin-order-service~~005d125ec35c, ts-admin-route-service~~2163bd50b7bd, ts-admin-travel-service~~3112d212a916, ts-admin-user-service~~e1c28b9deae8, ts-admin-basic-info-service~~0842bcfbff8b]
+
+LDFI Round 2
+< Most: 1 >
+
+Inject Config: [ts-security-service~~398ef53127cf]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 3
+< Most: 1 >
+
+Inject Config: [ts-route-service~~a21a4a8db32c]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 4
+< Most: 1 >
+
+Inject Config: [ts-user-service~~de7aee0018b5]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 5
+< Most: 1 >
+
+Inject Config: [ts-consign-service~~c12df908d27d]
+Got an error code: 502 when GET http://localhost:32677/api/v1/consignservice/consigns/order/67960644-7217-47c0-9b68-acf292ec4335
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/consignservice/consigns/order/fb28235e-2a70-4b52-89f8-9092c7a534f8
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/consignservice/consigns/order/dc2abd52-8720-4f27-b867-62267ba7537d
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 6
+< Most: 1 >
+
+Inject Config: [ts-cancel-service~~5292f0cd67fc]
+Got an error code: 502 when GET http://localhost:32677/api/v1/cancelservice/cancel/refound/6e92840a-d49d-4432-9c0e-b891684b7f34
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/cancelservice/cancel/refound/789baa12-3671-4aad-8755-786c4a293874
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/cancelservice/cancel/refound/0d6a7de5-39c9-4efa-9d8f-9b24a8540deb
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 7
+< Most: 1 >
+
+Inject Config: [ts-order-other-service~~2ce3c1fe4e69]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 8
+< Most: 1 >
+
+Inject Config: [ts-admin-order-service~~005d125ec35c]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminorderservice/adminorder
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminorderservice/adminorder
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminorderservice/adminorder
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 9
+< Most: 1 >
+
+Inject Config: [ts-execute-service~~be6810956cd1]
+[ Workload Success ]
+Path: [ts-assurance-service~~184a8c19a754, ts-food-service~~5c6a38910844, ts-food-map-service~~939c56981179, ts-travel-service~~7adcbdff6506, ts-route-service~~a21a4a8db32c, ts-station-service~~9488a16bade5, ts-preserve-service~~674e4b22950c, ts-security-service~~398ef53127cf, ts-order-service~~7c85a0c239f5, ts-order-other-service~~2ce3c1fe4e69, ts-contacts-service~~1b533c45dbed, ts-ticketinfo-service~~74f748c57d02, ts-basic-service~~2be7fcdea81d, ts-train-service~~329ab06e644e, ts-price-service~~01b4c6c4d2e9, ts-seat-service~~64ea50702235, ts-config-service~~0683f64e5892, ts-user-service~~de7aee0018b5, ts-notification-service~~9490e4762301, ts-consign-service~~c12df908d27d, ts-cancel-service~~5292f0cd67fc, ts-inside-payment-service~~11473567b268, ts-payment-service~~71981d8449dc, ts-rebook-service~~64514f4243e5, ts-travel-plan-service~~3207e27ab694, ts-route-plan-service~~0acfc18e6e6c, ts-travel2-service~~32cc87e36448, ts-execute-service~~a30bee9f151c, ts-auth-service~~0bb07d3db52e, ts-admin-order-service~~005d125ec35c, ts-admin-route-service~~2163bd50b7bd, ts-admin-travel-service~~3112d212a916, ts-admin-user-service~~e1c28b9deae8, ts-admin-basic-info-service~~0842bcfbff8b]
+
+LDFI Round 10
+< Most: 1 >
+
+Inject Config: [ts-auth-service~~0bb07d3db52e]
+Got an error code: 502 when POST http://localhost:32677/api/v1/users/login
+Parameter is: {"password":"222222", "username":"admin"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/users/login
+Parameter is: {"password":"222222", "username":"admin"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/users/login
+Parameter is: {"password":"222222", "username":"admin"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 11
+< Most: 1 >
+
+Inject Config: [ts-admin-basic-info-service~~0842bcfbff8b]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminbasicservice/adminbasic/contacts
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminbasicservice/adminbasic/contacts
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminbasicservice/adminbasic/contacts
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 12
+< Most: 1 >
+
+Inject Config: [ts-basic-service~~2be7fcdea81d]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 13
+< Most: 1 >
+
+Inject Config: [ts-food-service~~5c6a38910844]
+Got an error code: 502 when GET http://localhost:32677/api/v1/foodservice/foods/2022-07-03/Shang%20Hai/Su%20Zhou/D1345
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/foodservice/foods/2022-07-03/Shang%20Hai/Su%20Zhou/D1345
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/foodservice/foods/2022-07-03/Shang%20Hai/Su%20Zhou/D1345
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 14
+< Most: 1 >
+
+Inject Config: [ts-seat-service~~64ea50702235]
+[ Workload Success ]
+Path: [ts-assurance-service~~184a8c19a754, ts-food-service~~5c6a38910844, ts-food-map-service~~939c56981179, ts-travel-service~~a15b2a918bf4, ts-route-service~~a21a4a8db32c, ts-station-service~~9488a16bade5, ts-preserve-service~~c8acfce19e5d, ts-security-service~~398ef53127cf, ts-order-service~~7c85a0c239f5, ts-order-other-service~~2ce3c1fe4e69, ts-contacts-service~~250bed7e4d78, ts-ticketinfo-service~~74f748c57d02, ts-basic-service~~2be7fcdea81d, ts-train-service~~8971ac137e28, ts-price-service~~01b4c6c4d2e9, ts-seat-service~~17ef39fa2360, ts-config-service~~5968ef8acc60, ts-user-service~~de7aee0018b5, ts-notification-service~~82d0e421fbf6, ts-consign-service~~c12df908d27d, ts-cancel-service~~5292f0cd67fc, ts-inside-payment-service~~144f8e3f8104, ts-payment-service~~71981d8449dc, ts-rebook-service~~64514f4243e5, ts-travel-plan-service~~d2a322f50bc6, ts-route-plan-service~~0acfc18e6e6c, ts-travel2-service~~32cc87e36448, ts-execute-service~~a30bee9f151c, ts-auth-service~~0bb07d3db52e, ts-admin-order-service~~005d125ec35c, ts-admin-route-service~~2163bd50b7bd, ts-admin-travel-service~~3112d212a916, ts-admin-user-service~~e1c28b9deae8, ts-admin-basic-info-service~~0842bcfbff8b]
+
+LDFI Round 15
+< Most: 1 >
+
+Inject Config: [ts-payment-service~~71981d8449dc]
+Got an error code: 500 when POST http://localhost:32677/api/v1/inside_pay_service/inside_payment
+Parameter is: {"orderId":"1f508cb7-e9e2-4f97-81b3-f07656a86b6c","tripId":"D1345"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/inside_pay_service/inside_payment
+Parameter is: {"orderId":"f3f85a0e-267f-436c-aa6f-0fe7b9d641c3","tripId":"D1345"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/inside_pay_service/inside_payment
+Parameter is: {"orderId":"90567535-9e85-4825-8395-c4062f434f2e","tripId":"D1345"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 16
+< Most: 1 >
+
+Inject Config: [ts-food-map-service~~939c56981179]
+Got an error code: 500 when GET http://localhost:32677/api/v1/foodservice/foods/2022-07-03/Shang%20Hai/Su%20Zhou/D1345
+[ Workload Failed ]
+Got an error code: 500 when GET http://localhost:32677/api/v1/foodservice/foods/2022-07-03/Shang%20Hai/Su%20Zhou/D1345
+[ Workload Failed ]
+Got an error code: 500 when GET http://localhost:32677/api/v1/foodservice/foods/2022-07-03/Shang%20Hai/Su%20Zhou/D1345
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 17
+< Most: 1 >
+
+Inject Config: [ts-assurance-service~~184a8c19a754]
+Got an error code: 502 when GET http://localhost:32677/api/v1/assuranceservice/assurances/types
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/assuranceservice/assurances/types
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/assuranceservice/assurances/types
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 18
+< Most: 1 >
+
+Inject Config: [ts-route-plan-service~~0acfc18e6e6c]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelplanservice/travelPlan/cheapest
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Shang Hai", "startingPlace":"Nan Jing"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelplanservice/travelPlan/cheapest
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Shang Hai", "startingPlace":"Nan Jing"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelplanservice/travelPlan/cheapest
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Shang Hai", "startingPlace":"Nan Jing"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 19
+< Most: 1 >
+
+Inject Config: [ts-order-service~~7c85a0c239f5]
+[ Workload Success ]
+Path: [ts-assurance-service~~184a8c19a754, ts-food-service~~5c6a38910844, ts-food-map-service~~939c56981179, ts-travel-service~~7adcbdff6506, ts-route-service~~a21a4a8db32c, ts-station-service~~9488a16bade5, ts-preserve-service~~674e4b22950c, ts-security-service~~398ef53127cf, ts-order-service~~000caf076aaf, ts-order-other-service~~2ce3c1fe4e69, ts-contacts-service~~250bed7e4d78, ts-ticketinfo-service~~74f748c57d02, ts-basic-service~~2be7fcdea81d, ts-train-service~~329ab06e644e, ts-price-service~~01b4c6c4d2e9, ts-seat-service~~64ea50702235, ts-config-service~~0683f64e5892, ts-user-service~~de7aee0018b5, ts-notification-service~~82d0e421fbf6, ts-consign-service~~c12df908d27d, ts-cancel-service~~5292f0cd67fc, ts-inside-payment-service~~11473567b268, ts-payment-service~~71981d8449dc, ts-rebook-service~~64514f4243e5, ts-travel-plan-service~~d2a322f50bc6, ts-route-plan-service~~0acfc18e6e6c, ts-travel2-service~~32cc87e36448, ts-execute-service~~a30bee9f151c, ts-auth-service~~0bb07d3db52e, ts-admin-order-service~~005d125ec35c, ts-admin-route-service~~0ff30e941ffe, ts-admin-travel-service~~a31eec1abd0d, ts-admin-user-service~~c8f5f5754e65, ts-admin-basic-info-service~~0842bcfbff8b]
+
+LDFI Round 20
+< Most: 1 >
+
+Inject Config: [ts-rebook-service~~64514f4243e5]
+Got an error code: 502 when POST http://localhost:32677/api/v1/rebookservice/rebook
+Parameter is: {"date":"2022-07-03", "oldTripId":"D1345", "orderId":"effa06af-ea8b-490f-be3c-1c6cb21cdbe0", "seatType":2,"tripId":"D1345"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/rebookservice/rebook
+Parameter is: {"date":"2022-07-03", "oldTripId":"D1345", "orderId":"639b8f80-d8ff-43c6-a365-7bcf75d3fc08", "seatType":2,"tripId":"D1345"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/rebookservice/rebook
+Parameter is: {"date":"2022-07-03", "oldTripId":"D1345", "orderId":"28cb3331-91a8-4829-9301-b501ced16dbd", "seatType":2,"tripId":"D1345"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 21
+< Most: 1 >
+
+LDFI Round 22
+< Most: 2 >
+
+Inject Config: [ts-config-service~~0683f64e5892, ts-config-service~~5968ef8acc60]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 23
+< Most: 2 >
+
+Inject Config: [ts-travel2-service~~1d7fe7f697c6, ts-travel2-service~~32cc87e36448]
+Got an error code: 502 when POST http://localhost:32677/api/v1/travel2service/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/travel2service/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/travel2service/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 24
+< Most: 2 >
+
+Inject Config: [ts-station-service~~9488a16bade5, ts-station-service~~6afa2c31e725]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 25
+< Most: 2 >
+
+Inject Config: [ts-travel2-service~~32cc87e36448, ts-execute-service~~be6810956cd1]
+[ Workload Success ]
+Path: [ts-assurance-service~~184a8c19a754, ts-food-service~~5c6a38910844, ts-food-map-service~~939c56981179, ts-travel-service~~a15b2a918bf4, ts-route-service~~a21a4a8db32c, ts-station-service~~6afa2c31e725, ts-preserve-service~~c8acfce19e5d, ts-security-service~~398ef53127cf, ts-order-service~~7c85a0c239f5, ts-order-other-service~~2ce3c1fe4e69, ts-contacts-service~~250bed7e4d78, ts-ticketinfo-service~~74f748c57d02, ts-basic-service~~2be7fcdea81d, ts-train-service~~8971ac137e28, ts-price-service~~01b4c6c4d2e9, ts-seat-service~~64ea50702235, ts-config-service~~0683f64e5892, ts-user-service~~de7aee0018b5, ts-notification-service~~82d0e421fbf6, ts-consign-service~~c12df908d27d, ts-cancel-service~~5292f0cd67fc, ts-inside-payment-service~~144f8e3f8104, ts-payment-service~~71981d8449dc, ts-rebook-service~~64514f4243e5, ts-travel-plan-service~~3207e27ab694, ts-route-plan-service~~0acfc18e6e6c, ts-travel2-service~~1d7fe7f697c6, ts-execute-service~~a30bee9f151c, ts-auth-service~~0bb07d3db52e, ts-admin-order-service~~005d125ec35c, ts-admin-route-service~~2163bd50b7bd, ts-admin-travel-service~~3112d212a916, ts-admin-user-service~~e1c28b9deae8, ts-admin-basic-info-service~~0842bcfbff8b]
+
+LDFI Round 26
+< Most: 2 >
+
+Inject Config: [ts-execute-service~~be6810956cd1, ts-execute-service~~a30bee9f151c]
+Got an error code: 502 when GET http://localhost:32677/api/v1/executeservice/execute/collected/bb80780a-57ec-426e-9fc7-7b7f9659919d
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/executeservice/execute/collected/499d7e94-da35-473f-a09a-a02872a79d4c
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/executeservice/execute/collected/94e4ae6f-b98a-4734-8c9b-44e383575057
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 27
+< Most: 2 >
+
+Inject Config: [ts-train-service~~329ab06e644e, ts-train-service~~8971ac137e28]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 28
+< Most: 2 >
+
+Inject Config: [ts-travel-plan-service~~d2a322f50bc6, ts-travel-plan-service~~3207e27ab694]
+Got an error code: 502 when POST http://localhost:32677/api/v1/travelplanservice/travelPlan/cheapest
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Shang Hai", "startingPlace":"Nan Jing"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/travelplanservice/travelPlan/cheapest
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Shang Hai", "startingPlace":"Nan Jing"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/travelplanservice/travelPlan/cheapest
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Shang Hai", "startingPlace":"Nan Jing"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 29
+< Most: 2 >
+
+Inject Config: [ts-admin-travel-service~~3112d212a916, ts-admin-travel-service~~a31eec1abd0d]
+Got an error code: 502 when GET http://localhost:32677/api/v1/admintravelservice/admintravel
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/admintravelservice/admintravel
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/admintravelservice/admintravel
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 30
+< Most: 2 >
+
+Inject Config: [ts-admin-user-service~~e1c28b9deae8, ts-admin-travel-service~~a31eec1abd0d]
+[ Workload Success ]
+Path: [ts-assurance-service~~184a8c19a754, ts-food-service~~5c6a38910844, ts-food-map-service~~939c56981179, ts-travel-service~~a15b2a918bf4, ts-route-service~~a21a4a8db32c, ts-station-service~~6afa2c31e725, ts-preserve-service~~c8acfce19e5d, ts-security-service~~398ef53127cf, ts-order-service~~7c85a0c239f5, ts-order-other-service~~2ce3c1fe4e69, ts-contacts-service~~1b533c45dbed, ts-ticketinfo-service~~e5fa434ac058, ts-basic-service~~2be7fcdea81d, ts-train-service~~8971ac137e28, ts-price-service~~a46c63c81d12, ts-seat-service~~17ef39fa2360, ts-config-service~~0683f64e5892, ts-user-service~~de7aee0018b5, ts-notification-service~~82d0e421fbf6, ts-consign-service~~c12df908d27d, ts-cancel-service~~5292f0cd67fc, ts-inside-payment-service~~144f8e3f8104, ts-payment-service~~71981d8449dc, ts-rebook-service~~64514f4243e5, ts-travel-plan-service~~3207e27ab694, ts-route-plan-service~~0acfc18e6e6c, ts-travel2-service~~1d7fe7f697c6, ts-execute-service~~be6810956cd1, ts-auth-service~~0bb07d3db52e, ts-admin-order-service~~005d125ec35c, ts-admin-route-service~~2163bd50b7bd, ts-admin-travel-service~~3112d212a916, ts-admin-user-service~~c8f5f5754e65, ts-admin-basic-info-service~~0842bcfbff8b]
+
+LDFI Round 31
+< Most: 2 >
+
+Inject Config: [ts-notification-service~~82d0e421fbf6, ts-notification-service~~9490e4762301]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 32
+< Most: 2 >
+
+Inject Config: [ts-admin-travel-service~~a31eec1abd0d, ts-admin-route-service~~2163bd50b7bd]
+[ Workload Success ]
+Path: [ts-assurance-service~~184a8c19a754, ts-food-service~~5c6a38910844, ts-food-map-service~~939c56981179, ts-travel-service~~a15b2a918bf4, ts-route-service~~a21a4a8db32c, ts-station-service~~6afa2c31e725, ts-preserve-service~~674e4b22950c, ts-security-service~~398ef53127cf, ts-order-service~~7c85a0c239f5, ts-order-other-service~~2ce3c1fe4e69, ts-contacts-service~~1b533c45dbed, ts-ticketinfo-service~~e5fa434ac058, ts-basic-service~~2be7fcdea81d, ts-train-service~~329ab06e644e, ts-price-service~~a46c63c81d12, ts-seat-service~~64ea50702235, ts-config-service~~0683f64e5892, ts-user-service~~de7aee0018b5, ts-notification-service~~9490e4762301, ts-consign-service~~c12df908d27d, ts-cancel-service~~5292f0cd67fc, ts-inside-payment-service~~144f8e3f8104, ts-payment-service~~71981d8449dc, ts-rebook-service~~64514f4243e5, ts-travel-plan-service~~3207e27ab694, ts-route-plan-service~~0acfc18e6e6c, ts-travel2-service~~1d7fe7f697c6, ts-execute-service~~be6810956cd1, ts-auth-service~~0bb07d3db52e, ts-admin-order-service~~005d125ec35c, ts-admin-route-service~~0ff30e941ffe, ts-admin-travel-service~~3112d212a916, ts-admin-user-service~~c8f5f5754e65, ts-admin-basic-info-service~~0842bcfbff8b]
+
+LDFI Round 33
+< Most: 2 >
+
+Inject Config: [ts-preserve-service~~674e4b22950c, ts-preserve-service~~c8acfce19e5d]
+Got an error code: 502 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/preserveservice/preserve
+Parameter is: {"accountId":"4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f","contactsId":"a319ac68-9a70-427a-b332-d191db78bb5b","tripId":"D1345","seatType":"2","date":"2022-07-03","from":"Shang Hai","to":"Su Zhou","assurance":"0","foodType":1,"foodName":"Bone Soup","foodPrice":2.5,"stationName":"","storeName":""}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 34
+< Most: 2 >
+
+Inject Config: [ts-contacts-service~~1b533c45dbed, ts-contacts-service~~250bed7e4d78]
+Got an error code: 502 when GET http://localhost:32677/api/v1/contactservice/contacts/account/4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/contactservice/contacts/account/4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/contactservice/contacts/account/4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 35
+< Most: 2 >
+
+Inject Config: [ts-travel-service~~7adcbdff6506, ts-travel-service~~a15b2a918bf4]
+Got an error code: 502 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 36
+< Most: 2 >
+
+Inject Config: [ts-price-service~~a46c63c81d12, ts-price-service~~01b4c6c4d2e9]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 37
+< Most: 2 >
+
+Inject Config: [ts-order-service~~000caf076aaf, ts-order-service~~7c85a0c239f5]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 38
+< Most: 2 >
+
+Inject Config: [ts-admin-route-service~~2163bd50b7bd, ts-admin-route-service~~0ff30e941ffe]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminrouteservice/adminroute
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminrouteservice/adminroute
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminrouteservice/adminroute
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 39
+< Most: 2 >
+
+Inject Config: [ts-admin-travel-service~~3112d212a916, ts-admin-route-service~~0ff30e941ffe]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminrouteservice/adminroute
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminrouteservice/adminroute
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminrouteservice/adminroute
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 40
+< Most: 2 >
+
+Inject Config: [ts-admin-user-service~~e1c28b9deae8, ts-admin-user-service~~c8f5f5754e65]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminuserservice/users
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminuserservice/users
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/adminuserservice/users
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 41
+< Most: 2 >
+
+Inject Config: [ts-admin-travel-service~~3112d212a916, ts-admin-user-service~~c8f5f5754e65]
+Got an error code: 502 when GET http://localhost:32677/api/v1/admintravelservice/admintravel
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/admintravelservice/admintravel
+[ Workload Failed ]
+Got an error code: 502 when GET http://localhost:32677/api/v1/admintravelservice/admintravel
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 42
+< Most: 2 >
+
+Inject Config: [ts-ticketinfo-service~~e5fa434ac058, ts-ticketinfo-service~~74f748c57d02]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 43
+< Most: 2 >
+
+Inject Config: [ts-seat-service~~17ef39fa2360, ts-seat-service~~64ea50702235]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Got an error code: 500 when POST http://localhost:32677/api/v1/travelservice/trips/left
+Parameter is: {"departureTime":"2022-07-03", "endPlace":"Su Zhou", "startingPlace":"Shang Hai"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 44
+< Most: 2 >
+
+Inject Config: [ts-inside-payment-service~~11473567b268, ts-inside-payment-service~~144f8e3f8104]
+Got an error code: 502 when POST http://localhost:32677/api/v1/inside_pay_service/inside_payment
+Parameter is: {"orderId":"9b102ab0-755b-42db-9df3-79f94d876dd6","tripId":"D1345"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/inside_pay_service/inside_payment
+Parameter is: {"orderId":"c939f17c-e5f4-4ee0-892a-ecb415b8b666","tripId":"D1345"}
+[ Workload Failed ]
+Got an error code: 502 when POST http://localhost:32677/api/v1/inside_pay_service/inside_payment
+Parameter is: {"orderId":"ff31289e-438d-4552-b371-216aa9b06988","tripId":"D1345"}
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 45
+< Most: 2 >
+
+LDFI Round 46
+< Most: 3 >
+
+LDFI Round 47
+< Most: 4 >
+
+LDFI Round 48
+< Most: 5 >
+
+LDFI Round 49
+< Most: 6 >
+
+LDFI Round 50
+< Most: 7 >
+
+LDFI Round 51
+< Most: 8 >
+
+LDFI Round 52
+< Most: 9 >
+
+LDFI Round 53
+< Most: 10 >
+
+LDFI Round 54
+< Most: 11 >
+
+LDFI Round 55
+< Most: 12 >
+
+LDFI Round 56
+< Most: 13 >
+
+LDFI Round 57
+< Most: 14 >
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at Experiment.Experiment.RunExperiment(Experiment.java:345)
+	at Experiment.Experiment.main(Experiment.java:411)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+
+
+Total Graph
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Graph ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+[ Layer 1: ts-assurance-service ]
+LayerSize: 1
+LayerNodes: [ts-assurance-service~~184a8c19a754]
+
+NodeID: ts-assurance-service~~184a8c19a754
+Layer: 1
+SubNodes: ts-food-service~~5c6a38910844 
+PreNodes: start 
+
+[ Layer 2: ts-food-service ]
+LayerSize: 1
+LayerNodes: [ts-food-service~~5c6a38910844]
+
+NodeID: ts-food-service~~5c6a38910844
+Layer: 2
+SubNodes: ts-food-map-service~~939c56981179 
+PreNodes: ts-assurance-service~~184a8c19a754 
+
+[ Layer 3: ts-food-map-service ]
+LayerSize: 1
+LayerNodes: [ts-food-map-service~~939c56981179]
+
+NodeID: ts-food-map-service~~939c56981179
+Layer: 3
+SubNodes: ts-travel-service~~a15b2a918bf4 ts-travel-service~~7adcbdff6506 
+PreNodes: ts-food-service~~5c6a38910844 
+
+[ Layer 4: ts-travel-service ]
+LayerSize: 2
+LayerNodes: [ts-travel-service~~a15b2a918bf4, ts-travel-service~~7adcbdff6506]
+
+NodeID: ts-travel-service~~a15b2a918bf4
+Layer: 4
+SubNodes: ts-route-service~~a21a4a8db32c 
+PreNodes: ts-food-map-service~~939c56981179 
+
+NodeID: ts-travel-service~~7adcbdff6506
+Layer: 4
+SubNodes: ts-route-service~~a21a4a8db32c 
+PreNodes: ts-food-map-service~~939c56981179 
+
+[ Layer 5: ts-route-service ]
+LayerSize: 1
+LayerNodes: [ts-route-service~~a21a4a8db32c]
+
+NodeID: ts-route-service~~a21a4a8db32c
+Layer: 5
+SubNodes: ts-station-service~~6afa2c31e725 ts-station-service~~9488a16bade5 
+PreNodes: ts-travel-service~~a15b2a918bf4 ts-travel-service~~7adcbdff6506 
+
+[ Layer 6: ts-station-service ]
+LayerSize: 2
+LayerNodes: [ts-station-service~~6afa2c31e725, ts-station-service~~9488a16bade5]
+
+NodeID: ts-station-service~~6afa2c31e725
+Layer: 6
+SubNodes: ts-preserve-service~~c8acfce19e5d ts-preserve-service~~674e4b22950c 
+PreNodes: ts-route-service~~a21a4a8db32c 
+
+NodeID: ts-station-service~~9488a16bade5
+Layer: 6
+SubNodes: ts-preserve-service~~c8acfce19e5d ts-preserve-service~~674e4b22950c 
+PreNodes: ts-route-service~~a21a4a8db32c 
+
+[ Layer 7: ts-preserve-service ]
+LayerSize: 2
+LayerNodes: [ts-preserve-service~~c8acfce19e5d, ts-preserve-service~~674e4b22950c]
+
+NodeID: ts-preserve-service~~c8acfce19e5d
+Layer: 7
+SubNodes: ts-security-service~~398ef53127cf 
+PreNodes: ts-station-service~~6afa2c31e725 ts-station-service~~9488a16bade5 
+
+NodeID: ts-preserve-service~~674e4b22950c
+Layer: 7
+SubNodes: ts-security-service~~398ef53127cf 
+PreNodes: ts-station-service~~6afa2c31e725 ts-station-service~~9488a16bade5 
+
+[ Layer 8: ts-security-service ]
+LayerSize: 1
+LayerNodes: [ts-security-service~~398ef53127cf]
+
+NodeID: ts-security-service~~398ef53127cf
+Layer: 8
+SubNodes: ts-order-service~~7c85a0c239f5 ts-order-service~~000caf076aaf 
+PreNodes: ts-preserve-service~~c8acfce19e5d ts-preserve-service~~674e4b22950c 
+
+[ Layer 9: ts-order-service ]
+LayerSize: 2
+LayerNodes: [ts-order-service~~7c85a0c239f5, ts-order-service~~000caf076aaf]
+
+NodeID: ts-order-service~~7c85a0c239f5
+Layer: 9
+SubNodes: ts-order-other-service~~2ce3c1fe4e69 
+PreNodes: ts-security-service~~398ef53127cf 
+
+NodeID: ts-order-service~~000caf076aaf
+Layer: 9
+SubNodes: ts-order-other-service~~2ce3c1fe4e69 
+PreNodes: ts-security-service~~398ef53127cf 
+
+[ Layer 10: ts-order-other-service ]
+LayerSize: 1
+LayerNodes: [ts-order-other-service~~2ce3c1fe4e69]
+
+NodeID: ts-order-other-service~~2ce3c1fe4e69
+Layer: 10
+SubNodes: ts-contacts-service~~250bed7e4d78 ts-contacts-service~~1b533c45dbed 
+PreNodes: ts-order-service~~7c85a0c239f5 ts-order-service~~000caf076aaf 
+
+[ Layer 11: ts-contacts-service ]
+LayerSize: 2
+LayerNodes: [ts-contacts-service~~250bed7e4d78, ts-contacts-service~~1b533c45dbed]
+
+NodeID: ts-contacts-service~~250bed7e4d78
+Layer: 11
+SubNodes: ts-ticketinfo-service~~74f748c57d02 ts-ticketinfo-service~~e5fa434ac058 
+PreNodes: ts-order-other-service~~2ce3c1fe4e69 
+
+NodeID: ts-contacts-service~~1b533c45dbed
+Layer: 11
+SubNodes: ts-ticketinfo-service~~74f748c57d02 ts-ticketinfo-service~~e5fa434ac058 
+PreNodes: ts-order-other-service~~2ce3c1fe4e69 
+
+[ Layer 12: ts-ticketinfo-service ]
+LayerSize: 2
+LayerNodes: [ts-ticketinfo-service~~74f748c57d02, ts-ticketinfo-service~~e5fa434ac058]
+
+NodeID: ts-ticketinfo-service~~74f748c57d02
+Layer: 12
+SubNodes: ts-basic-service~~2be7fcdea81d 
+PreNodes: ts-contacts-service~~250bed7e4d78 ts-contacts-service~~1b533c45dbed 
+
+NodeID: ts-ticketinfo-service~~e5fa434ac058
+Layer: 12
+SubNodes: ts-basic-service~~2be7fcdea81d 
+PreNodes: ts-contacts-service~~250bed7e4d78 ts-contacts-service~~1b533c45dbed 
+
+[ Layer 13: ts-basic-service ]
+LayerSize: 1
+LayerNodes: [ts-basic-service~~2be7fcdea81d]
+
+NodeID: ts-basic-service~~2be7fcdea81d
+Layer: 13
+SubNodes: ts-train-service~~329ab06e644e ts-train-service~~8971ac137e28 
+PreNodes: ts-ticketinfo-service~~74f748c57d02 ts-ticketinfo-service~~e5fa434ac058 
+
+[ Layer 14: ts-train-service ]
+LayerSize: 2
+LayerNodes: [ts-train-service~~329ab06e644e, ts-train-service~~8971ac137e28]
+
+NodeID: ts-train-service~~329ab06e644e
+Layer: 14
+SubNodes: ts-price-service~~01b4c6c4d2e9 ts-price-service~~a46c63c81d12 
+PreNodes: ts-basic-service~~2be7fcdea81d 
+
+NodeID: ts-train-service~~8971ac137e28
+Layer: 14
+SubNodes: ts-price-service~~01b4c6c4d2e9 ts-price-service~~a46c63c81d12 
+PreNodes: ts-basic-service~~2be7fcdea81d 
+
+[ Layer 15: ts-price-service ]
+LayerSize: 2
+LayerNodes: [ts-price-service~~01b4c6c4d2e9, ts-price-service~~a46c63c81d12]
+
+NodeID: ts-price-service~~01b4c6c4d2e9
+Layer: 15
+SubNodes: ts-seat-service~~64ea50702235 ts-seat-service~~17ef39fa2360 
+PreNodes: ts-train-service~~329ab06e644e ts-train-service~~8971ac137e28 
+
+NodeID: ts-price-service~~a46c63c81d12
+Layer: 15
+SubNodes: ts-seat-service~~64ea50702235 ts-seat-service~~17ef39fa2360 
+PreNodes: ts-train-service~~329ab06e644e ts-train-service~~8971ac137e28 
+
+[ Layer 16: ts-seat-service ]
+LayerSize: 2
+LayerNodes: [ts-seat-service~~64ea50702235, ts-seat-service~~17ef39fa2360]
+
+NodeID: ts-seat-service~~64ea50702235
+Layer: 16
+SubNodes: ts-config-service~~5968ef8acc60 ts-config-service~~0683f64e5892 
+PreNodes: ts-price-service~~01b4c6c4d2e9 ts-price-service~~a46c63c81d12 
+
+NodeID: ts-seat-service~~17ef39fa2360
+Layer: 16
+SubNodes: ts-config-service~~5968ef8acc60 ts-config-service~~0683f64e5892 
+PreNodes: ts-price-service~~01b4c6c4d2e9 ts-price-service~~a46c63c81d12 
+
+[ Layer 17: ts-config-service ]
+LayerSize: 2
+LayerNodes: [ts-config-service~~5968ef8acc60, ts-config-service~~0683f64e5892]
+
+NodeID: ts-config-service~~5968ef8acc60
+Layer: 17
+SubNodes: ts-user-service~~de7aee0018b5 
+PreNodes: ts-seat-service~~64ea50702235 ts-seat-service~~17ef39fa2360 
+
+NodeID: ts-config-service~~0683f64e5892
+Layer: 17
+SubNodes: ts-user-service~~de7aee0018b5 
+PreNodes: ts-seat-service~~64ea50702235 ts-seat-service~~17ef39fa2360 
+
+[ Layer 18: ts-user-service ]
+LayerSize: 1
+LayerNodes: [ts-user-service~~de7aee0018b5]
+
+NodeID: ts-user-service~~de7aee0018b5
+Layer: 18
+SubNodes: ts-notification-service~~9490e4762301 ts-notification-service~~82d0e421fbf6 
+PreNodes: ts-config-service~~5968ef8acc60 ts-config-service~~0683f64e5892 
+
+[ Layer 19: ts-notification-service ]
+LayerSize: 2
+LayerNodes: [ts-notification-service~~9490e4762301, ts-notification-service~~82d0e421fbf6]
+
+NodeID: ts-notification-service~~9490e4762301
+Layer: 19
+SubNodes: ts-consign-service~~c12df908d27d 
+PreNodes: ts-user-service~~de7aee0018b5 
+
+NodeID: ts-notification-service~~82d0e421fbf6
+Layer: 19
+SubNodes: ts-consign-service~~c12df908d27d 
+PreNodes: ts-user-service~~de7aee0018b5 
+
+[ Layer 20: ts-consign-service ]
+LayerSize: 1
+LayerNodes: [ts-consign-service~~c12df908d27d]
+
+NodeID: ts-consign-service~~c12df908d27d
+Layer: 20
+SubNodes: ts-cancel-service~~5292f0cd67fc 
+PreNodes: ts-notification-service~~9490e4762301 ts-notification-service~~82d0e421fbf6 
+
+[ Layer 21: ts-cancel-service ]
+LayerSize: 1
+LayerNodes: [ts-cancel-service~~5292f0cd67fc]
+
+NodeID: ts-cancel-service~~5292f0cd67fc
+Layer: 21
+SubNodes: ts-inside-payment-service~~11473567b268 ts-inside-payment-service~~144f8e3f8104 
+PreNodes: ts-consign-service~~c12df908d27d 
+
+[ Layer 22: ts-inside-payment-service ]
+LayerSize: 2
+LayerNodes: [ts-inside-payment-service~~11473567b268, ts-inside-payment-service~~144f8e3f8104]
+
+NodeID: ts-inside-payment-service~~11473567b268
+Layer: 22
+SubNodes: ts-payment-service~~71981d8449dc 
+PreNodes: ts-cancel-service~~5292f0cd67fc 
+
+NodeID: ts-inside-payment-service~~144f8e3f8104
+Layer: 22
+SubNodes: ts-payment-service~~71981d8449dc 
+PreNodes: ts-cancel-service~~5292f0cd67fc 
+
+[ Layer 23: ts-payment-service ]
+LayerSize: 1
+LayerNodes: [ts-payment-service~~71981d8449dc]
+
+NodeID: ts-payment-service~~71981d8449dc
+Layer: 23
+SubNodes: ts-rebook-service~~64514f4243e5 
+PreNodes: ts-inside-payment-service~~11473567b268 ts-inside-payment-service~~144f8e3f8104 
+
+[ Layer 24: ts-rebook-service ]
+LayerSize: 1
+LayerNodes: [ts-rebook-service~~64514f4243e5]
+
+NodeID: ts-rebook-service~~64514f4243e5
+Layer: 24
+SubNodes: ts-travel-plan-service~~3207e27ab694 ts-travel-plan-service~~d2a322f50bc6 
+PreNodes: ts-payment-service~~71981d8449dc 
+
+[ Layer 25: ts-travel-plan-service ]
+LayerSize: 2
+LayerNodes: [ts-travel-plan-service~~3207e27ab694, ts-travel-plan-service~~d2a322f50bc6]
+
+NodeID: ts-travel-plan-service~~3207e27ab694
+Layer: 25
+SubNodes: ts-route-plan-service~~0acfc18e6e6c 
+PreNodes: ts-rebook-service~~64514f4243e5 
+
+NodeID: ts-travel-plan-service~~d2a322f50bc6
+Layer: 25
+SubNodes: ts-route-plan-service~~0acfc18e6e6c 
+PreNodes: ts-rebook-service~~64514f4243e5 
+
+[ Layer 26: ts-route-plan-service ]
+LayerSize: 1
+LayerNodes: [ts-route-plan-service~~0acfc18e6e6c]
+
+NodeID: ts-route-plan-service~~0acfc18e6e6c
+Layer: 26
+SubNodes: ts-travel2-service~~1d7fe7f697c6 ts-travel2-service~~32cc87e36448 
+PreNodes: ts-travel-plan-service~~3207e27ab694 ts-travel-plan-service~~d2a322f50bc6 
+
+[ Layer 27: ts-travel2-service ]
+LayerSize: 2
+LayerNodes: [ts-travel2-service~~1d7fe7f697c6, ts-travel2-service~~32cc87e36448]
+
+NodeID: ts-travel2-service~~1d7fe7f697c6
+Layer: 27
+SubNodes: ts-execute-service~~a30bee9f151c ts-execute-service~~be6810956cd1 
+PreNodes: ts-route-plan-service~~0acfc18e6e6c 
+
+NodeID: ts-travel2-service~~32cc87e36448
+Layer: 27
+SubNodes: ts-execute-service~~a30bee9f151c ts-execute-service~~be6810956cd1 
+PreNodes: ts-route-plan-service~~0acfc18e6e6c 
+
+[ Layer 28: ts-execute-service ]
+LayerSize: 2
+LayerNodes: [ts-execute-service~~a30bee9f151c, ts-execute-service~~be6810956cd1]
+
+NodeID: ts-execute-service~~a30bee9f151c
+Layer: 28
+SubNodes: ts-auth-service~~0bb07d3db52e 
+PreNodes: ts-travel2-service~~32cc87e36448 ts-travel2-service~~1d7fe7f697c6 
+
+NodeID: ts-execute-service~~be6810956cd1
+Layer: 28
+SubNodes: ts-auth-service~~0bb07d3db52e 
+PreNodes: ts-travel2-service~~1d7fe7f697c6 ts-travel2-service~~32cc87e36448 
+
+[ Layer 29: ts-auth-service ]
+LayerSize: 1
+LayerNodes: [ts-auth-service~~0bb07d3db52e]
+
+NodeID: ts-auth-service~~0bb07d3db52e
+Layer: 29
+SubNodes: ts-admin-order-service~~005d125ec35c 
+PreNodes: ts-execute-service~~a30bee9f151c ts-execute-service~~be6810956cd1 
+
+[ Layer 30: ts-admin-order-service ]
+LayerSize: 1
+LayerNodes: [ts-admin-order-service~~005d125ec35c]
+
+NodeID: ts-admin-order-service~~005d125ec35c
+Layer: 30
+SubNodes: ts-admin-route-service~~0ff30e941ffe ts-admin-route-service~~2163bd50b7bd 
+PreNodes: ts-auth-service~~0bb07d3db52e 
+
+[ Layer 31: ts-admin-route-service ]
+LayerSize: 2
+LayerNodes: [ts-admin-route-service~~0ff30e941ffe, ts-admin-route-service~~2163bd50b7bd]
+
+NodeID: ts-admin-route-service~~0ff30e941ffe
+Layer: 31
+SubNodes: ts-admin-travel-service~~3112d212a916 ts-admin-travel-service~~a31eec1abd0d 
+PreNodes: ts-admin-order-service~~005d125ec35c 
+
+NodeID: ts-admin-route-service~~2163bd50b7bd
+Layer: 31
+SubNodes: ts-admin-travel-service~~3112d212a916 
+PreNodes: ts-admin-order-service~~005d125ec35c 
+
+[ Layer 32: ts-admin-travel-service ]
+LayerSize: 2
+LayerNodes: [ts-admin-travel-service~~3112d212a916, ts-admin-travel-service~~a31eec1abd0d]
+
+NodeID: ts-admin-travel-service~~3112d212a916
+Layer: 32
+SubNodes: ts-admin-user-service~~e1c28b9deae8 ts-admin-user-service~~c8f5f5754e65 
+PreNodes: ts-admin-route-service~~0ff30e941ffe ts-admin-route-service~~2163bd50b7bd 
+
+NodeID: ts-admin-travel-service~~a31eec1abd0d
+Layer: 32
+SubNodes: ts-admin-user-service~~c8f5f5754e65 
+PreNodes: ts-admin-route-service~~0ff30e941ffe 
+
+[ Layer 33: ts-admin-user-service ]
+LayerSize: 2
+LayerNodes: [ts-admin-user-service~~e1c28b9deae8, ts-admin-user-service~~c8f5f5754e65]
+
+NodeID: ts-admin-user-service~~e1c28b9deae8
+Layer: 33
+SubNodes: ts-admin-basic-info-service~~0842bcfbff8b 
+PreNodes: ts-admin-travel-service~~3112d212a916 
+
+NodeID: ts-admin-user-service~~c8f5f5754e65
+Layer: 33
+SubNodes: ts-admin-basic-info-service~~0842bcfbff8b 
+PreNodes: ts-admin-travel-service~~3112d212a916 ts-admin-travel-service~~a31eec1abd0d 
+
+[ Layer 34: ts-admin-basic-info-service ]
+LayerSize: 1
+LayerNodes: [ts-admin-basic-info-service~~0842bcfbff8b]
+
+NodeID: ts-admin-basic-info-service~~0842bcfbff8b
+Layer: 34
+SubNodes: end 
+PreNodes: ts-admin-user-service~~e1c28b9deae8 ts-admin-user-service~~c8f5f5754e65 
+
+
+Bottlenecks: 
+[[ts-security-service~~398ef53127cf], [ts-route-service~~a21a4a8db32c], [ts-user-service~~de7aee0018b5], [ts-consign-service~~c12df908d27d], [ts-cancel-service~~5292f0cd67fc], [ts-order-other-service~~2ce3c1fe4e69], [ts-admin-order-service~~005d125ec35c], [ts-auth-service~~0bb07d3db52e], [ts-admin-basic-info-service~~0842bcfbff8b], [ts-basic-service~~2be7fcdea81d], [ts-food-service~~5c6a38910844], [ts-payment-service~~71981d8449dc], [ts-food-map-service~~939c56981179], [ts-assurance-service~~184a8c19a754], [ts-route-plan-service~~0acfc18e6e6c], [ts-rebook-service~~64514f4243e5], [ts-config-service~~0683f64e5892, ts-config-service~~5968ef8acc60], [ts-travel2-service~~1d7fe7f697c6, ts-travel2-service~~32cc87e36448], [ts-station-service~~9488a16bade5, ts-station-service~~6afa2c31e725], [ts-execute-service~~be6810956cd1, ts-execute-service~~a30bee9f151c], [ts-train-service~~329ab06e644e, ts-train-service~~8971ac137e28], [ts-travel-plan-service~~d2a322f50bc6, ts-travel-plan-service~~3207e27ab694], [ts-admin-travel-service~~3112d212a916, ts-admin-travel-service~~a31eec1abd0d], [ts-notification-service~~82d0e421fbf6, ts-notification-service~~9490e4762301], [ts-preserve-service~~674e4b22950c, ts-preserve-service~~c8acfce19e5d], [ts-contacts-service~~1b533c45dbed, ts-contacts-service~~250bed7e4d78], [ts-travel-service~~7adcbdff6506, ts-travel-service~~a15b2a918bf4], [ts-price-service~~a46c63c81d12, ts-price-service~~01b4c6c4d2e9], [ts-order-service~~000caf076aaf, ts-order-service~~7c85a0c239f5], [ts-admin-route-service~~2163bd50b7bd, ts-admin-route-service~~0ff30e941ffe], [ts-admin-travel-service~~3112d212a916, ts-admin-route-service~~0ff30e941ffe], [ts-admin-user-service~~e1c28b9deae8, ts-admin-user-service~~c8f5f5754e65], [ts-admin-travel-service~~3112d212a916, ts-admin-user-service~~c8f5f5754e65], [ts-ticketinfo-service~~e5fa434ac058, ts-ticketinfo-service~~74f748c57d02], [ts-seat-service~~17ef39fa2360, ts-seat-service~~64ea50702235], [ts-inside-payment-service~~11473567b268, ts-inside-payment-service~~144f8e3f8104]]
+bottleneckNumber = 36
+
+Redundancies: 
+[]
+redundanciesNumber = 0
+
+Defects: 
+[]
+defectNumber = 0
+
+
+Flaky Defects: 
+[]
+
+ts-ticketinfo-service: 2/2
+ts-assurance-service: 1/1
+ts-inside-payment-service: 2/2
+ts-rebook-service: 1/1
+ts-travel-plan-service: 2/2
+ts-admin-order-service: 1/1
+ts-admin-route-service: 2/2
+ts-price-service: 2/2
+ts-contacts-service: 2/2
+ts-cancel-service: 1/1
+ts-payment-service: 1/1
+ts-basic-service: 1/1
+ts-consign-service: 1/1
+ts-route-plan-service: 1/1
+ts-seat-service: 2/2
+ts-security-service: 1/1
+ts-admin-user-service: 2/2
+ts-route-service: 1/1
+ts-order-other-service: 1/1
+ts-user-service: 1/1
+ts-execute-service: 2/2
+ts-admin-travel-service: 2/2
+ts-station-service: 2/2
+ts-travel-service: 2/2
+ts-train-service: 2/2
+ts-food-service: 1/1
+ts-preserve-service: 2/2
+ts-travel2-service: 2/2
+ts-config-service: 2/2
+ts-food-map-service: 1/1
+ts-order-service: 2/2
+ts-notification-service: 2/2
+ts-auth-service: 1/1
+ts-admin-basic-info-service: 1/1
+
+Node Coverage = 52/52
+
+Edge Coverage = 75/77
+Missed Edge = [ts-admin-route-service~~2163bd50b7bd -> ts-admin-travel-service~~a31eec1abd0d, ts-admin-travel-service~~a31eec1abd0d -> ts-admin-user-service~~e1c28b9deae8]
+
+Path Number = 8
+Inject Number = 43
+Average Inject Size = 1.53
+
+Total Time = 13213.203s
+HandleConfig Time = 4453.138s
+Algorithm Time = 7734.076s

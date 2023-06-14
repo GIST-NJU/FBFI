@@ -1,0 +1,810 @@
+FBFI_inject_number = 68
+FBFI_total_time = 7496.977
+
+[ < Experiment Start > ]
+
+subject = TrainTicket
+algorithm = LDFI
+inject type = stop
+
+Running algorithm: LDFI
+[ Workload Success ]
+
+[ Covered 34 Services ]
+ts-assurance-service
+ts-inside-payment-service
+ts-user-service
+ts-admin-user-service
+ts-basic-service
+ts-config-service
+ts-rebook-service
+ts-admin-travel-service
+ts-seat-service
+ts-order-other-service
+ts-payment-service
+ts-execute-service
+ts-contacts-service
+ts-consign-service
+ts-travel2-service
+ts-route-plan-service
+ts-admin-order-service
+ts-station-service
+ts-security-service
+ts-order-service
+ts-ticketinfo-service
+ts-cancel-service
+ts-admin-basic-info-service
+ts-travel-service
+ts-train-service
+ts-preserve-service
+ts-travel-plan-service
+ts-auth-service
+ts-admin-route-service
+ts-route-service
+ts-food-service
+ts-notification-service
+ts-food-map-service
+ts-price-service
+
+[ Trace List ]
+[ ts-assurance-service.getAllAssuranceType ]
+[ ts-food-service.getAllFood ]
+[ ts-preserve-service.preserve ]
+[ ts-consign-service.findByOrderId ]
+[ ts-cancel-service.calculate ]
+[ ts-inside-payment-service.pay ]
+[ ts-rebook-service.rebook ]
+[ ts-travel-plan-service.getByCheapest ]
+[ ts-execute-service.executeTicket ]
+[ ts-auth-service.getToken ]
+[ ts-admin-order-service.getAllOrders ]
+[ ts-admin-route-service.getAllRoutes ]
+[ ts-admin-travel-service.getAllTravels ]
+[ ts-admin-user-service.getAllUsers ]
+[ ts-admin-basic-info-service.getAllContacts ]
+[ ts-admin-basic-info-service.getAllStations ]
+[ ts-admin-basic-info-service.getAllTrains ]
+[ ts-admin-basic-info-service.getAllPrices ]
+[ ts-admin-basic-info-service.getAllConfigs ]
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Graph ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+[ Layer 1: ts-assurance-service ]
+[ Layer 2: ts-food-service ]
+[ Layer 3: ts-food-map-service ]
+[ Layer 4: ts-travel-service ]
+[ Layer 5: ts-route-service ]
+[ Layer 6: ts-station-service ]
+[ Layer 7: ts-preserve-service ]
+[ Layer 8: ts-security-service ]
+[ Layer 9: ts-order-service ]
+[ Layer 10: ts-order-other-service ]
+[ Layer 11: ts-contacts-service ]
+[ Layer 12: ts-ticketinfo-service ]
+[ Layer 13: ts-basic-service ]
+[ Layer 14: ts-train-service ]
+[ Layer 15: ts-price-service ]
+[ Layer 16: ts-seat-service ]
+[ Layer 17: ts-config-service ]
+[ Layer 18: ts-notification-service ]
+[ Layer 19: ts-consign-service ]
+[ Layer 20: ts-cancel-service ]
+[ Layer 21: ts-inside-payment-service ]
+[ Layer 22: ts-payment-service ]
+[ Layer 23: ts-rebook-service ]
+[ Layer 24: ts-travel-plan-service ]
+[ Layer 25: ts-route-plan-service ]
+[ Layer 26: ts-travel2-service ]
+[ Layer 27: ts-execute-service ]
+[ Layer 28: ts-auth-service ]
+[ Layer 29: ts-admin-order-service ]
+[ Layer 30: ts-admin-route-service ]
+[ Layer 31: ts-admin-travel-service ]
+[ Layer 32: ts-admin-user-service ]
+[ Layer 33: ts-user-service ]
+[ Layer 34: ts-admin-basic-info-service ]
+
+LDFI max time = 3 * 7496.977 = 22490.931s
+
+LDFI Round 1
+< Most: 1 >
+
+Inject Config: [ts-payment-service~~a76a32a51a3a]
+[ Workload Success ]
+Path: [ts-assurance-service~~871cd19157b0, ts-food-service~~bf6ca700bdd0, ts-food-map-service~~d1d3be95423c, ts-travel-service~~b38738b942d1, ts-route-service~~49652a8cf2c1, ts-station-service~~44d7270bb57d, ts-preserve-service~~232aef6b6c71, ts-security-service~~ed1da8042d91, ts-order-service~~a9e32f55a76c, ts-order-other-service~~e3c6f942441e, ts-contacts-service~~090b806cb540, ts-ticketinfo-service~~b7f73a9cd14d, ts-basic-service~~f24c3e66c3cc, ts-train-service~~b1476a7efb66, ts-price-service~~efabe8a553c2, ts-seat-service~~0367fa687d29, ts-config-service~~93b530e5dd0b, ts-notification-service~~9d3a92bb38bf, ts-consign-service~~a4baefa44552, ts-cancel-service~~7ba57ea979f4, ts-inside-payment-service~~aaae629fbab6, ts-payment-service~~fc53209c7fe5, ts-rebook-service~~de9a86cc9ebe, ts-travel-plan-service~~8a4853360898, ts-route-plan-service~~d946a77ca125, ts-travel2-service~~6234be2d95e8, ts-execute-service~~80fb2cfccb97, ts-auth-service~~8b0613b5a6ed, ts-admin-order-service~~dbbe5c3f98a4, ts-admin-route-service~~d6c06df973c4, ts-admin-travel-service~~4d95e6a2a532, ts-admin-user-service~~41c2d66ddbed, ts-user-service~~6010a0f41dbf, ts-admin-basic-info-service~~809a184b5223]
+
+LDFI Round 2
+< Most: 1 >
+
+Inject Config: [ts-travel-service~~b38738b942d1]
+[ Workload Success ]
+Path: [ts-assurance-service~~f2af27eece61, ts-food-service~~8b776f92137a, ts-food-map-service~~d1d3be95423c, ts-travel-service~~dd464d196ba1, ts-route-service~~49652a8cf2c1, ts-station-service~~44d7270bb57d, ts-preserve-service~~d42002b31988, ts-security-service~~ed1da8042d91, ts-order-service~~a9e32f55a76c, ts-order-other-service~~e3c6f942441e, ts-contacts-service~~65771208e302, ts-ticketinfo-service~~a2e3eb3a98c0, ts-basic-service~~f24c3e66c3cc, ts-train-service~~b1476a7efb66, ts-price-service~~efabe8a553c2, ts-seat-service~~4ab9ee001786, ts-config-service~~4c35ed9ae073, ts-notification-service~~e8a5c2bc604d, ts-consign-service~~df56cd12d33d, ts-cancel-service~~c96b53ae7feb, ts-inside-payment-service~~d129a65440a2, ts-payment-service~~fc53209c7fe5, ts-rebook-service~~4fa9f6baa4e8, ts-travel-plan-service~~a57c27f2185d, ts-route-plan-service~~d946a77ca125, ts-travel2-service~~6234be2d95e8, ts-execute-service~~4419fd525592, ts-auth-service~~7b3e0233d379, ts-admin-order-service~~dd30952cdfd4, ts-admin-route-service~~547266991db8, ts-admin-travel-service~~4d95e6a2a532, ts-admin-user-service~~d0256487a9f6, ts-user-service~~a4d736887fc1, ts-admin-basic-info-service~~0b2117c5d15e]
+
+LDFI Round 3
+< Most: 1 >
+
+Inject Config: [ts-train-service~~b1476a7efb66]
+[ Workload Success ]
+Path: [ts-assurance-service~~871cd19157b0, ts-food-service~~bf6ca700bdd0, ts-food-map-service~~d1d3be95423c, ts-travel-service~~30c38dc97f41, ts-route-service~~6a33985e49bd, ts-station-service~~44d7270bb57d, ts-preserve-service~~232aef6b6c71, ts-security-service~~ed1da8042d91, ts-order-service~~a9e32f55a76c, ts-order-other-service~~e3c6f942441e, ts-contacts-service~~65771208e302, ts-ticketinfo-service~~b7f73a9cd14d, ts-basic-service~~f24c3e66c3cc, ts-train-service~~3e57901b492f, ts-price-service~~104e4d44c769, ts-seat-service~~4ab9ee001786, ts-config-service~~93b530e5dd0b, ts-notification-service~~9d3a92bb38bf, ts-consign-service~~49f16f5664ac, ts-cancel-service~~1be052fb194a, ts-inside-payment-service~~aaae629fbab6, ts-payment-service~~a0cb7208bff7, ts-rebook-service~~de9a86cc9ebe, ts-travel-plan-service~~bbcd3e3a5161, ts-route-plan-service~~d946a77ca125, ts-travel2-service~~6234be2d95e8, ts-execute-service~~efe7ab232ebc, ts-auth-service~~6a03292027cb, ts-admin-order-service~~dbbe5c3f98a4, ts-admin-route-service~~7701d22d29d0, ts-admin-travel-service~~6dad60bf4c27, ts-admin-user-service~~4a802a112c6c, ts-user-service~~640f885f6b65, ts-admin-basic-info-service~~809a184b5223]
+
+LDFI Round 4
+< Most: 1 >
+
+LDFI Round 5
+< Most: 2 >
+
+Inject Config: [ts-food-map-service~~d1d3be95423c, ts-food-map-service~~a692e7f20c6f]
+Got an error code: 500 when GET http://localhost:32677/api/v1/foodservice/foods/2022-06-28/Shang%20Hai/Su%20Zhou/D1345
+[ Workload Failed ]
+Got an error code: 500 when GET http://localhost:32677/api/v1/foodservice/foods/2022-06-28/Shang%20Hai/Su%20Zhou/D1345
+[ Workload Failed ]
+Got an error code: 500 when GET http://localhost:32677/api/v1/foodservice/foods/2022-06-28/Shang%20Hai/Su%20Zhou/D1345
+[ Workload Failed ]
+Checking workload on unbroken system
+[ Workload Success ]
+
+LDFI Round 6
+< Most: 2 >
+
+Inject Config: [ts-admin-route-service~~7701d22d29d0, ts-admin-travel-service~~4d95e6a2a532]
+[ Workload Success ]
+Path: [ts-assurance-service~~f2af27eece61, ts-food-service~~8b776f92137a, ts-food-map-service~~a692e7f20c6f, ts-travel-service~~dd464d196ba1, ts-route-service~~6a33985e49bd, ts-station-service~~44d7270bb57d, ts-preserve-service~~232aef6b6c71, ts-security-service~~e3209a7898e4, ts-order-service~~a9e32f55a76c, ts-order-other-service~~50ba3076c8fa, ts-contacts-service~~090b806cb540, ts-ticketinfo-service~~a2e3eb3a98c0, ts-basic-service~~f24c3e66c3cc, ts-train-service~~b1476a7efb66, ts-price-service~~a95fe85e3421, ts-seat-service~~27c95494be69, ts-config-service~~4c35ed9ae073, ts-notification-service~~9ef2c7d70201, ts-consign-service~~df56cd12d33d, ts-cancel-service~~c96b53ae7feb, ts-inside-payment-service~~aaae629fbab6, ts-payment-service~~fc53209c7fe5, ts-rebook-service~~de9a86cc9ebe, ts-travel-plan-service~~a57c27f2185d, ts-route-plan-service~~36bc55a0feb2, ts-travel2-service~~6234be2d95e8, ts-execute-service~~4419fd525592, ts-auth-service~~7b3e0233d379, ts-admin-order-service~~dbbe5c3f98a4, ts-admin-route-service~~547266991db8, ts-admin-travel-service~~57c1647a49d2, ts-admin-user-service~~d0256487a9f6, ts-user-service~~6010a0f41dbf, ts-admin-basic-info-service~~809a184b5223]
+
+LDFI Round 7
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at Experiment.Experiment.RunExperiment(Experiment.java:345)
+	at Experiment.Experiment.main(Experiment.java:411)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.HashMap.newNode(HashMap.java:1750)
+	at java.util.HashMap.putVal(HashMap.java:642)
+	at java.util.HashMap.put(HashMap.java:612)
+	at java.util.HashSet.add(HashSet.java:220)
+	at java.util.AbstractCollection.addAll(AbstractCollection.java:344)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:303)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at MainFBFI.FBFI_Algorithm.CNF(FBFI_Algorithm.java:298)
+	at Experiment.Experiment.RunLDFI(Experiment.java:228)
+	at Experiment.Experiment$3.call(Experiment.java:341)
+	at Experiment.Experiment$3.call(Experiment.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+
+
+Total Graph
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Graph ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+[ Layer 1: ts-assurance-service ]
+LayerSize: 2
+LayerNodes: [ts-assurance-service~~f2af27eece61, ts-assurance-service~~871cd19157b0]
+
+NodeID: ts-assurance-service~~f2af27eece61
+Layer: 1
+SubNodes: ts-food-service~~8b776f92137a 
+PreNodes: start 
+
+NodeID: ts-assurance-service~~871cd19157b0
+Layer: 1
+SubNodes: ts-food-service~~bf6ca700bdd0 
+PreNodes: start 
+
+[ Layer 2: ts-food-service ]
+LayerSize: 2
+LayerNodes: [ts-food-service~~8b776f92137a, ts-food-service~~bf6ca700bdd0]
+
+NodeID: ts-food-service~~8b776f92137a
+Layer: 2
+SubNodes: ts-food-map-service~~d1d3be95423c ts-food-map-service~~a692e7f20c6f 
+PreNodes: ts-assurance-service~~f2af27eece61 
+
+NodeID: ts-food-service~~bf6ca700bdd0
+Layer: 2
+SubNodes: ts-food-map-service~~d1d3be95423c 
+PreNodes: ts-assurance-service~~871cd19157b0 
+
+[ Layer 3: ts-food-map-service ]
+LayerSize: 2
+LayerNodes: [ts-food-map-service~~d1d3be95423c, ts-food-map-service~~a692e7f20c6f]
+
+NodeID: ts-food-map-service~~d1d3be95423c
+Layer: 3
+SubNodes: ts-travel-service~~dd464d196ba1 ts-travel-service~~b38738b942d1 ts-travel-service~~30c38dc97f41 
+PreNodes: ts-food-service~~8b776f92137a ts-food-service~~bf6ca700bdd0 
+
+NodeID: ts-food-map-service~~a692e7f20c6f
+Layer: 3
+SubNodes: ts-travel-service~~dd464d196ba1 ts-travel-service~~b38738b942d1 
+PreNodes: ts-food-service~~8b776f92137a 
+
+[ Layer 4: ts-travel-service ]
+LayerSize: 3
+LayerNodes: [ts-travel-service~~dd464d196ba1, ts-travel-service~~b38738b942d1, ts-travel-service~~30c38dc97f41]
+
+NodeID: ts-travel-service~~dd464d196ba1
+Layer: 4
+SubNodes: ts-route-service~~6a33985e49bd ts-route-service~~49652a8cf2c1 
+PreNodes: ts-food-map-service~~d1d3be95423c ts-food-map-service~~a692e7f20c6f 
+
+NodeID: ts-travel-service~~b38738b942d1
+Layer: 4
+SubNodes: ts-route-service~~6a33985e49bd ts-route-service~~49652a8cf2c1 
+PreNodes: ts-food-map-service~~d1d3be95423c ts-food-map-service~~a692e7f20c6f 
+
+NodeID: ts-travel-service~~30c38dc97f41
+Layer: 4
+SubNodes: ts-route-service~~6a33985e49bd 
+PreNodes: ts-food-map-service~~d1d3be95423c 
+
+[ Layer 5: ts-route-service ]
+LayerSize: 2
+LayerNodes: [ts-route-service~~6a33985e49bd, ts-route-service~~49652a8cf2c1]
+
+NodeID: ts-route-service~~6a33985e49bd
+Layer: 5
+SubNodes: ts-station-service~~41fa113a6463 ts-station-service~~44d7270bb57d 
+PreNodes: ts-travel-service~~dd464d196ba1 ts-travel-service~~b38738b942d1 ts-travel-service~~30c38dc97f41 
+
+NodeID: ts-route-service~~49652a8cf2c1
+Layer: 5
+SubNodes: ts-station-service~~44d7270bb57d 
+PreNodes: ts-travel-service~~dd464d196ba1 ts-travel-service~~b38738b942d1 
+
+[ Layer 6: ts-station-service ]
+LayerSize: 2
+LayerNodes: [ts-station-service~~41fa113a6463, ts-station-service~~44d7270bb57d]
+
+NodeID: ts-station-service~~41fa113a6463
+Layer: 6
+SubNodes: ts-preserve-service~~d42002b31988 
+PreNodes: ts-route-service~~6a33985e49bd 
+
+NodeID: ts-station-service~~44d7270bb57d
+Layer: 6
+SubNodes: ts-preserve-service~~232aef6b6c71 ts-preserve-service~~d42002b31988 
+PreNodes: ts-route-service~~6a33985e49bd ts-route-service~~49652a8cf2c1 
+
+[ Layer 7: ts-preserve-service ]
+LayerSize: 2
+LayerNodes: [ts-preserve-service~~232aef6b6c71, ts-preserve-service~~d42002b31988]
+
+NodeID: ts-preserve-service~~232aef6b6c71
+Layer: 7
+SubNodes: ts-security-service~~ed1da8042d91 ts-security-service~~e3209a7898e4 
+PreNodes: ts-station-service~~44d7270bb57d 
+
+NodeID: ts-preserve-service~~d42002b31988
+Layer: 7
+SubNodes: ts-security-service~~ed1da8042d91 ts-security-service~~e3209a7898e4 
+PreNodes: ts-station-service~~41fa113a6463 ts-station-service~~44d7270bb57d 
+
+[ Layer 8: ts-security-service ]
+LayerSize: 2
+LayerNodes: [ts-security-service~~ed1da8042d91, ts-security-service~~e3209a7898e4]
+
+NodeID: ts-security-service~~ed1da8042d91
+Layer: 8
+SubNodes: ts-order-service~~a9e32f55a76c 
+PreNodes: ts-preserve-service~~232aef6b6c71 ts-preserve-service~~d42002b31988 
+
+NodeID: ts-security-service~~e3209a7898e4
+Layer: 8
+SubNodes: ts-order-service~~0966de995bda ts-order-service~~a9e32f55a76c 
+PreNodes: ts-preserve-service~~232aef6b6c71 ts-preserve-service~~d42002b31988 
+
+[ Layer 9: ts-order-service ]
+LayerSize: 2
+LayerNodes: [ts-order-service~~0966de995bda, ts-order-service~~a9e32f55a76c]
+
+NodeID: ts-order-service~~0966de995bda
+Layer: 9
+SubNodes: ts-order-other-service~~50ba3076c8fa 
+PreNodes: ts-security-service~~e3209a7898e4 
+
+NodeID: ts-order-service~~a9e32f55a76c
+Layer: 9
+SubNodes: ts-order-other-service~~50ba3076c8fa ts-order-other-service~~e3c6f942441e 
+PreNodes: ts-security-service~~ed1da8042d91 ts-security-service~~e3209a7898e4 
+
+[ Layer 10: ts-order-other-service ]
+LayerSize: 2
+LayerNodes: [ts-order-other-service~~50ba3076c8fa, ts-order-other-service~~e3c6f942441e]
+
+NodeID: ts-order-other-service~~50ba3076c8fa
+Layer: 10
+SubNodes: ts-contacts-service~~65771208e302 ts-contacts-service~~090b806cb540 
+PreNodes: ts-order-service~~0966de995bda ts-order-service~~a9e32f55a76c 
+
+NodeID: ts-order-other-service~~e3c6f942441e
+Layer: 10
+SubNodes: ts-contacts-service~~65771208e302 ts-contacts-service~~090b806cb540 
+PreNodes: ts-order-service~~a9e32f55a76c 
+
+[ Layer 11: ts-contacts-service ]
+LayerSize: 2
+LayerNodes: [ts-contacts-service~~65771208e302, ts-contacts-service~~090b806cb540]
+
+NodeID: ts-contacts-service~~65771208e302
+Layer: 11
+SubNodes: ts-ticketinfo-service~~a2e3eb3a98c0 ts-ticketinfo-service~~b7f73a9cd14d 
+PreNodes: ts-order-other-service~~50ba3076c8fa ts-order-other-service~~e3c6f942441e 
+
+NodeID: ts-contacts-service~~090b806cb540
+Layer: 11
+SubNodes: ts-ticketinfo-service~~a2e3eb3a98c0 ts-ticketinfo-service~~b7f73a9cd14d 
+PreNodes: ts-order-other-service~~50ba3076c8fa ts-order-other-service~~e3c6f942441e 
+
+[ Layer 12: ts-ticketinfo-service ]
+LayerSize: 2
+LayerNodes: [ts-ticketinfo-service~~a2e3eb3a98c0, ts-ticketinfo-service~~b7f73a9cd14d]
+
+NodeID: ts-ticketinfo-service~~a2e3eb3a98c0
+Layer: 12
+SubNodes: ts-basic-service~~f24c3e66c3cc ts-basic-service~~d1fc6eec8ca2 
+PreNodes: ts-contacts-service~~65771208e302 ts-contacts-service~~090b806cb540 
+
+NodeID: ts-ticketinfo-service~~b7f73a9cd14d
+Layer: 12
+SubNodes: ts-basic-service~~f24c3e66c3cc 
+PreNodes: ts-contacts-service~~65771208e302 ts-contacts-service~~090b806cb540 
+
+[ Layer 13: ts-basic-service ]
+LayerSize: 2
+LayerNodes: [ts-basic-service~~f24c3e66c3cc, ts-basic-service~~d1fc6eec8ca2]
+
+NodeID: ts-basic-service~~f24c3e66c3cc
+Layer: 13
+SubNodes: ts-train-service~~b1476a7efb66 ts-train-service~~3e57901b492f 
+PreNodes: ts-ticketinfo-service~~a2e3eb3a98c0 ts-ticketinfo-service~~b7f73a9cd14d 
+
+NodeID: ts-basic-service~~d1fc6eec8ca2
+Layer: 13
+SubNodes: ts-train-service~~b1476a7efb66 
+PreNodes: ts-ticketinfo-service~~a2e3eb3a98c0 
+
+[ Layer 14: ts-train-service ]
+LayerSize: 2
+LayerNodes: [ts-train-service~~b1476a7efb66, ts-train-service~~3e57901b492f]
+
+NodeID: ts-train-service~~b1476a7efb66
+Layer: 14
+SubNodes: ts-price-service~~efabe8a553c2 ts-price-service~~a95fe85e3421 ts-price-service~~104e4d44c769 
+PreNodes: ts-basic-service~~f24c3e66c3cc ts-basic-service~~d1fc6eec8ca2 
+
+NodeID: ts-train-service~~3e57901b492f
+Layer: 14
+SubNodes: ts-price-service~~104e4d44c769 
+PreNodes: ts-basic-service~~f24c3e66c3cc 
+
+[ Layer 15: ts-price-service ]
+LayerSize: 3
+LayerNodes: [ts-price-service~~efabe8a553c2, ts-price-service~~a95fe85e3421, ts-price-service~~104e4d44c769]
+
+NodeID: ts-price-service~~efabe8a553c2
+Layer: 15
+SubNodes: ts-seat-service~~0367fa687d29 ts-seat-service~~4ab9ee001786 
+PreNodes: ts-train-service~~b1476a7efb66 
+
+NodeID: ts-price-service~~a95fe85e3421
+Layer: 15
+SubNodes: ts-seat-service~~27c95494be69 
+PreNodes: ts-train-service~~b1476a7efb66 
+
+NodeID: ts-price-service~~104e4d44c769
+Layer: 15
+SubNodes: ts-seat-service~~0367fa687d29 ts-seat-service~~4ab9ee001786 
+PreNodes: ts-train-service~~b1476a7efb66 ts-train-service~~3e57901b492f 
+
+[ Layer 16: ts-seat-service ]
+LayerSize: 3
+LayerNodes: [ts-seat-service~~27c95494be69, ts-seat-service~~0367fa687d29, ts-seat-service~~4ab9ee001786]
+
+NodeID: ts-seat-service~~27c95494be69
+Layer: 16
+SubNodes: ts-config-service~~4c35ed9ae073 
+PreNodes: ts-price-service~~a95fe85e3421 
+
+NodeID: ts-seat-service~~0367fa687d29
+Layer: 16
+SubNodes: ts-config-service~~93b530e5dd0b ts-config-service~~4c35ed9ae073 
+PreNodes: ts-price-service~~efabe8a553c2 ts-price-service~~104e4d44c769 
+
+NodeID: ts-seat-service~~4ab9ee001786
+Layer: 16
+SubNodes: ts-config-service~~93b530e5dd0b ts-config-service~~4c35ed9ae073 
+PreNodes: ts-price-service~~efabe8a553c2 ts-price-service~~104e4d44c769 
+
+[ Layer 17: ts-config-service ]
+LayerSize: 2
+LayerNodes: [ts-config-service~~93b530e5dd0b, ts-config-service~~4c35ed9ae073]
+
+NodeID: ts-config-service~~93b530e5dd0b
+Layer: 17
+SubNodes: ts-notification-service~~9d3a92bb38bf 
+PreNodes: ts-seat-service~~0367fa687d29 ts-seat-service~~4ab9ee001786 
+
+NodeID: ts-config-service~~4c35ed9ae073
+Layer: 17
+SubNodes: ts-notification-service~~e8a5c2bc604d ts-notification-service~~9d3a92bb38bf ts-notification-service~~9ef2c7d70201 
+PreNodes: ts-seat-service~~27c95494be69 ts-seat-service~~0367fa687d29 ts-seat-service~~4ab9ee001786 
+
+[ Layer 18: ts-notification-service ]
+LayerSize: 3
+LayerNodes: [ts-notification-service~~e8a5c2bc604d, ts-notification-service~~9d3a92bb38bf, ts-notification-service~~9ef2c7d70201]
+
+NodeID: ts-notification-service~~e8a5c2bc604d
+Layer: 18
+SubNodes: ts-consign-service~~df56cd12d33d 
+PreNodes: ts-config-service~~4c35ed9ae073 
+
+NodeID: ts-notification-service~~9d3a92bb38bf
+Layer: 18
+SubNodes: ts-consign-service~~a4baefa44552 ts-consign-service~~49f16f5664ac 
+PreNodes: ts-config-service~~93b530e5dd0b ts-config-service~~4c35ed9ae073 
+
+NodeID: ts-notification-service~~9ef2c7d70201
+Layer: 18
+SubNodes: ts-consign-service~~df56cd12d33d 
+PreNodes: ts-config-service~~4c35ed9ae073 
+
+[ Layer 19: ts-consign-service ]
+LayerSize: 3
+LayerNodes: [ts-consign-service~~a4baefa44552, ts-consign-service~~49f16f5664ac, ts-consign-service~~df56cd12d33d]
+
+NodeID: ts-consign-service~~a4baefa44552
+Layer: 19
+SubNodes: ts-cancel-service~~7ba57ea979f4 
+PreNodes: ts-notification-service~~9d3a92bb38bf 
+
+NodeID: ts-consign-service~~49f16f5664ac
+Layer: 19
+SubNodes: ts-cancel-service~~1be052fb194a 
+PreNodes: ts-notification-service~~9d3a92bb38bf 
+
+NodeID: ts-consign-service~~df56cd12d33d
+Layer: 19
+SubNodes: ts-cancel-service~~c96b53ae7feb 
+PreNodes: ts-notification-service~~e8a5c2bc604d ts-notification-service~~9ef2c7d70201 
+
+[ Layer 20: ts-cancel-service ]
+LayerSize: 3
+LayerNodes: [ts-cancel-service~~c96b53ae7feb, ts-cancel-service~~7ba57ea979f4, ts-cancel-service~~1be052fb194a]
+
+NodeID: ts-cancel-service~~c96b53ae7feb
+Layer: 20
+SubNodes: ts-inside-payment-service~~d129a65440a2 ts-inside-payment-service~~aaae629fbab6 
+PreNodes: ts-consign-service~~df56cd12d33d 
+
+NodeID: ts-cancel-service~~7ba57ea979f4
+Layer: 20
+SubNodes: ts-inside-payment-service~~aaae629fbab6 
+PreNodes: ts-consign-service~~a4baefa44552 
+
+NodeID: ts-cancel-service~~1be052fb194a
+Layer: 20
+SubNodes: ts-inside-payment-service~~d129a65440a2 ts-inside-payment-service~~aaae629fbab6 
+PreNodes: ts-consign-service~~49f16f5664ac 
+
+[ Layer 21: ts-inside-payment-service ]
+LayerSize: 2
+LayerNodes: [ts-inside-payment-service~~d129a65440a2, ts-inside-payment-service~~aaae629fbab6]
+
+NodeID: ts-inside-payment-service~~d129a65440a2
+Layer: 21
+SubNodes: ts-payment-service~~a76a32a51a3a ts-payment-service~~fc53209c7fe5 
+PreNodes: ts-cancel-service~~c96b53ae7feb ts-cancel-service~~1be052fb194a 
+
+NodeID: ts-inside-payment-service~~aaae629fbab6
+Layer: 21
+SubNodes: ts-payment-service~~a0cb7208bff7 ts-payment-service~~fc53209c7fe5 
+PreNodes: ts-cancel-service~~c96b53ae7feb ts-cancel-service~~7ba57ea979f4 ts-cancel-service~~1be052fb194a 
+
+[ Layer 22: ts-payment-service ]
+LayerSize: 3
+LayerNodes: [ts-payment-service~~a76a32a51a3a, ts-payment-service~~a0cb7208bff7, ts-payment-service~~fc53209c7fe5]
+
+NodeID: ts-payment-service~~a76a32a51a3a
+Layer: 22
+SubNodes: ts-rebook-service~~4fa9f6baa4e8 
+PreNodes: ts-inside-payment-service~~d129a65440a2 
+
+NodeID: ts-payment-service~~a0cb7208bff7
+Layer: 22
+SubNodes: ts-rebook-service~~de9a86cc9ebe 
+PreNodes: ts-inside-payment-service~~aaae629fbab6 
+
+NodeID: ts-payment-service~~fc53209c7fe5
+Layer: 22
+SubNodes: ts-rebook-service~~4fa9f6baa4e8 ts-rebook-service~~de9a86cc9ebe 
+PreNodes: ts-inside-payment-service~~d129a65440a2 ts-inside-payment-service~~aaae629fbab6 
+
+[ Layer 23: ts-rebook-service ]
+LayerSize: 2
+LayerNodes: [ts-rebook-service~~4fa9f6baa4e8, ts-rebook-service~~de9a86cc9ebe]
+
+NodeID: ts-rebook-service~~4fa9f6baa4e8
+Layer: 23
+SubNodes: ts-travel-plan-service~~a57c27f2185d ts-travel-plan-service~~bbcd3e3a5161 
+PreNodes: ts-payment-service~~a76a32a51a3a ts-payment-service~~fc53209c7fe5 
+
+NodeID: ts-rebook-service~~de9a86cc9ebe
+Layer: 23
+SubNodes: ts-travel-plan-service~~a57c27f2185d ts-travel-plan-service~~bbcd3e3a5161 ts-travel-plan-service~~8a4853360898 
+PreNodes: ts-payment-service~~a0cb7208bff7 ts-payment-service~~fc53209c7fe5 
+
+[ Layer 24: ts-travel-plan-service ]
+LayerSize: 3
+LayerNodes: [ts-travel-plan-service~~a57c27f2185d, ts-travel-plan-service~~bbcd3e3a5161, ts-travel-plan-service~~8a4853360898]
+
+NodeID: ts-travel-plan-service~~a57c27f2185d
+Layer: 24
+SubNodes: ts-route-plan-service~~d946a77ca125 ts-route-plan-service~~36bc55a0feb2 
+PreNodes: ts-rebook-service~~4fa9f6baa4e8 ts-rebook-service~~de9a86cc9ebe 
+
+NodeID: ts-travel-plan-service~~bbcd3e3a5161
+Layer: 24
+SubNodes: ts-route-plan-service~~d946a77ca125 ts-route-plan-service~~36bc55a0feb2 
+PreNodes: ts-rebook-service~~4fa9f6baa4e8 ts-rebook-service~~de9a86cc9ebe 
+
+NodeID: ts-travel-plan-service~~8a4853360898
+Layer: 24
+SubNodes: ts-route-plan-service~~d946a77ca125 
+PreNodes: ts-rebook-service~~de9a86cc9ebe 
+
+[ Layer 25: ts-route-plan-service ]
+LayerSize: 2
+LayerNodes: [ts-route-plan-service~~d946a77ca125, ts-route-plan-service~~36bc55a0feb2]
+
+NodeID: ts-route-plan-service~~d946a77ca125
+Layer: 25
+SubNodes: ts-travel2-service~~6234be2d95e8 
+PreNodes: ts-travel-plan-service~~a57c27f2185d ts-travel-plan-service~~bbcd3e3a5161 ts-travel-plan-service~~8a4853360898 
+
+NodeID: ts-route-plan-service~~36bc55a0feb2
+Layer: 25
+SubNodes: ts-travel2-service~~2eeb87c58cde ts-travel2-service~~6234be2d95e8 
+PreNodes: ts-travel-plan-service~~a57c27f2185d ts-travel-plan-service~~bbcd3e3a5161 
+
+[ Layer 26: ts-travel2-service ]
+LayerSize: 2
+LayerNodes: [ts-travel2-service~~2eeb87c58cde, ts-travel2-service~~6234be2d95e8]
+
+NodeID: ts-travel2-service~~2eeb87c58cde
+Layer: 26
+SubNodes: ts-execute-service~~efe7ab232ebc 
+PreNodes: ts-route-plan-service~~36bc55a0feb2 
+
+NodeID: ts-travel2-service~~6234be2d95e8
+Layer: 26
+SubNodes: ts-execute-service~~80fb2cfccb97 ts-execute-service~~4419fd525592 ts-execute-service~~efe7ab232ebc 
+PreNodes: ts-route-plan-service~~d946a77ca125 ts-route-plan-service~~36bc55a0feb2 
+
+[ Layer 27: ts-execute-service ]
+LayerSize: 3
+LayerNodes: [ts-execute-service~~80fb2cfccb97, ts-execute-service~~4419fd525592, ts-execute-service~~efe7ab232ebc]
+
+NodeID: ts-execute-service~~80fb2cfccb97
+Layer: 27
+SubNodes: ts-auth-service~~8b0613b5a6ed 
+PreNodes: ts-travel2-service~~6234be2d95e8 
+
+NodeID: ts-execute-service~~4419fd525592
+Layer: 27
+SubNodes: ts-auth-service~~7b3e0233d379 
+PreNodes: ts-travel2-service~~6234be2d95e8 
+
+NodeID: ts-execute-service~~efe7ab232ebc
+Layer: 27
+SubNodes: ts-auth-service~~6a03292027cb 
+PreNodes: ts-travel2-service~~2eeb87c58cde ts-travel2-service~~6234be2d95e8 
+
+[ Layer 28: ts-auth-service ]
+LayerSize: 3
+LayerNodes: [ts-auth-service~~8b0613b5a6ed, ts-auth-service~~6a03292027cb, ts-auth-service~~7b3e0233d379]
+
+NodeID: ts-auth-service~~8b0613b5a6ed
+Layer: 28
+SubNodes: ts-admin-order-service~~dbbe5c3f98a4 
+PreNodes: ts-execute-service~~80fb2cfccb97 
+
+NodeID: ts-auth-service~~6a03292027cb
+Layer: 28
+SubNodes: ts-admin-order-service~~dd30952cdfd4 ts-admin-order-service~~dbbe5c3f98a4 
+PreNodes: ts-execute-service~~efe7ab232ebc 
+
+NodeID: ts-auth-service~~7b3e0233d379
+Layer: 28
+SubNodes: ts-admin-order-service~~dd30952cdfd4 ts-admin-order-service~~dbbe5c3f98a4 
+PreNodes: ts-execute-service~~4419fd525592 
+
+[ Layer 29: ts-admin-order-service ]
+LayerSize: 2
+LayerNodes: [ts-admin-order-service~~dd30952cdfd4, ts-admin-order-service~~dbbe5c3f98a4]
+
+NodeID: ts-admin-order-service~~dd30952cdfd4
+Layer: 29
+SubNodes: ts-admin-route-service~~547266991db8 ts-admin-route-service~~7701d22d29d0 
+PreNodes: ts-auth-service~~6a03292027cb ts-auth-service~~7b3e0233d379 
+
+NodeID: ts-admin-order-service~~dbbe5c3f98a4
+Layer: 29
+SubNodes: ts-admin-route-service~~d6c06df973c4 ts-admin-route-service~~547266991db8 ts-admin-route-service~~7701d22d29d0 
+PreNodes: ts-auth-service~~8b0613b5a6ed ts-auth-service~~6a03292027cb ts-auth-service~~7b3e0233d379 
+
+[ Layer 30: ts-admin-route-service ]
+LayerSize: 3
+LayerNodes: [ts-admin-route-service~~d6c06df973c4, ts-admin-route-service~~547266991db8, ts-admin-route-service~~7701d22d29d0]
+
+NodeID: ts-admin-route-service~~d6c06df973c4
+Layer: 30
+SubNodes: ts-admin-travel-service~~4d95e6a2a532 
+PreNodes: ts-admin-order-service~~dbbe5c3f98a4 
+
+NodeID: ts-admin-route-service~~547266991db8
+Layer: 30
+SubNodes: ts-admin-travel-service~~4d95e6a2a532 ts-admin-travel-service~~57c1647a49d2 
+PreNodes: ts-admin-order-service~~dd30952cdfd4 ts-admin-order-service~~dbbe5c3f98a4 
+
+NodeID: ts-admin-route-service~~7701d22d29d0
+Layer: 30
+SubNodes: ts-admin-travel-service~~6dad60bf4c27 
+PreNodes: ts-admin-order-service~~dd30952cdfd4 ts-admin-order-service~~dbbe5c3f98a4 
+
+[ Layer 31: ts-admin-travel-service ]
+LayerSize: 3
+LayerNodes: [ts-admin-travel-service~~4d95e6a2a532, ts-admin-travel-service~~6dad60bf4c27, ts-admin-travel-service~~57c1647a49d2]
+
+NodeID: ts-admin-travel-service~~4d95e6a2a532
+Layer: 31
+SubNodes: ts-admin-user-service~~41c2d66ddbed ts-admin-user-service~~d0256487a9f6 
+PreNodes: ts-admin-route-service~~d6c06df973c4 ts-admin-route-service~~547266991db8 
+
+NodeID: ts-admin-travel-service~~6dad60bf4c27
+Layer: 31
+SubNodes: ts-admin-user-service~~4a802a112c6c 
+PreNodes: ts-admin-route-service~~7701d22d29d0 
+
+NodeID: ts-admin-travel-service~~57c1647a49d2
+Layer: 31
+SubNodes: ts-admin-user-service~~d0256487a9f6 
+PreNodes: ts-admin-route-service~~547266991db8 
+
+[ Layer 32: ts-admin-user-service ]
+LayerSize: 3
+LayerNodes: [ts-admin-user-service~~4a802a112c6c, ts-admin-user-service~~41c2d66ddbed, ts-admin-user-service~~d0256487a9f6]
+
+NodeID: ts-admin-user-service~~4a802a112c6c
+Layer: 32
+SubNodes: ts-user-service~~640f885f6b65 
+PreNodes: ts-admin-travel-service~~6dad60bf4c27 
+
+NodeID: ts-admin-user-service~~41c2d66ddbed
+Layer: 32
+SubNodes: ts-user-service~~6010a0f41dbf 
+PreNodes: ts-admin-travel-service~~4d95e6a2a532 
+
+NodeID: ts-admin-user-service~~d0256487a9f6
+Layer: 32
+SubNodes: ts-user-service~~6010a0f41dbf ts-user-service~~a4d736887fc1 
+PreNodes: ts-admin-travel-service~~4d95e6a2a532 ts-admin-travel-service~~57c1647a49d2 
+
+[ Layer 33: ts-user-service ]
+LayerSize: 3
+LayerNodes: [ts-user-service~~6010a0f41dbf, ts-user-service~~a4d736887fc1, ts-user-service~~640f885f6b65]
+
+NodeID: ts-user-service~~6010a0f41dbf
+Layer: 33
+SubNodes: ts-admin-basic-info-service~~809a184b5223 
+PreNodes: ts-admin-user-service~~41c2d66ddbed ts-admin-user-service~~d0256487a9f6 
+
+NodeID: ts-user-service~~a4d736887fc1
+Layer: 33
+SubNodes: ts-admin-basic-info-service~~0b2117c5d15e 
+PreNodes: ts-admin-user-service~~d0256487a9f6 
+
+NodeID: ts-user-service~~640f885f6b65
+Layer: 33
+SubNodes: ts-admin-basic-info-service~~809a184b5223 ts-admin-basic-info-service~~0b2117c5d15e 
+PreNodes: ts-admin-user-service~~4a802a112c6c 
+
+[ Layer 34: ts-admin-basic-info-service ]
+LayerSize: 2
+LayerNodes: [ts-admin-basic-info-service~~809a184b5223, ts-admin-basic-info-service~~0b2117c5d15e]
+
+NodeID: ts-admin-basic-info-service~~809a184b5223
+Layer: 34
+SubNodes: end 
+PreNodes: ts-user-service~~6010a0f41dbf ts-user-service~~640f885f6b65 
+
+NodeID: ts-admin-basic-info-service~~0b2117c5d15e
+Layer: 34
+SubNodes: end 
+PreNodes: ts-user-service~~a4d736887fc1 ts-user-service~~640f885f6b65 
+
+
+Bottlenecks: 
+[[ts-food-map-service~~d1d3be95423c, ts-food-map-service~~a692e7f20c6f]]
+bottleneckNumber = 1
+
+Redundancies: 
+[]
+redundanciesNumber = 0
+
+Defects: 
+[]
+defectNumber = 0
+
+
+Flaky Defects: 
+[]
+
+ts-ticketinfo-service: 2/2
+ts-assurance-service: 2/2
+ts-inside-payment-service: 2/2
+ts-rebook-service: 2/2
+ts-travel-plan-service: 3/3
+ts-admin-order-service: 2/2
+ts-admin-route-service: 3/3
+ts-price-service: 3/3
+ts-contacts-service: 2/2
+ts-cancel-service: 3/3
+ts-payment-service: 3/3
+ts-basic-service: 2/2
+ts-consign-service: 3/3
+ts-route-plan-service: 2/2
+ts-seat-service: 3/3
+ts-security-service: 2/3
+ts-admin-user-service: 3/3
+ts-route-service: 2/2
+ts-order-other-service: 2/3
+ts-user-service: 3/3
+ts-execute-service: 3/3
+ts-admin-travel-service: 3/3
+ts-station-service: 2/2
+ts-travel-service: 3/3
+ts-train-service: 2/2
+ts-food-service: 2/2
+ts-preserve-service: 2/2
+ts-travel2-service: 2/3
+ts-config-service: 2/2
+ts-food-map-service: 2/2
+ts-order-service: 2/3
+ts-notification-service: 3/3
+ts-auth-service: 3/3
+ts-admin-basic-info-service: 2/2
+
+Node Coverage = 82/86
+
+Edge Coverage = 129/214
+Missed Edge = [ts-assurance-service~~871cd19157b0 -> ts-food-service~~8b776f92137a, ts-assurance-service~~f2af27eece61 -> ts-food-service~~bf6ca700bdd0, ts-food-service~~bf6ca700bdd0 -> ts-food-map-service~~a692e7f20c6f, ts-food-map-service~~a692e7f20c6f -> ts-travel-service~~30c38dc97f41, ts-travel-service~~30c38dc97f41 -> ts-route-service~~49652a8cf2c1, ts-route-service~~49652a8cf2c1 -> ts-station-service~~41fa113a6463, ts-station-service~~41fa113a6463 -> ts-preserve-service~~232aef6b6c71, ts-security-service~~ed1da8042d91 -> ts-order-service~~0966de995bda, ts-order-service~~0966de995bda -> ts-order-other-service~~e3c6f942441e, ts-ticketinfo-service~~b7f73a9cd14d -> ts-basic-service~~d1fc6eec8ca2, ts-basic-service~~d1fc6eec8ca2 -> ts-train-service~~3e57901b492f, ts-train-service~~3e57901b492f -> ts-price-service~~efabe8a553c2, ts-train-service~~3e57901b492f -> ts-price-service~~a95fe85e3421, ts-price-service~~efabe8a553c2 -> ts-seat-service~~27c95494be69, ts-price-service~~104e4d44c769 -> ts-seat-service~~27c95494be69, ts-price-service~~a95fe85e3421 -> ts-seat-service~~0367fa687d29, ts-price-service~~a95fe85e3421 -> ts-seat-service~~4ab9ee001786, ts-seat-service~~27c95494be69 -> ts-config-service~~93b530e5dd0b, ts-config-service~~93b530e5dd0b -> ts-notification-service~~e8a5c2bc604d, ts-config-service~~93b530e5dd0b -> ts-notification-service~~9ef2c7d70201, ts-notification-service~~e8a5c2bc604d -> ts-consign-service~~a4baefa44552, ts-notification-service~~9ef2c7d70201 -> ts-consign-service~~a4baefa44552, ts-notification-service~~e8a5c2bc604d -> ts-consign-service~~49f16f5664ac, ts-notification-service~~9ef2c7d70201 -> ts-consign-service~~49f16f5664ac, ts-notification-service~~9d3a92bb38bf -> ts-consign-service~~df56cd12d33d, ts-consign-service~~a4baefa44552 -> ts-cancel-service~~c96b53ae7feb, ts-consign-service~~49f16f5664ac -> ts-cancel-service~~c96b53ae7feb, ts-consign-service~~49f16f5664ac -> ts-cancel-service~~7ba57ea979f4, ts-consign-service~~df56cd12d33d -> ts-cancel-service~~7ba57ea979f4, ts-consign-service~~a4baefa44552 -> ts-cancel-service~~1be052fb194a, ts-consign-service~~df56cd12d33d -> ts-cancel-service~~1be052fb194a, ts-cancel-service~~7ba57ea979f4 -> ts-inside-payment-service~~d129a65440a2, ts-inside-payment-service~~aaae629fbab6 -> ts-payment-service~~a76a32a51a3a, ts-inside-payment-service~~d129a65440a2 -> ts-payment-service~~a0cb7208bff7, ts-payment-service~~a0cb7208bff7 -> ts-rebook-service~~4fa9f6baa4e8, ts-payment-service~~a76a32a51a3a -> ts-rebook-service~~de9a86cc9ebe, ts-rebook-service~~4fa9f6baa4e8 -> ts-travel-plan-service~~8a4853360898, ts-travel-plan-service~~8a4853360898 -> ts-route-plan-service~~36bc55a0feb2, ts-route-plan-service~~d946a77ca125 -> ts-travel2-service~~2eeb87c58cde, ts-travel2-service~~2eeb87c58cde -> ts-execute-service~~80fb2cfccb97, ts-travel2-service~~2eeb87c58cde -> ts-execute-service~~4419fd525592, ts-execute-service~~4419fd525592 -> ts-auth-service~~8b0613b5a6ed, ts-execute-service~~efe7ab232ebc -> ts-auth-service~~8b0613b5a6ed, ts-execute-service~~80fb2cfccb97 -> ts-auth-service~~6a03292027cb, ts-execute-service~~4419fd525592 -> ts-auth-service~~6a03292027cb, ts-execute-service~~80fb2cfccb97 -> ts-auth-service~~7b3e0233d379, ts-execute-service~~efe7ab232ebc -> ts-auth-service~~7b3e0233d379, ts-auth-service~~8b0613b5a6ed -> ts-admin-order-service~~dd30952cdfd4, ts-admin-order-service~~dd30952cdfd4 -> ts-admin-route-service~~d6c06df973c4, ts-admin-route-service~~7701d22d29d0 -> ts-admin-travel-service~~4d95e6a2a532, ts-admin-route-service~~d6c06df973c4 -> ts-admin-travel-service~~6dad60bf4c27, ts-admin-route-service~~547266991db8 -> ts-admin-travel-service~~6dad60bf4c27, ts-admin-route-service~~d6c06df973c4 -> ts-admin-travel-service~~57c1647a49d2, ts-admin-route-service~~7701d22d29d0 -> ts-admin-travel-service~~57c1647a49d2, ts-admin-travel-service~~4d95e6a2a532 -> ts-admin-user-service~~4a802a112c6c, ts-admin-travel-service~~57c1647a49d2 -> ts-admin-user-service~~4a802a112c6c, ts-admin-travel-service~~6dad60bf4c27 -> ts-admin-user-service~~41c2d66ddbed, ts-admin-travel-service~~57c1647a49d2 -> ts-admin-user-service~~41c2d66ddbed, ts-admin-travel-service~~6dad60bf4c27 -> ts-admin-user-service~~d0256487a9f6, ts-admin-user-service~~4a802a112c6c -> ts-user-service~~6010a0f41dbf, ts-admin-user-service~~4a802a112c6c -> ts-user-service~~a4d736887fc1, ts-admin-user-service~~41c2d66ddbed -> ts-user-service~~a4d736887fc1, ts-admin-user-service~~41c2d66ddbed -> ts-user-service~~640f885f6b65, ts-admin-user-service~~d0256487a9f6 -> ts-user-service~~640f885f6b65, ts-user-service~~a4d736887fc1 -> ts-admin-basic-info-service~~809a184b5223, ts-user-service~~6010a0f41dbf -> ts-admin-basic-info-service~~0b2117c5d15e]
+
+Path Number = 5
+Inject Number = 5
+Average Inject Size = 1.40
+
+Total Time = 1621.013s
+HandleConfig Time = 327.741s
+Algorithm Time = 509.574s

@@ -1,9 +1,0 @@
-sock-shop-8072_user = 4
-sock-shop-8072_catalogue = 4
-sock-shop-8072_catalogue-db = 4
-sock-shop-8072_carts = 4
-sock-shop-8072_carts-db = 4
-sock-shop-8072_orders = 4
-sock-shop-8072_orders-db = 4
-sock-shop-8072_payment = 4
-sock-shop-8072_shipping = 3
