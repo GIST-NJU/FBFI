@@ -2,18 +2,20 @@
 
 FBFI (Fault-tolerance Bottleneck driven Fault Injection) is a fault injection testing (FIT) approach to the effective and efficient validation of redundant components deployed in a service system. It uses the concept of **fault-tolerance bottleneck** to repeatedly generate fault injection configurations, and does not rely on *a priori*, complete knowledge of the system's business structure.
 
-### Usage
+For the implementation details of FBFI, please refer to the following paper:
+
+> Huayao Wu, Senyao Yu, Xintao Niu, Changhai Nie, Yu Pei, Qiang He, and Yun Yang. Enhancing Fault Injection Testing of Service Systems via Fault-Tolerance Bottleneck. IEEE Transactions on Software Engineering (TSE), doi: [10.1109/TSE.2023.3285357](https://doi.org/10.1109/TSE.2023.3285357)
+
+## Usage
 
 To use FBFI to test a system, the tester should have a *system workload* that exercises a certain number of services, a *fault injector* that implements the concrete fault injections, and a *tracing tool* that captures the execution paths of the system. Given such an application scenario, FBFI will take the system execution results observed as the input (either a successful execution path, or a system failure observed), and infer fault-tolerance bottlenecks as the locations of fault injection.
 
-#### Usage for simulation
-We currently provide a command-line utility that implements the core algorithms of the FBFI (with `algorithm=FBFI`). In addition, the `algorithm` parameter can also be configured to `Random` or `LDFI`, in order to use different strategies to generate fault injection configurations.
+### For simulation
+We currently provide a command-line utility that implements the core algorithms of FBFI (with `algorithm=FBFI`). In addition, the `algorithm` parameter can also be configured to `Random` or `LDFI`, in order to use different strategies to generate fault injection configurations.
 
 ```bash
 java -jar Main.jar algorithm=[Algorithm_Name]
 ```
-##### Main process of FBFI
-
 At first, since FBFI is unaware of the complete business structure, the tester should provide an initial successful execution path, and FBFI will use this path as the initial business structure. Here, each *execution path* should be encoded as `x_1-x_2-...-x_n`, where `x_i` is a string that indicates the name of a particular business node of the *i*-th service.
 
 ```
@@ -21,11 +23,10 @@ Please input a successful execution path (e.g. A_1-B_1-C_1):
 A_1-B_1-C_1
 ```
 
-FBFI will then update the business structure, and generate its fault-tolerance bottlenecks. The tester should use the given bottleneck to implement concrete fault injections and trace the system execution. At this moment, if an alternative execution path is obtained, this path should be given to FBFI for structure update. Otherwise, the input `-` should be given to FBFI. Note that the system should be reset (removes faults injected) after this step.
+FBFI will then update the business structure, and generate its fault-tolerance bottlenecks. The tester should use the given bottleneck to implement concrete fault injections and trace the system execution. At this moment, if an alternative execution path is obtained, this path should be given to FBFI for structure update. Otherwise, the input `-` should be given to FBFI. Note that the system should be reset (removes faults injected) after each fault injection.
 
 ```
 Please inject config: [A_1]
-...
 
 Please input the new execution path (if the system works correctly), 
 or "-" (if the system fails in all cases), 
@@ -34,6 +35,7 @@ A_2-B_1-C_2
 Path: [A_2, B_1, C_2]
 Please restore config: [A_1]
 ```
+
 FBFI will repeat the above process until all bottlenecks inferred can break the system. At this moment, FBFI has explored the complete business structure, and the algorithm terminates.
 
 ```
@@ -96,68 +98,72 @@ defectNumber = 0
 ...
 ```
 
-##### The random and LDFI approaches 
-
 Like FBFI, the random and LDFI approaches are also unaware of the complete business structure, and will rely on only the successful execution paths to update the business structure. The main difference between these approaches is in the generation of fault injection configurations: the random approach generates fault injection configurations randomly, while LDFI uses a SAT solver to infer bottlenecks.
 
-#### Usage by interface
+### Interface
 
-We currently provide an interface of FBFI algorithm. To use the FBFI algorithm in your code, you need to implement the method `genPath(Set<String> config)` in `Main.FBFIUsage` first.  You can use the method `getInjectConfig()` to get the configuration that needs to be injected into the SUT. After injecting the fault, you need to execute the SUT workload and get the new execution path as the output of the method `genPath()`. After implementing the method `genPath()`, you can use the method `RunFBFIExperiment()` to perform the FBFI algorithm in your code. `FBFIExample.java` shows an example of the usage of FBFI algorithm by interface `Main.FBFIUsage`.
+We also provide a programming interface for using the FBFI algorithm in your codes. To this end, you need to implement the `genPath(Set<String> config)` method in `Main.FBFIUsage`, which takes a fault injection configuration, `config`, as the input and returns the system execution path observed, `path`. After this, you can use the `RunFBFIExperiment()` method to perform FBFI. A detailed example can be found in `FBFIExample.java`.
 
 ```java
 import Main.FBFIUsage;
-		FBFIUsage FBFI = new FBFIUsage() {
-			@Override
-			/**
-			 * @param config The configuration that needs to be injected into the SUT
-			 * @return The execution path with the following form: {"A_1", "B_1", "C_1"}, 
-			 *          or an empty list if the SUT workload execution failed.
-			 */
-			public List<String> genPath(Set<String> config) throws Exception {
-				List<String> path = new ArrayList<String>();
-				// TODO Your code may like this:
-				// Inject(config);
-				// path = Tracer();
-				// Restore(config);
-				return path;
-			}
-		};
-		FBFI.RunFBFIExperiment();
+
+FBFIUsage FBFI = new FBFIUsage() {
+	@Override
+	/**
+		* @param config The configuration that needs to be injected into the SUT
+		* @return The execution path observed, in the format of {"A_1", "B_1", "C_1"}, 
+		*         or an empty list if the workload execution fails
+		*/
+	public List<String> genPath(Set<String> config) throws Exception {
+		List<String> path = new ArrayList<String>();
+		// Your code may like this:
+		// Inject(config);     // implement the concrete fault injection
+    // executeWorkload();  // execute the workload
+		// path = Tracer();    // get the execution path from the tracing tool
+		// Restore(config);    // remove the faults injected 
+		return path;
+  }
+};
+
+FBFI.RunFBFIExperiment();
 ```
 
-### Experiment
+
+
+
+
+## Experiment
 
 The performance of FBFI is evaluated under two microservice benchmark systems, [TrainTicket](https://github.com/FudanSELab/train-ticket/tree/jaeger) and [SockShop](https://github.com/microservices-demo/microservices-demo). Two additional automated FIT approaches, Radnom and LDFI (an adapted version), are used for comparison.
 
-To reproduce the experimental results, first run the following command to generate a series of configurations for deploying the benchmark system under different scales (note that the default deployment configuration of benchmark system does not introduce redundancy to service instances):
+To reproduce the experiments, first run the following command to generate a series of configurations for deploying the benchmark system under different scales (note that the default deployment configuration does not introduce redundancy to service instances):
 
 ```bash
 java -jar DeployConfig.jar
 ```
 
-Executing this command will generate the following series of files:
+This will generate a series of configuration files, `../ExperimentData/[Subject]/[Scale]/[id]/scale.txt`, where `[Subject]` can be `TrainTicket` or `SockShop`, `[Scale]` can be `small`, `medium` or `large`, and `[id]` is in the rang of [1, 30]. This includes a total number of `2 * 3 * 30 = 180` configuration files, each of which corresponds to an experiment subject.
 
-``../Data/[Subject]/[Scale]/[id]/scale.txt``
-
-Here, `[Subject]` can take `TrainTicket` or `SockShop`, `[Scale]` indicates the deployment scale of the system, which can take `small`, `medium` or `large` (that is, each service has `{1, 2}`, `{2, 3}`, or `{3, 4}` redundant nodes), and `[id]`can take from 1 to 30. That is to say, a total of 2\*3\*30=180 `scale.txt` files were generated. For example, the content form of the `scale.txt` may be as follows
-
-```
-ts-ticketinfo-service = 4
-ts-seat-service = 3
-```
-
-Next, for the deployment configuration generated, run the following command to deploy the SUT and carry out the experiment. Here, the `subject` parameter indicates the address of deployment configuration file `scale.txt` (e.g. subject=../Data/TrainTicket/large/26). 
+Next, for each experiment subject, run the following command to deploy the SUT and carry out the expeiment. 
 
 ```bash
-java -jar Main.jar subject=[Deployment Configuration Addr] algorithm=[Algorithm Name] time=[Time Limit]
+java -jar Main.jar subject=[Subject Path]
+# for example
+# java -jar Main.jar subject=../ExperimentData/TrainTicket/small/1
 ```
-Take the deployment file above as an example, the program will first automatically execute the following code to deploy the SUT.
+
+Accoridng to the experiment setting, the three FIT approaches (that is, `FBFI`, `LDFI`, and `Random`) will be executed in order, and the maximum execution time constraints allocated to the random and LDFI approaches will be 1x and 3x of that of FBFI.
+
+Alternatively, if you want to execute a specific FIT algorithm on the subject, run the following command:
 
 ```bash
-docker-compose up --scale ts-ticketinfo-service=4 --scale ts-seat-service=3
+java -jar Main.jar subject=[Subject Path] algorithm=[Algorithm Name] time=[Time Limit]
+# for example
+# java -jar Main.jar subject=../ExperimentData/TrainTicket/small/1 algorithm=FBFI time=3600
 ```
 
-After the successful deployment of the benchmark system, the FIT approach selected will then be invoked to automatically perform fault injection experiments. The `algorithm` parameter indicates the FIT approach that will be used, which can take `FBFI`, `LDFI` or `Random`. The `algorithm` parameter can be defaulted, which means that the three FIT approaches, `FBFI`, `LDFI` and `Random`, will be executed in turn. Note that according to the experiment setting, FBFI should be executed first, because the maximum execution time constraints allocated to the random and LDFI approaches are dependent on the time costs of FBFI (1x and 3x of FBFI, respectively). If you want to execute LDFI or Random alone, you can specify the parameter `time` to determine the upper limit of running time (unit: seconds, default value: 3600).
+Here, the `algorithm` parameter can take `FBFI`, `LDFI` or `Random`; and the `time` parameter indicates the maximum execution time constraint allocated (in seconds, 3600 by default).
+
 Once the experiment terminates, the following data will be reported:
 
 * `Total Graph`: the whole business structure explored by algorithm
@@ -168,10 +174,6 @@ Once the experiment terminates, the following data will be reported:
 * `Edge Coverage`: number of covered message transmissions / total number of message transmissions of the corresponding symmetric structure
 * `Path Number`: the number of execution paths
 * `Inject Number`: the number of fault injection configurations
-* `Total Time`:  the total cost of experiment (Seconds)
-* `HandleConfig Time`:  the injection cost of experiment, including the time cost of implementing injections and resetting the system (Seconds)
-* `Algorithm Time`:  the generation cost of the algorithm (Seconds)
-
-The `Data` directory gives the raw experimental data observed in our experiment. In the directory of each deployment configuration file `scale.txt`, we provide:
-
-* `outputs_[Algorithm].txt`: the raw experiment results of running each algorithm under this deployment configuration
+* `Total Time`:  the total cost of experiment (in seconds)
+* `HandleConfig Time`:  the injection cost of experiment, including the time cost of implementing injections and resetting the system (in seconds)
+* `Algorithm Time`:  the generation cost of the algorithm (in seconds)
