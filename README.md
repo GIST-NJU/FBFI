@@ -102,7 +102,7 @@ Like FBFI, the random and LDFI approaches are also unaware of the complete busin
 
 ### Interface
 
-We also provide a programming interface for using the FBFI algorithm in your codes. To this end, you need to implement the `genPath(Set<String> config)` method in `Main.FBFIUsage`, which takes a fault injection configuration, `config`, as the input and returns the system execution path observed, `path`. After this, you can use the `RunFBFIExperiment()` method to perform FBFI. A detailed example can be found in `FBFIExample.java`.
+We also provide a programming interface for using the FBFI algorithm in your codes. To this end, you need to implement the `genPath(Set<String> config)` method in `Main.FBFIUsage`, which takes a fault injection configuration, `config`, as the input and returns the system execution path observed, `path`. After this, you can use the `RunFBFIExperiment()` method to perform FBFI.
 
 ```java
 import Main.FBFIUsage;
