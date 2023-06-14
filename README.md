@@ -108,20 +108,20 @@ We also provide a programming interface for using the FBFI algorithm in your cod
 import Main.FBFIUsage;
 
 FBFIUsage FBFI = new FBFIUsage() {
-	@Override
-	/**
-		* @param config The configuration that needs to be injected into the SUT
-		* @return The execution path observed, in the format of {"A_1", "B_1", "C_1"}, 
-		*         or an empty list if the workload execution fails
-		*/
-	public List<String> genPath(Set<String> config) throws Exception {
-		List<String> path = new ArrayList<String>();
-		// Your code may like this:
-		// Inject(config);     // implement the concrete fault injection
+  @Override
+  /**
+   * @param config The configuration that needs to be injected into the SUT
+   * @return The execution path observed, in the format of {"A_1", "B_1", "C_1"}, 
+   *         or an empty list if the workload execution fails
+   */
+  public List<String> genPath(Set<String> config) throws Exception {
+    List<String> path = new ArrayList<String>();
+    // Your code may like this:
+    // Inject(config);     // implement the concrete fault injection
     // executeWorkload();  // execute the workload
-		// path = Tracer();    // get the execution path from the tracing tool
-		// Restore(config);    // remove the faults injected 
-		return path;
+    // path = Tracer();    // get the execution path from the tracing tool
+    // Restore(config);    // remove the faults injected 
+    return path;
   }
 };
 
